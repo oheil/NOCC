@@ -1,0 +1,21 @@
+full_name=Full Name
+email_address=foo@bar.org
+msg_per_page=30
+cc_self=1
+hide_addresses=1
+outlook_quoting=1
+colored_quotes=1
+display_struct=1
+seperate_msg_win=1
+reply_leadin=
+signature=VGhpcyBpcyBhIHNpZ25hdHVyZS4uLg==
+wrap_msg=72
+sig_sep=1
+html_mail_send=1
+graphical_smilies=1
+sent_folder=1
+sent_folder_name=Sent
+trash_folder=1
+trash_folder_name=Trash
+lang=de
+theme=newlook
