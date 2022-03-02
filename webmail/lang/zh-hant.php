@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hant.php 2959 2021-10-07 11:09:16Z translatewiki $
+ * @version    SVN: $Id: zh-hant.php 2994 2022-02-17 12:10:02Z translatewiki $
  */
 /** Traditional Chinese (中文（繁體）)
  * 
@@ -35,6 +35,7 @@
  * @author Sanmosa
  * @author Wrightbus
  * @author Xiplus
+ * @author 列维劳德
  */
 
 $lang_locale = 'zh_TW.UTF-8';
@@ -73,7 +74,7 @@ $html_full_name_label = '全名：';
 $html_email_address_label = '電子郵件地址：';
 $html_bccself = '密件副本給自己';
 $html_hide_addresses = '隱藏地址';
-$html_outlook_quoting = '以微軟Outlook的形式引用';
+$html_outlook_quoting = 'Outlook式引用';
 $html_reply_to = '回覆';
 $html_reply_to_label = '回覆：';
 $html_use_signature = '使用簽名';

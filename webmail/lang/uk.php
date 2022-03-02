@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: uk.php 2957 2021-08-30 11:13:56Z translatewiki $
+ * @version    SVN: $Id: uk.php 2996 2022-02-24 12:11:03Z translatewiki $
  */
 /** Ukrainian (українська)
  * 
@@ -25,6 +25,7 @@
  * @author Andriykopanytsia
  * @author Base
  * @author DDPAT
+ * @author Ice bulldog
  * @author KEL
  * @author Movses
  * @author Piramidion

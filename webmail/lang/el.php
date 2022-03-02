@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: el.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: el.php 2995 2022-02-21 12:10:24Z translatewiki $
  */
 /** Greek (Ελληνικά)
  * 
@@ -32,6 +32,7 @@
  * @author Nikosgranturismogt
  * @author Omnipaedista
  * @author Spyros Ioakim <sioakim@ace-hellas.gr>
+ * @author Αντιγόνη
  * @author Περίεργος
  */
 
@@ -252,3 +253,4 @@ $html_fd_skipcount = 'με %1$d διευθύνσεις ηλ. ταχυδρομε�
 $reset_clicked = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτή τη φόρμα;';
 $html_collect_option0 = 'Ποτέ';
 $html_collect_option3 = 'Πάντα';
+$html_version_message3 = 'Eίναι διαθέσιμη νέα έκδοση';

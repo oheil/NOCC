@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: it.php 2965 2021-11-25 12:10:56Z translatewiki $
+ * @version    SVN: $Id: it.php 2989 2022-01-17 12:09:58Z translatewiki $
  */
 /** Italian (italiano)
  * 
@@ -69,7 +69,7 @@ $html_lang_label = 'Lingua:';
 $html_msgperpage_label = 'Messaggi per pagina:';
 $html_preferences = 'Preferenze';
 $html_full_name_label = 'Nome completo:';
-$html_email_address_label = 'Indirizzo e-mail:';
+$html_email_address_label = 'Indirizzo email:';
 $html_bccself = 'Manda una copia nascosta a me stesso';
 $html_hide_addresses = 'Nascondi indirizzi';
 $html_outlook_quoting = 'Citazioni in stile Outlook';
