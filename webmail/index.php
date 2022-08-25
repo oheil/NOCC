@@ -12,7 +12,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: index.php 2967 2021-12-10 14:24:34Z oheil $
+ * @version    SVN: $Id: index.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 //If a previous authentification cookie was set, we use it to bypass login
@@ -124,17 +124,20 @@ require './html/header.php';
                 <tr>
                   <th><label for="lang"><?php echo $html_lang_label ?></label></th>
                   <td>
-                  <select class="button" name="lang" id="lang" onchange="updateLoginPage()">
+                  <select class="button" name="lang" id="lang" onchange="updateLoginPage('<?php echo NOCC_Session::getUrlGetSession(); ?>')">
                   <?php
                   
+                  echo '<option value="default"';
+		if( ! isset($_REQUEST['lang']) || $_REQUEST['lang']=="default" ) {
+			echo ' selected="selected"';
+		}
+		  echo '>' . convertLang2Html($html_default) . '</option>';
                   foreach ($lang_array as $_lang_key => $_lang_var) {
                       if (file_exists('lang/' . $_lang_var->filename . '.php')) {
                           echo '<option value="' . $_lang_var->filename . '"';
-
-                          if ($_SESSION['nocc_lang'] == $_lang_var->filename) {
+                          if (isset($_REQUEST['lang']) && $_REQUEST['lang']!="default" && $_SESSION['nocc_lang'] == $_lang_var->filename) {
                               echo ' selected="selected"';
                           }
-
                           echo '>' . convertLang2Html($_lang_var->label) . '</option>';
                       }
                   }
@@ -150,12 +153,17 @@ require './html/header.php';
                 <tr>
                 <th><label for="theme"><?php echo $html_theme_label ?></label></th>
                 <td>
-                <select class="button" name="theme" id="theme" onchange="updateLoginPage()">
+                <select class="button" name="theme" id="theme" onchange="updateLoginPage('<?php echo NOCC_Session::getUrlGetSession(); ?>')">
                 <?php
+                  echo '<option value="default"';
+		if( ! isset($_REQUEST['lang']) || $_REQUEST['lang']=="default" ) {
+			echo ' selected="selected"';
+		}
+		  echo '>' . convertLang2Html($html_default) . '</option>';
                     $themes = new NOCC_Themes('./themes/', $_SESSION['nocc_theme']);
                     foreach ($themes->getThemeNames() as $themeName) { //for all theme names...
                         echo '<option value="' . $themeName . '"';
-                        if ($themeName == $_SESSION['nocc_theme']) { //if selected theme...
+                        if (isset($_REQUEST['theme']) && $_REQUEST['theme']!="default" && $themeName == $_SESSION['nocc_theme']) {
                             echo ' selected="selected"';
                         }
                         echo '>' . $themeName . '</option>';

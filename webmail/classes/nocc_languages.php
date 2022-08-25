@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_languages.php 2373 2011-01-04 15:06:58Z gerundt $
+ * @version    SVN: $Id: nocc_languages.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 /**
@@ -56,6 +56,7 @@ class NOCC_Languages {
                   $path .= '/';
                 }
                 
+		$this->_languages["default"]=convertLang2Html($html_default);
                 //TODO: Move some code to a NOCC_Directory class?
                 if ($handle = opendir($path)) { //if can open the directory...
                     while (false !== ($name = readdir($handle))) { //for each item...

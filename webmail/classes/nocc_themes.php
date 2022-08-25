@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_themes.php 2580 2013-08-19 21:57:33Z gerundt $
+ * @version    SVN: $Id: nocc_themes.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 /**
@@ -47,7 +47,7 @@ class NOCC_Themes {
      */
     public function __construct($path, $defaultThemeName = '') {
         $this->_themes = array();
-        $this->_defaultThemeName = 'standard';
+        $this->_defaultThemeName = 'default';
         $this->_selectedThemeName = '';
 
         if (isset($path) && is_string($path) && !empty($path)) { //if path is set...

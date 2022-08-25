@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: pl.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: pl.php 3010 2022-05-16 11:11:12Z translatewiki $
  */
 /** Polish (polski)
  * 
@@ -27,6 +27,7 @@
  * @author Ryszard Janiszewski <dex7@akacje.net>
  * @author Sp5uhe
  * @author Tomasz Mateja <tommat@pimpek.one.pl>
+ * @author WaldiSt
  * @author Woytecr
  */
 
@@ -79,6 +80,7 @@ $html_manage_filters_link = 'Reguły wiadomości';
 $html_use_graphical_smilies = 'Używaj emotikon';
 $html_sent_folder_label = 'Kopiuj wysłane wiadomości do wyznaczonego folderu';
 $html_trash_folder_label = 'Przenieś usunięte wiadomości do dedykowanego katalogu';
+$html_inbox_folder_label = 'Połącz pozycję menu Skrzynka odbiorcza z folderem:';
 $html_colored_quotes = 'Wyróżnij cytaty kolorami';
 $html_display_struct = 'Wyświetl skonstruowany tekst';
 $html_send_html_mail = 'Wyślij wiadomość w formacie HTML';

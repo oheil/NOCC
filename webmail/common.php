@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 2981 2021-12-22 08:53:00Z oheil $
+ * @version    SVN: $Id: common.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -132,19 +132,29 @@ $languages = new NOCC_Languages('./lang/', $conf->default_lang);
 
 //TODO: Check $_REQUEST['lang'] also when force_default_lang?
 if (isset($_REQUEST['lang'])) { //if a language is requested...
-    if ($languages->setSelectedLangId($_REQUEST['lang'])) { //if the language exists...
+    if( $languages->setSelectedLangId($_REQUEST['lang']) || $_REQUEST['lang']=="default" ) { //if the language exists...
         $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
     }
 }
 
-if (isset($_SESSION['nocc_lang'])) { //if session language already set...
+if( isset($_SESSION['nocc_lang']) && $_SESSION['nocc_lang']!="default" ) { //if session language already set...
     $languages->setSelectedLangId($_SESSION['nocc_lang']);
 }
 else { //if session language NOT already set...
     if (!isset($conf->force_default_lang) || !$conf->force_default_lang) { //if NOT force default language...
         $languages->detectFromBrowser();
     }
-    $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
+    else {
+	    if( isset($conf->default_lang) ) {
+		   $languages->setSelectedLangId($conf->default_lang);
+	    }
+	    else {
+		   $languages->setSelectedLangId('en');
+	    }
+    }
+    if( $_SESSION['nocc_lang']!="default" ) {
+	    $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
+    }
 }
 $lang = $languages->getSelectedLangId();
 
@@ -161,17 +171,20 @@ if ($lang != 'en') { //if NOT English...
 //--------------------------------------------------------------------------------
 // Set the theme...
 //--------------------------------------------------------------------------------
+
 $themes = new NOCC_Themes('./themes/', $conf->default_theme);
 
 //TODO: Check $_REQUEST['theme'] also when NOT use_theme?
-if (isset($_REQUEST['theme'])) { //if a theme is requested...
-    if ($themes->setSelectedThemeName($_REQUEST['theme'])) { //if the theme exists...
+if( isset($_REQUEST['theme']) && isset($conf->use_theme) && $conf->use_theme ) {
+    if( $themes->setSelectedThemeName($_REQUEST['theme']) ) { //if the theme exists...
         $_SESSION['nocc_theme'] = $themes->getSelectedThemeName();
     }
 }
 
-if (!isset($_SESSION['nocc_theme'])) { //if session theme NOT already set...
-    $_SESSION['nocc_theme'] = $themes->getDefaultThemeName();
+$default_theme_set=false;
+if( !isset($_SESSION['nocc_theme']) ) { //if session theme NOT already set...
+	$_SESSION['nocc_theme'] = $themes->getDefaultThemeName();
+	$default_theme_set=true;
 }
 //--------------------------------------------------------------------------------
 
@@ -333,19 +346,20 @@ if (isset($_SESSION['nocc_user']) && isset($_SESSION['nocc_domain'])) {
     //--------------------------------------------------------------------------------
     // Set and load the user prefs language...
     //--------------------------------------------------------------------------------
-    //TODO: Move to normal language loading!
-    if (isset($user_prefs->lang) && $user_prefs->lang != '') {
-        $userLang = $languages->getSelectedLangId();
-        if ($languages->setSelectedLangId($user_prefs->lang)) { //if the language exists...
-            $userLang = $languages->getSelectedLangId();
-            if (($userLang != 'en') && ($userLang != $lang)) { //if NOT English AND current language...
-                $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
-                $lang = $languages->getSelectedLangId();
+    if( !isset($_SESSION['nocc_lang']) || (isset($_SESSION['nocc_lang']) && $_SESSION['nocc_lang']=='default') ) {
+	    if( isset($user_prefs->lang) && $user_prefs->lang != '' && $user_prefs->lang != 'default' ) {
+	        $userLang = $languages->getSelectedLangId();
+	        if ($languages->setSelectedLangId($user_prefs->lang)) { //if the language exists...
+	            $userLang = $languages->getSelectedLangId();
+	            if (($userLang != 'en') && ($userLang != $lang)) { //if NOT English AND current language...
+	                $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
+	                $lang = $languages->getSelectedLangId();
                 
-                require './lang/'. $lang . '.php';
-            }
-        }
-        unset($userLang);
+	                require './lang/'. $lang . '.php';
+	            }
+	        }
+	        unset($userLang);
+	    }
     }
     unset($languages);
     //--------------------------------------------------------------------------------
@@ -353,13 +367,14 @@ if (isset($_SESSION['nocc_user']) && isset($_SESSION['nocc_domain'])) {
     //--------------------------------------------------------------------------------
     // Set the user prefs theme...
     //--------------------------------------------------------------------------------
-    //TODO: Move to normal theme loading!
-    if (isset($conf->use_theme) && ($conf->use_theme == true)) { //if allow theme changing...
-        if (isset($user_prefs->theme) && $user_prefs->theme != '') {
-            if ($themes->setSelectedThemeName($user_prefs->theme)) { //if the theme exists...
-                $_SESSION['nocc_theme'] = $themes->getSelectedThemeName();
-            }
-        }
+    if( $default_theme_set || !isset($_SESSION['nocc_theme']) || (isset($_SESSION['nocc_theme']) && $_SESSION['nocc_theme']=='default') ) {
+	    if (isset($conf->use_theme) && ($conf->use_theme == true)) { //if allow theme changing...
+	        if( isset($user_prefs->theme) && $user_prefs->theme != '' && $user_prefs->theme != 'default' ) {
+ 	           if ($themes->setSelectedThemeName($user_prefs->theme)) { //if the theme exists...
+	                $_SESSION['nocc_theme'] = $themes->getSelectedThemeName();
+	            }
+		}
+	    }
     }
     unset($themes);
     //--------------------------------------------------------------------------------

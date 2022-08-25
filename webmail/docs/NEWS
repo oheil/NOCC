@@ -4,10 +4,17 @@ Latest version is 1.9.11
 NOCC 1.9.12-dev  ???????? ??, ????
 
   Misc
-    * Bug in mail part/attachment parsing (Oliver Heil).
     * Autoupdate: a -dev version is smaller than the release,
       e.g. 1.9.12-dev is smaller than 1.9.12, because release is later (Oliver Heil).
-    * Regression bug in session handling: session expires premature  (Oliver Heil).
+    * Language/theme selector and preferences logic enhanced (Oliver Heil)
+      https://github.com/oheil/NOCC/issues/1 
+
+  Bugs
+    * Bug in mail part/attachment parsing (Oliver Heil).
+    * Regression bug in session handling: session expires premature (Oliver Heil).
+    * Bug in check for AES256, should be lowercase, check for both (Oliver Heil).
+    * Bug on login screen: reload when lang/theme change, new session is
+      ignored (Oliver Heil).
 
 NOCC 1.9.11  December 10, 2021
 

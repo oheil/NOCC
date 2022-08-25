@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fa.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: fa.php 3006 2022-04-25 11:11:55Z translatewiki $
  */
 /** Persian (فارسی)
  * 
@@ -23,11 +23,13 @@
  * @file
  *
  * @author Alirezaaa
+ * @author Beginneruser
  * @author Ebraminio
  * @author FarsiNevis
  * @author Huji
  * @author Iriman
  * @author Mjbmr
+ * @author Mohammad ebz
  * @author Omnia
  * @author Reza1615
  * @author ZxxZxxZ
@@ -39,7 +41,7 @@ $default_date_format = '%Y-%m-%d';
 $no_locale_date_format = '%Y-%m-%d';
 $default_time_format = '%I:%M %p';
 $err_user_empty = 'شناسه کاربر خالى است';
-$err_passwd_empty = 'رمز خالى است';
+$err_passwd_empty = 'قسمت رمز عبور خالى است';
 $alt_delete = 'پاک کردن پيغامهاى انتخاب شده';
 $alt_delete_one = 'پاک کردن پيغام';
 $alt_new_msg = 'پيغامهاى جديد';
@@ -56,7 +58,7 @@ $html_theme_label = 'پوسته';
 $html_welcome = 'خوش آمدید به %1$s';
 $html_login = 'ورود به سامانه';
 $html_user_label = 'کاربر:';
-$html_passwd_label = 'کلمه عبور:';
+$html_passwd_label = 'رمز عبور:';
 $html_submit = 'ارسال';
 $html_help = 'راهنما';
 $html_server_label = 'سرور :';
@@ -65,7 +67,7 @@ $html_retry = 'سعى دوباره';
 $html_remember = 'تنظیمات را به یاد داشته باشید';
 $html_lang_label = 'زبان:';
 $html_msgperpage_label = 'پيغامها به ازاء هر صفحه';
-$html_preferences = 'تنظيمات';
+$html_preferences = 'ترجیحات';
 $html_full_name_label = 'نام و نام خانوادگی :';
 $html_email_address_label = 'نشانی ایمیل:';
 $html_bccself = 'رونوشت پنهان به خود';

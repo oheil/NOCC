@@ -13,7 +13,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf_lang.php 2967 2021-12-10 14:24:34Z oheil $
+ * @version    SVN: $Id: conf_lang.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 // ################### Language Array  ################### //
@@ -585,6 +585,10 @@ $lang_array[$i]->label = 'ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ';
 
 
 usort($lang_array, function($a,$b){return($a->filename <=> $b->filename);});
+$default=new lang();
+$default->filename = 'default';
+$default->label = convertLang2Html($html_default);
+array_unshift($lang_array,$default);
 
 
 /* Message documentation (translatewiki.net specific)

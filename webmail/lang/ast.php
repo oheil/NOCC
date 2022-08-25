@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Fitoschido
  * @author Xuacu
  */
 
@@ -59,7 +60,7 @@ $html_preferences = 'Preferencies';
 $html_full_name_label = 'Nome completu:';
 $html_email_address_label = 'Direición de corréu electrónicu:';
 $html_bccself = 'Poneme na CCT';
-$html_hide_addresses = 'Tapecer les direiciones';
+$html_hide_addresses = 'Anubrir les señes';
 $html_outlook_quoting = 'Citar al estilu Outlook';
 $html_reply_to = 'Responder a';
 $html_reply_to_label = 'Responder a:';

@@ -32,23 +32,24 @@ function updateLoginPort() {
 /**
  * Update login page.
  */
-function updateLoginPage() {
+function updateLoginPage(id) {
+	if( ! id ) { id=""; }
   var form = document.getElementById("nocc_webmail_login");
   if (form.user.value == "" && form.passwd.value == "") {
     if (form.theme && form.lang) {
-      var lang_page = "index.php?theme=" + form.theme[form.theme.selectedIndex].value + "&lang=" + form.lang[form.lang.selectedIndex].value;
+      var lang_page = "index.php?"+id+"&theme=" + form.theme[form.theme.selectedIndex].value + "&lang=" + form.lang[form.lang.selectedIndex].value;
       self.location = lang_page;
     }
     if (!form.theme && form.lang) {
-      var lang_page = "index.php?lang=" + form.lang[form.lang.selectedIndex].value;
+      var lang_page = "index.php?"+id+"&lang=" + form.lang[form.lang.selectedIndex].value;
       self.location = lang_page;
     }
     if (form.theme && !form.lang) {
-      var lang_page = "index.php?theme=" + form.theme[form.theme.selectedIndex].value;
+      var lang_page = "index.php?"+id+"&theme=" + form.theme[form.theme.selectedIndex].value;
       self.location = lang_page;
     }
     if (!form.theme && !form.lang) {
-      var lang_page = "index.php";
+      var lang_page = "index.php?"+id;
       self.location = lang_page;
     }
   }

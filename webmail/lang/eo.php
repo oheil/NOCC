@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: eo.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: eo.php 3003 2022-03-28 11:11:38Z translatewiki $
  */
 /** Esperanto (Esperanto)
  * 
@@ -261,3 +261,5 @@ $html_session_ip_changed = 'pro ŝangô de klienta IP-adreso';
 $html_session_expire_time = 'Ĉi tiu sesio eksvalidiĝos aŭtomate je';
 $html_inbox_changed = 'Ŝanĝiĝis la enhavo de via enirkesto';
 $html_inbox_show_alert = 'Montri atentigan skatolon se ŝanĝiĝas la nombro de retmesaĝoj en la enirkesto';
+$lang_horde_require_failed = 'Horde pmap-klientklaso ne trovita';
+$lang_strong_encryption_required = 'Malsekura ĉifrado ne estas permesita';

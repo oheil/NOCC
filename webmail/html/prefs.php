@@ -1,4 +1,4 @@
-<!-- start of $Id: prefs.php 2967 2021-12-10 14:24:34Z oheil $ -->
+<!-- start of $Id: prefs.php 3016 2022-08-25 11:00:42Z oheil $ -->
 <?php
   if (!isset($conf->loaded))
     die('Hacking attempt');
@@ -257,13 +257,20 @@ if (count($big_list) > 1) {
            <td class="prefsData">
              <select class="button" name="lang" id="lang">
                <?php
-                 for ($i = 0; $i < sizeof($lang_array); $i++)
-                 if (file_exists('lang/'.$lang_array[$i]->filename.'.php')) {
-                   echo '<option value="'.$lang_array[$i]->filename.'"';
-                   if ($_SESSION['nocc_lang'] == $lang_array[$i]->filename)
-                     echo ' selected="selected"';
-                   echo '>'.$lang_array[$i]->label.'</option>';
-                 }
+                 for ($i = 0; $i < sizeof($lang_array); $i++) {
+	                 if( $lang_array[$i]->filename == 'default' || file_exists('lang/'.$lang_array[$i]->filename.'.php') ) {
+	                   echo '<option value="'.$lang_array[$i]->filename.'"';
+			   if( isset($user_prefs->lang) ) {
+				if( $user_prefs->lang == $lang_array[$i]->filename ) {
+					echo ' selected="selected"';
+				}
+			   }
+			   else if( $_SESSION['nocc_lang'] == $lang_array[$i]->filename ) {
+				echo ' selected="selected"';
+			   }
+	                   echo '>'.$lang_array[$i]->label.'</option>';
+	                 }
+		 }
                ?>
              </select>
            </td>
@@ -274,12 +281,18 @@ if (count($big_list) > 1) {
            <td class="prefsData">
              <select class="button" name="theme" id="theme">
              <?php
+               echo '<option value="default"';
+		if( ! isset($user_prefs->theme) || $user_prefs->theme=="default" ) {
+                     echo ' selected="selected"';
+		}
+               echo '>'.convertLang2Html($html_default).'</option>';
                $handle = opendir('./themes');
                while (($file = readdir($handle)) != false) {
                  if (($file != '.') && ($file != '..') && ($file != '.svn')) {
                    echo '<option value="'.$file.'"';
-                   if ($file == $_SESSION['nocc_theme'])
-                     echo ' selected="selected"';
+			if( isset($user_prefs->theme) && $user_prefs->theme==$file ) {
+				echo ' selected="selected"';
+		     	}
                    echo '>'.$file.'</option>';
                  }
                }
@@ -320,4 +333,4 @@ if (count($big_list) > 1) {
      </div>
    </form>
  </div>
-<!-- end of $Id: prefs.php 2967 2021-12-10 14:24:34Z oheil $ -->
+<!-- end of $Id: prefs.php 3016 2022-08-25 11:00:42Z oheil $ -->

@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Utilities
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: crypt.php 2871 2020-04-13 14:16:02Z oheil $
+ * @version    SVN: $Id: crypt.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 function encrXOR($string, $key) {
@@ -45,7 +45,7 @@ function encpass($passwd, $rkey) {
 	if( extension_loaded("openssl") && function_exists("openssl_encrypt") && function_exists("openssl_decrypt")
 		&& extension_loaded("hash") && function_exists("hash")
 		&& in_array("sha256",hash_algos())
-		&& in_array("AES256",openssl_get_cipher_methods(true))
+		&& count( preg_grep("/^aes256$/i",openssl_get_cipher_methods(true)) ) > 0
 	) {
 		$key=hash("SHA256",$rkey,true);
 		$iv_size=openssl_cipher_iv_length("AES256");
@@ -91,7 +91,7 @@ function decpass($cipher, $rkey) {
 	if( extension_loaded("openssl") && function_exists("openssl_encrypt") && function_exists("openssl_decrypt")
 		&& extension_loaded("hash") && function_exists("hash")
 		&& in_array("sha256",hash_algos())
-		&& in_array("AES256",openssl_get_cipher_methods(true))
+		&& count( preg_grep("/^aes256$/i",openssl_get_cipher_methods(true)) )>0
 	) {
 		$key=hash("SHA256",$rkey,true);
 		$iv_size=openssl_cipher_iv_length("AES256");

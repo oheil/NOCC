@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: de.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: de.php 3016 2022-08-25 11:00:42Z oheil $
  */
 /** German (Deutsch)
  * 
@@ -273,3 +273,4 @@ $html_inbox_changed = 'Der Inhalt Ihres Posteingangs wurde geändert';
 $html_inbox_show_alert = 'Hinweis anzeigen, wenn sich die Anzahl der E-Mails im Posteingang ändert';
 $lang_horde_require_failed = 'Horde Imap Client Klasse nicht gefunden';
 $lang_strong_encryption_required = 'Unsichere Verschlüsselung ist nicht erlaubt';
+$html_default = 'Standard';

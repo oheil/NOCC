@@ -47,7 +47,6 @@ $title_prev_msg = 'Previous message';
 $html_theme_label = 'Theme:';
 $html_welcome = 'Welcome to %1$s';
 $html_login = 'Login';
-$html_user_label = 'User:';
 $html_passwd_label = 'Password:';
 $html_submit = 'Submit';
 $html_help = 'Help';

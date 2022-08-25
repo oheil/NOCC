@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ru.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ru.php 3009 2022-05-12 11:11:13Z translatewiki $
  */
 /** Russian (русский)
  * 
@@ -31,9 +31,11 @@
  * @author Lvova
  * @author Nzeemin
  * @author Okras
+ * @author Pacha Tchernof
  * @author Putnik
  * @author Sergey Frolovithev <serg@spylog.ru>
  * @author Sk
+ * @author Vcohen
  * @author Александр Сигачёв
  * @author Туллук
  * @author გიორგიმელა
@@ -121,7 +123,7 @@ $html_and = 'и';
 $html_new_msg_in = 'Новые сообщения в';
 $html_or = 'или';
 $html_move = 'Переместить';
-$html_copy = 'Копировать';
+$html_copy = 'Скопировать';
 $html_messages_to = 'выбранные письма в';
 $html_gotopage = 'Перейти к странице';
 $html_gotofolder = 'Перейти в папку';
@@ -236,7 +238,7 @@ $original_msg = '-- Исходное письмо --';
 $to_empty = 'Поле \'Кому\' не должно быть пустым !';
 $html_images_warning = 'Для вашей безопасности удаленные картинки не показаны';
 $html_images_display = 'Отобразить картинки';
-$html_smtp_error_no_conn = 'Не возможно установить SMTP соединение';
+$html_smtp_error_no_conn = 'Невозможно установить SMTP-соединение';
 $html_smtp_error_unexpected = 'Неожиданный ответ SMTP:';
 $lang_could_not_connect = 'Невозможно подключиться к серверу';
 $lang_invalid_msg_num = 'Плохой номер изображения';

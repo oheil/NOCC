@@ -29,6 +29,8 @@
 $default_date_format = '%A %d %B %Y';
 $no_locale_date_format = '%d-%m-%Y';
 $default_time_format = '%H:%M';
+$err_user_empty = 'Lu campu di login è vacanti';
+$err_passwd_empty = 'Lu campu password è vacanti';
 $alt_new_msg = 'Missaggi novi';
 $alt_next = 'N avanti';
 $title_next_page = 'Pàggina appressu';

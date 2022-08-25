@@ -13,7 +13,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: action.php 2974 2021-12-14 13:19:30Z oheil $
+ * @version    SVN: $Id: action.php 3016 2022-08-25 11:00:42Z oheil $
  */
 
 require_once './common.php';
@@ -506,9 +506,15 @@ switch($action) {
 
             if (isset($_REQUEST['lang']))
                 $user_prefs->lang = $_REQUEST['lang'];
-            if (isset($_REQUEST['theme'])) {
+
+            if( isset($_REQUEST['theme']) ) {
                 $user_prefs->theme = $_REQUEST['theme'];
-                $_SESSION['nocc_theme'] = $_REQUEST['theme'];
+		if( $_REQUEST['theme']=="default" ) {
+	                $_SESSION['nocc_theme'] = $conf->default_theme;
+		}
+		else {
+	                $_SESSION['nocc_theme'] = $_REQUEST['theme'];
+		}
             }
 
             if ($conf->prefs_dir) {

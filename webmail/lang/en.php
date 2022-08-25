@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: en.php 2871 2020-04-13 14:16:02Z oheil $
+ * @version    SVN: $Id: en.php 3016 2022-08-25 11:00:42Z oheil $
  */
 /** English (English)
  * 
@@ -262,3 +262,4 @@ $html_inbox_changed = 'The content of your inbox has changed';
 $html_inbox_show_alert = 'Show alert box when number of emails in inbox change';
 $lang_horde_require_failed = 'Horde pmap client class not found';
 $lang_strong_encryption_required = 'Unsecure encryption is not allowed';
+$html_default = 'Default';
