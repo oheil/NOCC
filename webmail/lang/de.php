@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: de.php 3016 2022-08-25 11:00:42Z oheil $
+ * @version    SVN: $Id: de.php 3018 2022-08-25 11:16:17Z oheil $
  */
 /** German (Deutsch)
  * 
