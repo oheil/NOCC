@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sl.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: sl.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Slovenian (slovenščina)
  * 
@@ -265,3 +265,4 @@ $html_inbox_changed = 'Vsebina vašega nabiralnika se je spremenila';
 $html_inbox_show_alert = 'Prikaži obvestilo, ko se število e-poštnih sporočil v nabiralniku spremeni';
 $lang_horde_require_failed = 'Razred odjemalnika pmap Horde ni najden';
 $lang_strong_encryption_required = 'Ne-varno šifriranje ni dovoljeno';
+$html_default = 'Privzeto';

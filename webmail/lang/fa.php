@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fa.php 3006 2022-04-25 11:11:55Z translatewiki $
+ * @version    SVN: $Id: fa.php 3023 2022-09-12 11:11:56Z translatewiki $
  */
 /** Persian (فارسی)
  * 
@@ -30,6 +30,7 @@
  * @author Iriman
  * @author Mjbmr
  * @author Mohammad ebz
+ * @author Mskf1383
  * @author Omnia
  * @author Reza1615
  * @author ZxxZxxZ
@@ -162,7 +163,7 @@ $html_kb = 'کيلو بايت';
 $html_mb = 'مگابایت';
 $html_gb = 'گیگابایت';
 $html_bytes = 'بايت';
-$html_filename = 'نام فايل';
+$html_filename = 'نام پرونده';
 $html_to = 'به';
 $html_to_label = 'به:';
 $html_cc = 'کپى';

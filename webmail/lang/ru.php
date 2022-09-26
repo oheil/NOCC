@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ru.php 3009 2022-05-12 11:11:13Z translatewiki $
+ * @version    SVN: $Id: ru.php 3020 2022-09-01 11:12:45Z translatewiki $
  */
 /** Russian (русский)
  * 
@@ -277,3 +277,4 @@ $html_inbox_changed = 'Содержимое вашего почтового ящ
 $html_inbox_show_alert = 'Показывать окно предупреждения, когда количество писем в папке входящих изменяется';
 $lang_horde_require_failed = 'Не найден класс pmap-клиента Horde';
 $lang_strong_encryption_required = 'Небезопасное шифрование не допускается';
+$html_default = 'По умолчанию';

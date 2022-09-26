@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: mk.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: mk.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Macedonian (македонски)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Bjankuloski06
  * @author Brest
+ * @author Vlad5250
  */
 
 $lang_locale = 'mk_MK.UTF-8';
@@ -263,3 +264,4 @@ $html_inbox_changed = 'Содржината во Примените е изме�
 $html_inbox_show_alert = 'Прикажувај напомена кога ќе се измени бројот на писма во Примените';
 $lang_horde_require_failed = 'Не ја пронајдов клиентската класа Horde pmap';
 $lang_strong_encryption_required = 'Не се допушта небезбедна енкрипција';
+$html_default = 'По основно';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hant.php 2994 2022-02-17 12:10:02Z translatewiki $
+ * @version    SVN: $Id: zh-hant.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Traditional Chinese (中文（繁體）)
  * 
@@ -274,3 +274,4 @@ $html_inbox_changed = '您的信箱內容已更改';
 $html_inbox_show_alert = '當在信箱的郵件數量變更時顯示警告訊息框';
 $lang_horde_require_failed = '找不到 Horde pmap 客戶端類別';
 $lang_strong_encryption_required = '不允許不安全的加密';
+$html_default = '預設';

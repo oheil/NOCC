@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: uk.php 2996 2022-02-24 12:11:03Z translatewiki $
+ * @version    SVN: $Id: uk.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Ukrainian (українська)
  * 
@@ -270,3 +270,4 @@ $html_inbox_changed = 'Вміст Вашої теки із вхідними зм
 $html_inbox_show_alert = 'Показати вікно попередження, коли кількість електронних листів у теці із вхідними зміниться';
 $lang_horde_require_failed = 'Не знайдено класу pmap-клієнта Horde.';
 $lang_strong_encryption_required = 'Не дозволене незахищене шифрування';
+$html_default = 'За замовчуванням';

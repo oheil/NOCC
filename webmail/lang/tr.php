@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: tr.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: tr.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Turkish (Türkçe)
  * 
@@ -26,6 +26,7 @@
  * @author Emperyan
  * @author Grkn gll
  * @author HakanIST
+ * @author Hedda
  * @author Joseph
  * @author McAang
  * @author Meelo
@@ -273,3 +274,4 @@ $html_inbox_changed = 'Gelen kutunuzun içeriği değişti';
 $html_inbox_show_alert = 'Gelen kutusundaki e-posta sayısı değiştiğinde uyarı kutusunu göster';
 $lang_horde_require_failed = 'Horde pmap istemci sınıfı bulunamadı';
 $lang_strong_encryption_required = 'Güvenli olmayan parolama izin verilmiyor';
+$html_default = 'Varsayılan';

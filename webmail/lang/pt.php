@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: pt.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: pt.php 3024 2022-09-19 11:12:48Z translatewiki $
  */
 /** Portuguese (português)
  * 
@@ -277,3 +277,4 @@ $html_inbox_changed = 'O conteúdo da sua caixa de entrada foi alterado';
 $html_inbox_show_alert = 'Mostrar um alerta quando houver alterações no número de correios eletrónicos da caixa de entrada';
 $lang_horde_require_failed = 'Classe cliente pmap de \'\'horde\'\' não encontrada';
 $lang_strong_encryption_required = 'Não é permitida encriptação insegura';
+$html_default = 'Por omissão';

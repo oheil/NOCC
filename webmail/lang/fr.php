@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fr.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: fr.php 3020 2022-09-01 11:12:45Z translatewiki $
  */
 /** French (français)
  * 
@@ -91,13 +91,13 @@ $html_send_html_mail = 'Envoyer les courriels au format HTML';
 $html_folders = 'Dossiers';
 $html_folders_create_failed = 'Le dossier n’a pas pu être créé !';
 $html_folders_sub_failed = 'Impossible de s’inscrire au dossier !';
-$html_folders_unsub_failed = 'Impossible de se désinscrire du dossier !';
+$html_folders_unsub_failed = 'Impossible de se désabonner du dossier !';
 $html_folders_rename_failed = 'Le dossier n’a pas pu être renommé !';
 $html_folders_updated = 'Dossiers mis à jour';
 $html_folder_subscribe = 'S’inscrire à';
 $html_folder_rename = 'Renommer';
 $html_folder_create = 'Créer un nouveau dossier appelé';
-$html_folder_remove = 'Se désinscrire de';
+$html_folder_remove = 'Se désabonner de';
 $html_folder_delete = 'Supprimer';
 $html_folder_to = 'vers';
 $html_filter_remove = 'Supprimer';
@@ -271,3 +271,4 @@ $html_inbox_changed = 'Le contenu de votre boîte de réception a été modifié
 $html_inbox_show_alert = 'Afficher une fenêtre d’alerte quand le nombre de courriels dans la boîte de réception change';
 $lang_horde_require_failed = 'Classe du client pmap de Horde non trouvée';
 $lang_strong_encryption_required = 'Le chiffrement non sécurisé n’est pas autorisé';
+$html_default = 'Par défaut';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ia.php 2942 2021-04-30 07:03:34Z translatewiki $
+ * @version    SVN: $Id: ia.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Interlingua (interlingua)
  * 
@@ -261,3 +261,4 @@ $html_inbox_changed = 'Le contento de tu cassa de entrata ha cambiate';
 $html_inbox_show_alert = 'Monstrar un quadro de alerta quando le numero de messages in le cassa de entrata cambia';
 $lang_horde_require_failed = 'Classe del cliente pmap de Horde non trovate';
 $lang_strong_encryption_required = 'Le cryptation non secur non es permittite';
+$html_default = 'Predefinite';

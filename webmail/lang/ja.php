@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ja.php 2951 2021-06-10 14:55:03Z translatewiki $
+ * @version    SVN: $Id: ja.php 3019 2022-08-29 11:11:41Z translatewiki $
  */
 /** Japanese (日本語)
  * 
@@ -25,6 +25,7 @@
  * @author Ajeje Brazorf
  * @author Aotake
  * @author Fryed-peach
+ * @author MathXplore
  * @author Shirayuki
  * @author Sujiniku
  * @author Tadashi Jokagi <elf2000@users.sourceforge.net>
@@ -239,3 +240,4 @@ $html_fd_filesize = 'サイズ %1$d';
 $html_send_recover = '消失した下書きを復元するにはログインしてください!';
 $html_send_discard = '保存された下書きを破棄するにはここをクリックしてください。';
 $html_collect_option3 = '常に';
+$html_default = '既定';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ar.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ar.php 3023 2022-09-12 11:11:56Z translatewiki $
  */
 /** Arabic (العربية)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dr-Taher
  * @author Hhaboh162002
  * @author Meno25
  * @author Mohamed Hadrouj <mohamed.hadrouj@wanadoo.co.ma>
@@ -35,8 +36,8 @@
 
 $lang_locale = 'ar_AR.UTF-8';
 $lang_dir = 'rtl';
-$default_date_format = '%A %d %B %Y';
-$no_locale_date_format = '%d-%m-%Y';
+$default_date_format = '%Y-%m-%d';
+$no_locale_date_format = '%Y-%m-%d';
 $default_time_format = '%H:%M';
 $err_user_empty = 'حقل تسجيل الدخول فارغ';
 $err_passwd_empty = ' كلمة السر غير صحيحة. أعد المحاولة';
@@ -270,3 +271,4 @@ $html_inbox_changed = 'تم تغيير محتوى البريد الوارد ال
 $html_inbox_show_alert = 'عرض صندوق تنبيه عندما يتغير عدد الرسائل الإلكترونية في البريد الوارد';
 $lang_horde_require_failed = '.لم يتم العثور على فئة العميل';
 $lang_strong_encryption_required = 'التشفير غير الآمن غير مسموح به';
+$html_default = 'افتراضي';

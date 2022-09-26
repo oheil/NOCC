@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3026 2022-09-26 09:47:11Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3027 2022-09-26 10:06:47Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -168,6 +168,9 @@ $conf->loaded = true;
 //    Array/ Array.php Domhtml.php Exception/ Exception.php Idna/ Idna.php Imap/ Mail/ Mime/ Mime.php
 //    Socket/ Stream/ Stream.php String/ String.php Support/ Translation/ Translation.php Util.php
 //    Variables.php
+//  These are the installed Horde libraries (https://pear.horde.org/):
+//    Horde_Exception Horde_Idna Horde_Mail Horde_Mime Horde_Socket_Client Horde_Stream Horde_Support 
+//    Horde_Translation Horde_Util
 //  Horde supports additional to /ssl and /tls (see above) the following encryption methods in the connection string:
 //    /sslv2,/sslv3,/tlsv1,/false (for no encryption, default),/true (TLS if available)
 //  
