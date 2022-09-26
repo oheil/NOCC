@@ -6,8 +6,10 @@ NOCC 1.9.12-dev  ???????? ??, ????
   Misc
     * Autoupdate: a -dev version is smaller than the release,
       e.g. 1.9.12-dev is smaller than 1.9.12, because release is later (Oliver Heil).
-    * Language/theme selector and preferences logic enhanced (Oliver Heil)
+    * Language/theme selector and preferences logic enhanced (Oliver Heil).
       https://github.com/oheil/NOCC/issues/1 
+    * Some minor additional notes for Horde/Imap_Client Library usage in
+      conf.php.dist (Oliver Heil).
 
   Bugs
     * Bug in mail part/attachment parsing (Oliver Heil).

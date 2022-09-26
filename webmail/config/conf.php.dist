@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 2967 2021-12-10 14:24:34Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3026 2022-09-26 09:47:11Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -161,10 +161,15 @@ $conf->loaded = true;
 //  See below
 //    $conf->horde_imap_client = false;
 //  for a system wide configuration option. The system wide option will be overwritten by domain specific options.
-//   https://dev.horde.org/imap_client/
-//   https://dev.horde.org/imap_client/install.php
-//  additional to /ssl and /tls you can use (see above)
-//   /sslv2,/sslv3,/tlsv1,/false (for no encryption, default),/true (TLS if available)
+//    https://dev.horde.org/imap_client/
+//    https://dev.horde.org/imap_client/install.php
+//    https://pear.horde.org/
+//  Typically Horde needs some utility libraries too. The tested lib/Horde folder looks like:
+//    Array/ Array.php Domhtml.php Exception/ Exception.php Idna/ Idna.php Imap/ Mail/ Mime/ Mime.php
+//    Socket/ Stream/ Stream.php String/ String.php Support/ Translation/ Translation.php Util.php
+//    Variables.php
+//  Horde supports additional to /ssl and /tls (see above) the following encryption methods in the connection string:
+//    /sslv2,/sslv3,/tlsv1,/false (for no encryption, default),/true (TLS if available)
 //  
 // $conf->domains[$i]->allow_address_change = true;
 //  Is the user allowed to change his "From:" address? (true/false)
