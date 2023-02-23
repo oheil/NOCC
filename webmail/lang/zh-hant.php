@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hant.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: zh-hant.php 3037 2022-12-15 12:12:17Z translatewiki $
  */
 /** Traditional Chinese (中文（繁體）)
  * 
@@ -36,6 +36,7 @@
  * @author Wrightbus
  * @author Xiplus
  * @author 列维劳德
+ * @author 捍粵者
  */
 
 $lang_locale = 'zh_TW.UTF-8';
@@ -197,8 +198,8 @@ $html_loading_image = '載入圖片';
 $html_send_confirmed = '您的電郵被接受為可傳遞';
 $html_no_sendaction = '沒有指定的行為。嘗試開啟JavaScript。';
 $html_error_occurred = '發生一個錯誤';
-$html_prefs_file_error = '無法開啟首選檔案已進行寫入。';
-$html_wrap = '傳送信件內容在字元達到上限時自動進行換行的字數';
+$html_prefs_file_error = '無法開啟選項檔來寫入。';
+$html_wrap = '傳送信件內容在字元達到上限時自動換行的字數';
 $html_wrap_none = '不換行';
 $html_usenet_separator = '新聞組分隔字符("-- \n")放在簽名前';
 $html_mark_as = '標記為';
@@ -244,8 +245,8 @@ $html_invalid_email_address = '無效電子郵件帳號';
 $html_invalid_msg_per_page = '無效的各頁郵件顯示數值';
 $html_invalid_wrap_msg = '無效的郵件自動換行寬度';
 $html_seperate_msg_win = '在單獨視窗的訊息';
-$html_err_file_contacts = '無法開啟聯絡人檔案以進行寫入。';
-$html_session_file_error = '無法開啟會話檔案已進行寫入。';
+$html_err_file_contacts = '開不到電話簿來寫入。';
+$html_session_file_error = '無法開啟對話檔來寫入。';
 $html_login_not_allowed = '此登入名不允許連結';
 $lang_err_send_delay = '在兩封電子郵件傳送(%1$d秒)期間請等待';
 $html_search = '搜尋';

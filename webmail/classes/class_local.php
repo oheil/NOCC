@@ -16,7 +16,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_local.php 2979 2021-12-15 10:06:49Z oheil $
+ * @version    SVN: $Id: class_local.php 3050 2023-02-23 13:18:20Z oheil $
  */
 
 
@@ -190,7 +190,9 @@ class nocc_imap
 			} catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: open imap connection to '.$host.' failed, trying pop3';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 			}
 			if( ! $success ) {
 				try {
@@ -226,7 +228,9 @@ class nocc_imap
 		if( isset($_REQUEST['enter']) ) {
 			$log_string='NOCC: failed login from rhost='.$_SERVER['REMOTE_ADDR'].' to server='.$this->server.' as user='.$_SESSION['nocc_login'].'';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 		$error="";
 		if( strlen($this->login)==0 ) {
@@ -246,7 +250,9 @@ class nocc_imap
 	if( isset($_REQUEST['enter']) ) {
 		$log_string='NOCC: successful login from rhost='.$_SERVER['REMOTE_ADDR'].' to server='.$_SESSION['nocc_servr'].' as user='.$_SESSION['nocc_login'].'';
 		error_log($log_string);
-		syslog(LOG_INFO,$log_string);
+		if( isset($conf->syslog) && $conf->syslog ) {
+			syslog(LOG_INFO,$log_string);
+		}
 	}
 
         $this->conn = $conn;
@@ -417,7 +423,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: search failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
         return $messages;
@@ -449,7 +457,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching structure failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 
 		$rec = function($part) use (&$rec, &$parts_info, $msgnum) {
@@ -525,7 +535,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching header failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
         return new NOCC_Header($header, $this->is_horde());
@@ -630,7 +642,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching body text failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 		
 	}
@@ -666,7 +680,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching message size failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
 	return $size;
@@ -699,7 +715,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching message size failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
 	return $fullText;
@@ -722,7 +740,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: getting number of messages from folder '.$this->folder.' failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 		$count=$status["messages"];
 		return $count;
@@ -785,7 +805,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: getting sequence numbers of messages from folder '.$this->folder.' failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
         return $sorted;
@@ -818,7 +840,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: fetching headerinfo failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
 		
@@ -846,7 +870,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: deleting mailbox '.$mailbox.' failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
 	return false;
@@ -1134,7 +1160,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: renaming mailbox '.$oldMailbox.' to '.$newMailbox. 'failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
     }
@@ -1157,7 +1185,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: creating mailbox failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 			return false;
 		}
 	}
@@ -1356,7 +1386,9 @@ class nocc_imap
 			catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: copying mail failed';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 				return false;
 			}
 		}
@@ -1390,7 +1422,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: subscribing to mailbox failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 			return false;
 		}
 	}
@@ -1413,7 +1447,9 @@ class nocc_imap
 		catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: unsubscribing from mailbox failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 			return false;
 		}
 	}
@@ -1444,7 +1480,9 @@ class nocc_imap
 			} catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: move mail to folder '.$mailbox.' failed';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 				return false;
 			}
 			return true;
@@ -1475,7 +1513,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: expunge of folder '.$this->folder.' failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
     }
@@ -1504,7 +1544,9 @@ class nocc_imap
 			} catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: deleting message failed';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 			}
 		}
 		return false;
@@ -1526,7 +1568,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: close failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
     }
@@ -1646,7 +1690,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: failed to get mailbox names';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 			throw new Exception('imap_getmailboxes() did not return an array.');
 		}
 	}
@@ -1711,7 +1757,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: list subscribed mailboxes failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
         return $subscribed;
@@ -1769,7 +1817,9 @@ class nocc_imap
 			} catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: setting mail as read failed';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 			}
 		}
 	}
@@ -1799,7 +1849,9 @@ class nocc_imap
 			} catch(Horde_Imap_Client_Exception $e) {
 				$log_string='NOCC: setting mail as read failed';
 				error_log($log_string);
-				syslog(LOG_INFO,$log_string);
+				if( isset($conf->syslog) && $conf->syslog ) {
+					syslog(LOG_INFO,$log_string);
+				}
 			}
 		}
 	}
@@ -2092,7 +2144,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: getting quotaroot failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 	}
 	return false;
@@ -2123,7 +2177,9 @@ class nocc_imap
 		} catch(Horde_Imap_Client_Exception $e) {
 			$log_string='NOCC: getting status failed';
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 		}
 		return $status;
 	}

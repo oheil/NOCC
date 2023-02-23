@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 3016 2022-08-25 11:00:42Z oheil $
+ * @version    SVN: $Id: common.php 3050 2023-02-23 13:18:20Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -269,7 +269,9 @@ if (isset($_REQUEST['domainnum']) && !(isset($_REQUEST['server']))) {
 		//don't change text or rules may fail
 		$log_string='NOCC: failed login from rhost='.$_SERVER['REMOTE_ADDR'].' to server='.$_SESSION['nocc_servr'].' as user='.$_SESSION['nocc_login'].'';
 		error_log($log_string);
-		syslog(LOG_INFO,$log_string);
+		if( isset($conf->syslog) && $conf->syslog ) {
+			syslog(LOG_INFO,$log_string);
+		}
         $ev = new NoccException($html_login_not_allowed);
         require './html/header.php';
         require './html/error.php';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: gl.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: gl.php 3038 2022-12-19 12:11:58Z translatewiki $
  */
 /** Galician (galego)
  * 
@@ -262,3 +262,6 @@ $html_session_ip_changed = 'porque cambiou a IP do cliente';
 $html_session_expire_time = 'Esta sesión caduca automaticamente en';
 $html_inbox_changed = 'O contido da súa bandexa de entrada cambiou';
 $html_inbox_show_alert = 'Mostrar unha alerta cando cambia o número de correos electrónicos na bandeixa de entrada';
+$lang_horde_require_failed = 'Non se atopou a clase do cliente pmap de Horde';
+$lang_strong_encryption_required = 'Non se permite o cifrado non seguro';
+$html_default = 'Por defecto';

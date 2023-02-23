@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nb.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: nb.php 3032 2022-10-27 11:16:32Z translatewiki $
  */
 /** Norwegian Bokmål (norsk bokmål)
  * 
@@ -267,3 +267,4 @@ $html_inbox_changed = 'Innholdet i innboksen din har endret seg';
 $html_inbox_show_alert = 'Vis varselboks når antall eposter i innboksen endrer seg';
 $lang_horde_require_failed = '«Horde pmap client class» ikke funnet';
 $lang_strong_encryption_required = 'Usikker kryptering er ikke tillatt';
+$html_default = 'Standard';

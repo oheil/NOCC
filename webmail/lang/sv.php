@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sv.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: sv.php 3034 2022-11-24 12:11:19Z translatewiki $
  */
 /** Swedish (svenska)
  * 
@@ -272,3 +272,4 @@ $html_inbox_changed = 'Innehållet i din inkorg har ändrats';
 $html_inbox_show_alert = 'Visa en notis när antalet meddelanden i din inkorg förändras';
 $lang_horde_require_failed = 'Horde pmap-klientklass hittades inte';
 $lang_strong_encryption_required = 'Osäker kryptering är inte tillåten';
+$html_default = 'Standard';

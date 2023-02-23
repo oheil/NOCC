@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: he.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: he.php 3030 2022-10-17 11:10:41Z translatewiki $
  */
 /** Hebrew (עברית)
  * 
@@ -264,3 +264,4 @@ $html_inbox_changed = 'תוכן תיבת הדואר הנכנס שלך השתנת
 $html_inbox_show_alert = 'הצגת תיבת התראה כאשר מספר ההודעות בתיבת הדואר הנכנס משתנה';
 $lang_horde_require_failed = 'מחלקת לקוח Imap של Horde לא נמצאה';
 $lang_strong_encryption_required = 'הצפנה בלתי מאובטחת אינה מורשית';
+$html_default = 'ברירת המחדל';

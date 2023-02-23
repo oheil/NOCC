@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: nl.php 3048 2023-02-06 12:13:24Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -273,3 +273,4 @@ $html_inbox_changed = 'De inhoud van je inbox is veranderd';
 $html_inbox_show_alert = 'Melding weergeven als het aantal emails in het postvak in wijzigt';
 $lang_horde_require_failed = 'Horde pmap client klasse niet gevonden.';
 $lang_strong_encryption_required = 'Niet beveiligde encryptie is niet toegestaan';
+$html_default = 'Standaard';

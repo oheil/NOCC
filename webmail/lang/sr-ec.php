@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sr-ec.php 2959 2021-10-07 11:09:16Z translatewiki $
+ * @version    SVN: $Id: sr-ec.php 3046 2023-01-30 12:11:21Z translatewiki $
  */
 /** Serbian (Cyrillic script) (српски (ћирилица))
  * 
@@ -271,3 +271,4 @@ $html_inbox_changed = 'Садржај Вашег пријемног сандуч
 $html_inbox_show_alert = 'Прикажи оквир за обавештења када се промени број е-поште у пријемном сандучету';
 $lang_horde_require_failed = 'Horde pmap клијент класа није пронађена';
 $lang_strong_encryption_required = 'Несигурна енкрипција није дозвољена';
+$html_default = 'Подразумевано';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ca.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ca.php 3048 2023-02-06 12:13:24Z translatewiki $
  */
 /** Catalan (català)
  * 
@@ -23,10 +23,13 @@
  * @file
  *
  * @author David Gimeno i Ayuso <info@sima-pc.com>
+ * @author Fitoschido
  * @author Gemmaa
  * @author Martorell
  * @author Mguix
  * @author MuRe
+ * @author Qllach
+ * @author Robertgarrigos
  * @author SMP
  * @author Solde
  * @author Ssola
@@ -200,7 +203,7 @@ $html_mark_as = 'Marcar com';
 $html_read = 'llegit';
 $html_unread = 'per llegir';
 $html_encoding_label = 'Codificació:';
-$html_add = 'Afegir';
+$html_add = 'Afegeix';
 $html_contacts = '%1$s contactes';
 $html_modify = 'Modificar';
 $html_back = 'Enrere';
@@ -269,3 +272,4 @@ $html_inbox_changed = 'El contingut de la vostra safata d\'entrada ha canviat';
 $html_inbox_show_alert = 'Mostrar una alerta quan canviï el nombre de correus electrònics de la safata d\'entrada';
 $lang_horde_require_failed = 'Classe del client pmap d\'Horda no trobada';
 $lang_strong_encryption_required = 'No és permès el xifratge no segur';
+$html_default = 'Per defecte';

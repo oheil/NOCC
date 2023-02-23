@@ -10,6 +10,9 @@ NOCC 1.9.12-dev  ???????? ??, ????
       https://github.com/oheil/NOCC/issues/1 
     * Some minor additional notes for Horde/Imap_Client Library usage in
       conf.php.dist (Oliver Heil).
+    * Call to syslog can be problematic, see
+      https://sourceforge.net/p/nocc/discussion/38301/thread/94712f48c3/
+      All syslog calls behind config variable $conf->syslog=false (defaut) (Oliver Heil).
 
   Bugs
     * Bug in mail part/attachment parsing (Oliver Heil).

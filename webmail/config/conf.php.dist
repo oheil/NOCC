@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3027 2022-09-26 10:06:47Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3050 2023-02-23 13:18:20Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -375,6 +375,9 @@ $conf->debug_level = E_ALL & ~E_NOTICE;
 
 // PHP error reporting for this application
 error_reporting($conf->debug_level);
+
+// write messages to syslog (e.g. for fail2ban analysis)
+$conf->syslog = false;
 
 if (version_compare(PHP_VERSION, '5.3.0', '<')) { //if older as PHP 5.3.0...
   // Prevent mangling of uploaded attachments

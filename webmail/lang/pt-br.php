@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: pt-br.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: pt-br.php 3047 2023-02-02 12:12:40Z translatewiki $
  */
 /** Brazilian Portuguese (português do Brasil)
  * 
@@ -33,6 +33,7 @@
  * @author Giro720
  * @author Luckas
  * @author Luckas Blade
+ * @author Mello25
  * @author Raylton P. Sousa
  * @author Renato Frederick <frederick@dahype.org>
  * @author Rodrigo Avila
@@ -274,3 +275,4 @@ $html_inbox_changed = 'O conteúdo da sua caixa de entrada foi alterado';
 $html_inbox_show_alert = 'Mostrar um alerta quando houver alterações no número de e-mail da caixa de entrada';
 $lang_horde_require_failed = 'Classe cliente pmap da horda não encontrada';
 $lang_strong_encryption_required = 'A encriptação insegura não é permitida';
+$html_default = 'Padrão';

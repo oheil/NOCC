@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sl.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: sl.php 3044 2023-01-23 12:11:32Z translatewiki $
  */
 /** Slovenian (slovenščina)
  * 
@@ -30,6 +30,7 @@
  */
 
 $lang_locale = 'sl_SI.UTF-8';
+$lang_dir = 'ltr';
 $default_date_format = '%d. %m. %Y';
 $no_locale_date_format = '%d. %m. %Y';
 $default_time_format = '%I.%M %p';
@@ -61,7 +62,7 @@ $html_remember = 'Zapomni si nastavitve';
 $html_lang_label = 'Jezik:';
 $html_msgperpage_label = 'Sporočil na stran:';
 $html_preferences = 'Nastavitve';
-$html_full_name_label = 'Polno ime:';
+$html_full_name_label = 'Celotno ime:';
 $html_email_address_label = 'E-poštni naslov:';
 $html_bccself = 'Skp sebi';
 $html_hide_addresses = 'Skrij naslove';
@@ -85,13 +86,13 @@ $html_send_html_mail = 'Pošlji e-pošto v obliki HTML';
 $html_folders = 'Mape';
 $html_folders_create_failed = 'Mape ni bilo mogoče ustvariti!';
 $html_folders_sub_failed = 'Ne morem se naročiti na mapo!';
-$html_folders_unsub_failed = 'Ne morem se odjaviti od mape!';
+$html_folders_unsub_failed = 'Mape ni bilo mogoče odnaročiti!';
 $html_folders_rename_failed = 'Mape ni bilo mogoče preimenovati!';
 $html_folders_updated = 'Mape so posodobljene';
 $html_folder_subscribe = 'Naroči se na';
 $html_folder_rename = 'Preimenuj';
 $html_folder_create = 'Ustvari novo mapo z imenom';
-$html_folder_remove = 'Odjavi se od';
+$html_folder_remove = 'Odnaroči se od';
 $html_folder_delete = 'Izbriši';
 $html_folder_to = 'v';
 $html_filter_remove = 'Odstrani';
@@ -101,7 +102,7 @@ $html_filter_to = 'Polje Za';
 $html_filter_cc = 'Polje Kp';
 $html_filter_from = 'Polje Od';
 $html_filter_change_tip = 'Če želite spremeniti filter, ga preprosto prepišite.';
-$html_reapply_filters = 'Ponovno uveljavi vse filtre';
+$html_reapply_filters = 'Znova uporabi vse filtre';
 $html_filter_contains = 'vsebuje';
 $html_filter_name = 'Ime filtra';
 $html_filter_action = 'Dejanje filtra';
@@ -120,7 +121,7 @@ $html_page = 'Stran';
 $html_of = 'od';
 $html_view_header = 'Pokaži naslov';
 $html_remove_header = 'Skrij naslov';
-$html_inbox = 'Prejeto';
+$html_inbox = 'Prejeta pošta';
 $html_new_msg = 'Piši';
 $html_reply = 'Odgovori';
 $html_reply_short = 'Odg:';
@@ -148,8 +149,8 @@ $html_subject_label = 'Zadeva:';
 $html_date = 'Datum';
 $html_date_label = 'Datum:';
 $html_sent_label = 'Poslano:';
-$html_wrote = 'je napisal/a';
-$html_quote_wrote = 'Dne %1$s ob %2$s je %3$s napisal/a:';
+$html_wrote = 'je napisal_a';
+$html_quote_wrote = 'Dne %1$s ob %2$s je %3$s napisal_a:';
 $html_size = 'Velikost';
 $html_totalsize = 'Skupna velikost';
 $html_kb = 'kB';
@@ -187,7 +188,7 @@ $html_select_contacts = 'Izberite stike';
 $html_loading_image = 'Nalagam sliko';
 $html_send_confirmed = 'Vase sporočilo je bilo poslano.';
 $html_no_sendaction = 'Napaka: Brez ukaza. Poskusite omogočiti JavaScript.';
-$html_error_occurred = 'Pojavila se je napaka.';
+$html_error_occurred = 'Prišlo je do napake';
 $html_prefs_file_error = 'Nastavitvene datoteke ne morem odpreti za zapis.';
 $html_wrap = 'Število znakov preloma odhodnega sporočila:';
 $html_wrap_none = 'Brez preloma';
@@ -219,7 +220,7 @@ $html_contact_list_add = 'Dodaj na seznam';
 $html_contact_listname = 'Ime seznama';
 $html_contact_listonly = 'Samo seznami';
 $html_contact_all = 'Prikaži vse';
-$html_contact_add_confirm = 'Dodam e-pošto na obstoječi seznam?';
+$html_contact_add_confirm = 'Pripnem e-pošto obstoječemu seznamu?';
 $html_del_msg = 'Izbrišem izbrana sporočila?';
 $html_down_mail = 'Prenesi';
 $original_msg = '-- Izvorno sporočilo --';
@@ -228,7 +229,7 @@ $html_images_warning = 'Zaradi vaše varnosti oddaljene slike niso prikazane.';
 $html_images_display = 'Prikaži slike';
 $html_smtp_error_no_conn = 'Zveze SMTP ni mogoče vzpostaviti';
 $html_smtp_error_unexpected = 'Nepričakovan odgovor SMTP:';
-$lang_could_not_connect = 'Ne morem se povezati s strežnikom';
+$lang_could_not_connect = 'Ni se bilo mogoče povezati s strežnikom';
 $lang_invalid_msg_num = 'Neveljavna številka sporočila';
 $html_file_upload_attack = 'Možni napad z nalaganjem datoteke';
 $html_invalid_email_address = 'Neveljavni e-poštni naslov';
@@ -260,7 +261,7 @@ $html_version_message2 = 'Najnovejše različice ni mogoče pridobiti';
 $html_version_message3 = 'Na voljo je nova različica';
 $html_session_expired = 'Ta seja je potekla';
 $html_session_ip_changed = 'zaradi spremembe IP-naslova odjemalca';
-$html_session_expire_time = 'Ta seja samodejno poteče ob času:';
+$html_session_expire_time = 'Ta seja samodejno preteče ob času:';
 $html_inbox_changed = 'Vsebina vašega nabiralnika se je spremenila';
 $html_inbox_show_alert = 'Prikaži obvestilo, ko se število e-poštnih sporočil v nabiralniku spremeni';
 $lang_horde_require_failed = 'Razred odjemalnika pmap Horde ni najden';

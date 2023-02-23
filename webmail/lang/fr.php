@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fr.php 3020 2022-09-01 11:12:45Z translatewiki $
+ * @version    SVN: $Id: fr.php 3035 2022-12-01 12:11:33Z translatewiki $
  */
 /** French (français)
  * 
@@ -143,7 +143,7 @@ $html_unknown = '[inconnu]';
 $html_part_x = 'Partie %s';
 $html_attach = 'Attacher';
 $html_attach_forget = 'Vous devez attacher votre fichier avant d’envoyer votre message !';
-$html_attach_delete = 'Enlever les fichiers sélectionnés';
+$html_attach_delete = 'Retirer la sélection';
 $html_attach_none = 'Vous devez sélectionner un fichier à attacher !';
 $html_sort_by = 'Trier par';
 $html_sort = 'Trier';

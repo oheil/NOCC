@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: eu.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: eu.php 3036 2022-12-08 12:11:42Z translatewiki $
  */
 /** Basque (euskara)
  * 
@@ -26,6 +26,7 @@
  * @author EukeneFL
  * @author Gorkaazk
  * @author Subi
+ * @author Xabier Armendaritz
  */
 
 $lang_locale = 'en_US.UTF-8';
@@ -181,7 +182,7 @@ $html_contact_listname = 'Zerrenda izena';
 $html_contact_listonly = 'Bakarrik zerrendak';
 $html_contact_all = 'Dena erakutsi';
 $html_del_msg = 'Aukeratutako mezuak ezabatu nahi dituzu ?';
-$html_down_mail = 'Jaitsi';
+$html_down_mail = 'Deskargatu';
 $original_msg = '-- Jatorrizko Mezua --';
 $html_images_display = 'Irudiak erakutsi';
 $lang_could_not_connect = 'Ezin izan da zerbitzarira konektatu';

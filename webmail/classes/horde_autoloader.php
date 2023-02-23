@@ -52,7 +52,9 @@ class Autoloader
 		else {
 			$log_string="NOCC: autoloader can't find include file for class ".$class_name;
 			error_log($log_string);
-			syslog(LOG_INFO,$log_string);
+			if( isset($conf->syslog) && $conf->syslog ) {
+				syslog(LOG_INFO,$log_string);
+			}
 			// this may be a problem if other autoloaders are registered
 			throw new Exception($lang_horde_require_failed."($class_name)");
 		}
