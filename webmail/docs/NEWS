@@ -1,7 +1,7 @@
 
-Latest version is 1.9.11
+Latest version is 1.9.12
 
-NOCC 1.9.12-dev  ???????? ??, ????
+NOCC 1.9.12  February 28, 2023
 
   Misc
     * Autoupdate: a -dev version is smaller than the release,
@@ -12,7 +12,7 @@ NOCC 1.9.12-dev  ???????? ??, ????
       conf.php.dist (Oliver Heil).
     * Call to syslog can be problematic, see
       https://sourceforge.net/p/nocc/discussion/38301/thread/94712f48c3/
-      All syslog calls behind config variable $conf->syslog=false (defaut) (Oliver Heil).
+      All syslog calls behind config variable $conf->syslog=false (default) (Oliver Heil).
 
   Bugs
     * Bug in mail part/attachment parsing (Oliver Heil).

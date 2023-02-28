@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: it.php 2989 2022-01-17 12:09:58Z translatewiki $
+ * @version    SVN: $Id: it.php 3051 2023-02-27 12:10:54Z translatewiki $
  */
 /** Italian (italiano)
  * 
@@ -33,6 +33,7 @@
  * @author Nastoshka
  * @author Ontsed
  * @author Rippitippi
+ * @author UnGiglio
  */
 
 $lang_locale = 'it_IT.UTF-8';
@@ -270,4 +271,5 @@ $html_session_ip_changed = 'a causa del cambiamento dell’indirizzo IP del clie
 $html_session_expire_time = 'Questa sessione scadrà automaticamente il';
 $html_inbox_changed = 'Il contenuto della tua posta in arrivo è cambiato';
 $html_inbox_show_alert = 'Mostra una finestra di avviso quando il numero delle e-mail cambia';
+$lang_horde_require_failed = 'Classe client horde pmap non trovata';
 $lang_strong_encryption_required = 'La crittografia non sicura non è permessa';
