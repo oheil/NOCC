@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 3052 2023-02-28 10:40:12Z oheil $
+ * @version    SVN: $Id: common.php 3057 2023-03-04 14:45:24Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -57,7 +57,7 @@ require_once './utils/crypt.php';
 require_once './utils/translation.php';
 
 $conf->nocc_name = 'NOCC';
-$conf->nocc_version = '1.9.12';
+$conf->nocc_version = '1.9.13-dev';
 $conf->nocc_url = 'http://nocc.sourceforge.net/';
 
 $pwd_to_encrypt = false;
@@ -137,7 +137,7 @@ if (isset($_REQUEST['lang'])) { //if a language is requested...
     }
 }
 
-if( isset($_SESSION['nocc_lang']) && $_SESSION['nocc_lang']!="default" ) { //if session language already set...
+if( isset($_SESSION['nocc_lang']) && $_SESSION['nocc_lang'] != "default" ) { //if session language already set...
     $languages->setSelectedLangId($_SESSION['nocc_lang']);
 }
 else { //if session language NOT already set...
@@ -152,7 +152,7 @@ else { //if session language NOT already set...
 		   $languages->setSelectedLangId('en');
 	    }
     }
-    if( $_SESSION['nocc_lang']!="default" ) {
+    if( ! isset($_SESSION['nocc_lang']) || $_SESSION['nocc_lang'] != "default" ) {
 	    $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
     }
 }
