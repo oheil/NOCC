@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: lb.php 3056 2023-03-02 12:15:27Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Les Meloures
  * @author Robby
+ * @author Volvox
  */
 
 $lang_locale = 'lb_LB.UTF-8';
@@ -48,6 +49,7 @@ $html_welcome = 'Wëllkomm op %1$s';
 $html_login = 'Aloggen';
 $html_user_label = 'Benotzer:';
 $html_passwd_label = 'Passwuert:';
+$html_submit = 'Schécken';
 $html_help = 'Hëllef';
 $html_server_label = 'Server:';
 $html_wrong = 'De Benotzernumm oder d\'Passwuert sinn net richteg';

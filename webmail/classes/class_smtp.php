@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 2713 2017-09-06 12:34:03Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3058 2023-03-05 12:30:39Z oheil $
  */
 
 require_once 'exception.php';
@@ -96,7 +96,7 @@ class smtp {
 	$smtp=stream_socket_client($remote_socket,$errno,$errstr,ini_get("default_socket_timeout"),STREAM_CLIENT_CONNECT,$context);
 
         if (!$smtp)
-            return new NoccException($html_smtp_no_con . ' : ' . $errstr); 
+            return new NoccException($html_smtp_error_no_con . ' : ' . $errstr); 
 
 	$response="";
 	if( $this->check_response("OPEN",$smtp,$response) ) {
