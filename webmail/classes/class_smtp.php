@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 3059 2023-03-05 14:27:24Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3060 2023-03-05 19:06:00Z oheil $
  */
 
 require_once 'exception.php';
@@ -97,6 +97,12 @@ class smtp {
 	}
 	if( isset($conf->domains[$domainnum]->smtp_verify_peer_name) && $conf->domains[$domainnum]->smtp_verify_peer_name==true ) {
 		stream_context_set_option($context, "ssl", "verify_peer_name", $conf->domains[$domainnum]->smtp_verify_peer_name);
+	}
+	if( isset($conf->domains[$domainnum]->smtp_peer_name) && $conf->domains[$domainnum]->smtp_peer_name!="" ) {
+		stream_context_set_option($context, "ssl", "peer_name", $conf->domains[$domainnum]->smtp_peer_name);
+	}
+	if( isset($conf->domains[$domainnum]->smtp_security_level) && $conf->domains[$domainnum]->smtp_security_level>=0 ) {
+		stream_context_set_option($context, "ssl", "security_level", $conf->domains[$domainnum]->smtp_security_level);
 	}
 
 	//stream_context_set_option($context, "ssl", "peer_name", "localdomain");

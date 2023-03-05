@@ -12,7 +12,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: user_prefs.php 2930 2021-02-03 11:08:55Z oheil $
+ * @version    SVN: $Id: user_prefs.php 3060 2023-03-05 19:06:00Z oheil $
  */
 
 require_once 'exception.php';
@@ -186,7 +186,7 @@ class NOCCUserPrefs {
         $this->_sendHtmlMail = false;
         $this->_useGraphicalSmilies = false;
         $this->_useSentFolder = false;
-        $this->_sendFolderName = '';
+        $this->_sentFolderName = '';
         $this->_useTrashFolder = false;
         $this->_trashFolderName = '';
         $this->_useInboxFolder = true;

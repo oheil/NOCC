@@ -1,6 +1,20 @@
 
 Latest version is 1.9.12
 
+NOCC 1.9.13  FebXXXry XX, 2023
+
+  Misc
+    * Compatibility with PHP 8.2 (Oliver Heil).
+    * Integrating htmlpurifier (4.15.0-lite) (http://htmlpurifier.org) (Oliver Heil).
+    * New domain specific configuration options "smtp_peer_name" and
+      "smtp_security_level" if you encounter problems with SSL connection to the
+      SMTP server, see config/conf.php.dist for details or see discussion
+      https://sourceforge.net/p/nocc/discussion/38301/thread/daf7c51607/
+      (Oliver Heil).
+
+  Bugs
+    * Regression bugs (Oliver Heil).
+
 NOCC 1.9.12  February 28, 2023
 
   Misc

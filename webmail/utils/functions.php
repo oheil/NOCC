@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Utilities
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: functions.php 2980 2021-12-16 10:21:02Z oheil $
+ * @version    SVN: $Id: functions.php 3060 2023-03-05 19:06:00Z oheil $
  */
 
 require_once './classes/class_local.php';
@@ -436,6 +436,21 @@ function remove_stuff($body,$mime,$charset='UTF-8') {
 	$body=trim($body);
 	$body='<span style="white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;">'.$body.'</span>';
     }
+
+	class HTMLPurifier_URIScheme_cid extends HTMLPurifier_URIScheme {
+		public $browsable = true;
+		public $allowed_types = array(
+			'image/jpeg' => true,
+			'image/gif' => true,
+			'image/png' => true,
+			'application/octet-stream' => true,
+		);
+		public $may_omit_host = true;
+		public function doValidate(&$uri, $config, $context) {
+			return true;
+		}
+	}
+	HTMLPurifier_URISchemeRegistry::instance()->register("cid", new HTMLPurifier_URIScheme_cid());
 
 	$hp_config = HTMLPurifier_Config::createDefault();
 	$hp_config->set('Core.Encoding',$charset);

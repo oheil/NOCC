@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 3057 2023-03-04 14:45:24Z oheil $
+ * @version    SVN: $Id: common.php 3060 2023-03-05 19:06:00Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -99,7 +99,9 @@ if (isset($_REQUEST['user']) && !isset($_SESSION['nocc_loggedin'])) {
     $_SESSION['nocc_user'] = NOCC_Request::getStringValue('user');
 	if( ! isset($conf->utf8_decode) || $conf->utf8_decode ) {
 		if( mb_detect_encoding($_SESSION['nocc_user'],'UTF-8',true) == "UTF-8" ) {
-			$_SESSION['nocc_user'] = utf8_decode($_SESSION['nocc_user']);
+			//deprecated in php8.2
+			//$_SESSION['nocc_user'] = utf8_decode($_SESSION['nocc_user']);
+			$_SESSION['nocc_user'] = iconv('UTF-8', 'ISO-8859-1', $_SESSION['nocc_user']);
 		}
 	}
 }
@@ -108,7 +110,9 @@ if (isset($_REQUEST['passwd'])) {
 	$_SESSION['nocc_passwd'] = NOCC_Request::getStringValue('passwd');
 	if( ! isset($conf->utf8_decode) || $conf->utf8_decode ) {
 		if( mb_detect_encoding($_SESSION['nocc_passwd'],'UTF-8',true) == "UTF-8" ) {
-			$_SESSION['nocc_passwd'] = utf8_decode($_SESSION['nocc_passwd']);
+			//deprecated in php8.2
+			//$_SESSION['nocc_passwd'] = utf8_decode($_SESSION['nocc_passwd']);
+			$_SESSION['nocc_passwd'] = iconv('UTF-8', 'ISO-8859-1', $_SESSION['nocc_passwd']);
 		}
 	}
 	$pwd_to_encrypt = true;

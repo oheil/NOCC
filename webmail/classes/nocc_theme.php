@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_theme.php 2580 2013-08-19 21:57:33Z gerundt $
+ * @version    SVN: $Id: nocc_theme.php 3060 2023-03-05 19:06:00Z oheil $
  */
 
 /**
