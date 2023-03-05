@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3061 2023-03-05 19:10:10Z oheil $
  */
 
 require_once 'exception.php';
@@ -104,9 +104,6 @@ class smtp {
 	if( isset($conf->domains[$domainnum]->smtp_security_level) && $conf->domains[$domainnum]->smtp_security_level>=0 ) {
 		stream_context_set_option($context, "ssl", "security_level", $conf->domains[$domainnum]->smtp_security_level);
 	}
-
-	//stream_context_set_option($context, "ssl", "peer_name", "localdomain");
-	//stream_context_set_option($context, "ssl", "security_level", 0);
 
 	$remote_socket=$this->smtp_server.":".$this->port;
 	$smtp=stream_socket_client($remote_socket,$errno,$errstr,ini_get("default_socket_timeout"),STREAM_CLIENT_CONNECT,$context);
