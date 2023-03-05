@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 3058 2023-03-05 12:30:39Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3059 2023-03-05 14:27:24Z oheil $
  */
 
 require_once 'exception.php';
@@ -60,24 +60,31 @@ class smtp {
 		if( ! $this->pipelining || ($cmd!="MAIL" && $cmd!="RCPT") ) {
 			do {
 				$line=fgets($smtp, 1024);
-				if( $this->pipelining && $this->pipelining_count>0 ) {
-					$this->pipelining_count--;
+				if( $line != false ) {
+					if( $this->pipelining && $this->pipelining_count>0 ) {
+						$this->pipelining_count--;
+					}
+					if( substr($line,4,10)=="PIPELINING" ) {
+						$this->pipelining=true;
+						$this->pipelining_count=0;
+					}
+					$response=$response.$cmd.':'.trim($line)." | ";
+					if( $line[0]!='2' && $line[0]!='3' ) {
+						$error=true;
+					}
 				}
-				if( substr($line,4,10)=="PIPELINING" ) {
-					$this->pipelining=true;
-					$this->pipelining_count=0;
-				}
-				$response=$response.$cmd.':'.trim($line)." | ";
-				if( $line[0]!='2' && $line[0]!='3' ) {
-					$error=true;
-				}
-       		 	} while( empty($line) || substr($line, 3, 1) == '-' || ($this->pipelining && $this->pipelining_count>0) );
+       		 	} while( $line != false && (
+					empty($line) || substr($line, 3, 1) == '-' || ($this->pipelining && $this->pipelining_count>0)
+				) );
 		}
 		return $error;
 	}
 
     public function smtp_open() {
 	global $conf;
+	global $html_smtp_error_no_conn;
+	global $html_smtp_error_unexpected;
+
 	// $smtp = fsockopen($this->smtp_server, $this->port, $errno, $errstr); 
 	$context = stream_context_create();
 
@@ -92,11 +99,13 @@ class smtp {
 		stream_context_set_option($context, "ssl", "verify_peer_name", $conf->domains[$domainnum]->smtp_verify_peer_name);
 	}
 
+	//stream_context_set_option($context, "ssl", "peer_name", "localdomain");
+	//stream_context_set_option($context, "ssl", "security_level", 0);
+
 	$remote_socket=$this->smtp_server.":".$this->port;
 	$smtp=stream_socket_client($remote_socket,$errno,$errstr,ini_get("default_socket_timeout"),STREAM_CLIENT_CONNECT,$context);
-
         if (!$smtp)
-            return new NoccException($html_smtp_error_no_con . ' : ' . $errstr); 
+            return new NoccException($html_smtp_error_no_conn . ' : ' . $errstr); 
 
 	$response="";
 	if( $this->check_response("OPEN",$smtp,$response) ) {
@@ -107,6 +116,8 @@ class smtp {
     }
 
     public function smtp_helo($smtp) {
+	global $html_smtp_error_unexpected;
+
         fputs($smtp, "helo " . $_SERVER['SERVER_NAME'] . "\r\n"); 
 
 	$response="";
@@ -118,6 +129,8 @@ class smtp {
     }
 
     public function smtp_ehlo($smtp) {
+	global $html_smtp_error_unexpected;
+
         fputs($smtp, "ehlo " . $_SERVER['SERVER_NAME'] . "\r\n"); 
 
 	$response="";
@@ -130,6 +143,8 @@ class smtp {
 
     public function smtp_auth($smtp) {
       global $conf;
+	global $html_smtp_error_unexpected;
+
       require_once './utils/crypt.php';
 
 	if( isset($_SESSION['nocc_domainnum'])
@@ -226,6 +241,8 @@ class smtp {
     }
 
     public function smtp_mail_from($smtp) {
+	global $html_smtp_error_unexpected;
+
         fputs($smtp, "MAIL FROM:$this->from\r\n"); 
 	$response="";
 	if( $this->check_response("MAIL",$smtp,$response) ) {
@@ -236,6 +253,8 @@ class smtp {
     }
 
     public function smtp_rcpt_to($smtp) {
+	global $html_smtp_error_unexpected;
+
         // Modified by nicocha to use to, cc and bcc field
         while ($tmp = array_shift($this->to)) {
 		if($tmp == '' || $tmp == '<>')
@@ -268,6 +287,8 @@ class smtp {
     }
 
     public function smtp_data($smtp) {
+	global $html_smtp_error_unexpected;
+
 	fputs($smtp, "DATA\r\n"); 
 	$response="";
 	if( $this->check_response("DATA",$smtp,$response) ) {
@@ -285,6 +306,8 @@ class smtp {
     }
 
     public function smtp_quit($smtp) {
+	global $html_smtp_error_unexpected;
+
         fputs($smtp, "QUIT\r\n");
 	$response="";
 	if( $this->check_response("QUIT",$smtp,$response) ) {
