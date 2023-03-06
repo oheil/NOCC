@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_languages.php 3062 2023-03-06 11:07:35Z oheil $
+ * @version    SVN: $Id: nocc_languages.php 3065 2023-03-06 12:05:38Z oheil $
  */
 
 /**
@@ -168,7 +168,6 @@ class NOCC_Languages {
      * @return bool Successful?
      */
     public function setSelectedLangId($langId) {
-error_log("setSelectedLangId: ".$langId);
         if ($this->exists($langId)) { //if the language exists...
             $this->_selectedLangId = strtolower($langId);
             return true;
