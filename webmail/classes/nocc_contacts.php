@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_contacts.php 2629 2014-11-19 15:23:53Z oheil $
+ * @version    SVN: $Id: nocc_contacts.php 3062 2023-03-06 11:07:35Z oheil $
  */
 
 
@@ -230,7 +230,7 @@ class NOCC_Contacts {
      * @todo Rewrite!
      */
     public static function saveList($path, $contacts, $conf, &$ev) {
-        include 'lang/' . $_SESSION['nocc_lang'] . '.php';
+	global $html_err_file_contacts;
         if (file_exists($path) && !is_writable($path)) {
             $ev = new NoccException($html_err_file_contacts);
             return false;

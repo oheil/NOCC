@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: common.php 3062 2023-03-06 11:07:35Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -140,7 +140,6 @@ if (isset($_REQUEST['lang'])) { //if a language is requested...
         $_SESSION['nocc_lang'] = $languages->getSelectedLangId();
     }
 }
-
 if( isset($_SESSION['nocc_lang']) && $_SESSION['nocc_lang'] != "default" ) { //if session language already set...
     $languages->setSelectedLangId($_SESSION['nocc_lang']);
 }

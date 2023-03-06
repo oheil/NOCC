@@ -12,7 +12,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: send.php 2967 2021-12-10 14:24:34Z oheil $
+ * @version    SVN: $Id: send.php 3062 2023-03-06 11:07:35Z oheil $
  */
 
 require_once './common.php';
@@ -266,6 +266,7 @@ switch ($_REQUEST['sendaction']) {
         } else {
             $ev = new NoccException(i18n_message($lang_err_send_delay, $conf->send_delay));
         }
+
         header("Content-type: text/html; Charset=UTF-8");
         if (NoccException::isException($ev)) {
             // Error while sending the message, display an error message

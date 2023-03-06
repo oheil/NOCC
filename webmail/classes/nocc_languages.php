@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_languages.php 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: nocc_languages.php 3062 2023-03-06 11:07:35Z oheil $
  */
 
 /**
@@ -55,8 +55,7 @@ class NOCC_Languages {
                 if (substr($path, -1) != '/') { //if NOT ends with '/'...
                   $path .= '/';
                 }
-                
-		$this->_languages["default"]='';
+
                 //TODO: Move some code to a NOCC_Directory class?
                 if ($handle = opendir($path)) { //if can open the directory...
                     while (false !== ($name = readdir($handle))) { //for each item...
@@ -81,10 +80,12 @@ class NOCC_Languages {
                     }
                     closedir($handle);
                 }
-                
+
                 if ($this->exists($defaultLangId)) { //if the language exists...
                     $this->_defaultLangId = strtolower($defaultLangId);
                 }
+
+		$this->_languages["default"]=$this->_languages[$this->_defaultLangId];
             }
         }
     }
@@ -167,6 +168,7 @@ class NOCC_Languages {
      * @return bool Successful?
      */
     public function setSelectedLangId($langId) {
+error_log("setSelectedLangId: ".$langId);
         if ($this->exists($langId)) { //if the language exists...
             $this->_selectedLangId = strtolower($langId);
             return true;
