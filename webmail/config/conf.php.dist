@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3068 2023-03-07 14:57:08Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -199,6 +199,7 @@ $conf->loaded = true;
 //    your user login with 'ad\user' and his password, but the From:-address is user@domain.com
 //    without the ad\, than above setting is used to extract the part in the parantheses to form
 //    the From:-address.
+//  Setting this option helps with IMAP PLAIN SASL AUTH too.
 //
 // $conf->domains[$i]->allow_rss = false;
 //  This optional setting allows RSS feed for this domain if set to true

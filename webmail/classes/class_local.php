@@ -16,7 +16,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_local.php 3050 2023-02-23 13:18:20Z oheil $
+ * @version    SVN: $Id: class_local.php 3068 2023-03-07 14:57:08Z oheil $
  */
 
 
@@ -134,11 +134,30 @@ class nocc_imap
 				$secure="true";
 			}
 		}
+
+		$tmp_username=$this->login;
+		if( preg_match("/^ssl/",$secure) ) {
+			//With SSL we most probably run into PLAIN SASL AUTH
+			// strip domain part from login user name
+			//  For PLAIN SASL auth we want as a login string:
+			//    authzid\0authcid\0passwd
+			//  If authcid is something like "ad\user" the "ad\" must be stripped from authzid
+			//  For Details about PLAIN SASL see https://www.rfc-editor.org/rfc/rfc4616.html
+			if(
+				isset($conf->domains[$_SESSION['nocc_domainnum']]->from_part) &&
+				strlen($conf->domains[$_SESSION['nocc_domainnum']]->from_part) > 0
+			) {
+				$reg=$conf->domains[$_SESSION['nocc_domainnum']]->from_part;
+				$reg=preg_replace("/\\\/",'\\\\\\',$reg);
+				$tmp_username=preg_replace("/^".$reg."$/","$1",$tmp_username);
+			}
+		}
 		
 		if( $pop3 ) {
 			try {
 				$conn = new Horde_Imap_Client_Socket_Pop3(array(
-						'username' => $this->login,
+						'username' => $tmp_username,
+						'authusername' => $this->login,
 						'password' => $this->passwd,
 						'hostspec' => $host,
 						'port' => $port,
@@ -150,13 +169,14 @@ class nocc_imap
 	        			$_SESSION['is_imap'] = $this->_isImap;
 				}
 			} catch(Horde_Imap_Client_Exception $e) {
-				throw new Exception($lang_could_not_connect."(1)".":".$e->$raw_msg);
+				throw new Exception($lang_could_not_connect."(1)".":".$e->raw_msg);
 			}
 		}
 		else if( $imap ) {
 			try {
 				$conn = new Horde_Imap_Client_Socket(array(
-						'username' => $this->login,
+						'username' => $tmp_username,
+						'authusername' => $this->login,
 						'password' => $this->passwd,
 						'hostspec' => $host,
 						'port' => $port,
@@ -168,14 +188,15 @@ class nocc_imap
        		 			$_SESSION['is_imap'] = $this->_isImap;
 				}
 			} catch(Horde_Imap_Client_Exception $e) {
-				throw new Exception($lang_could_not_connect."(2)".":".$e->$raw_msg);
+				throw new Exception($lang_could_not_connect."(2)".":".$e->raw_msg);
 			}
 		}
 		else {
 			$success=false;
 			try {
 				$conn = new Horde_Imap_Client_Socket(array(
-						'username' => $this->login,
+						'username' => $tmp_username,
+						'authusername' => $this->login,
 						'password' => $this->passwd,
 						'hostspec' => $host,
 						'port' => $port,
@@ -188,7 +209,7 @@ class nocc_imap
 	        			$_SESSION['is_imap'] = $this->_isImap;
 				}
 			} catch(Horde_Imap_Client_Exception $e) {
-				$log_string='NOCC: open imap connection to '.$host.' failed, trying pop3';
+				$log_string='NOCC: open imap connection to '.$host.' failed with: "'.$e->raw_msg.'", trying pop3';
 				error_log($log_string);
 				if( isset($conf->syslog) && $conf->syslog ) {
 					syslog(LOG_INFO,$log_string);
@@ -197,7 +218,8 @@ class nocc_imap
 			if( ! $success ) {
 				try {
 					$conn = new Horde_Imap_Client_Socket_Pop3(array(
-							'username' => $this->login,
+							'username' => $tmp_username,
+							'authusername' => $this->login,
 							'password' => $this->passwd,
 							'hostspec' => $host,
 							'port' => $port,
@@ -210,6 +232,8 @@ class nocc_imap
 	        				$_SESSION['is_imap'] = $this->_isImap;
 					}
 				} catch(Horde_Imap_Client_Exception $e) {
+					$log_string='NOCC: open pop3 connection to '.$host.' failed with: "'.$e->raw_msg.'", giving up';
+					error_log($log_string);
 					$error="";
 					if( strlen($this->login)==0 ) {
 						$error=$error.$err_user_empty.".\n";
@@ -1320,9 +1344,29 @@ class nocc_imap
 					$secure="true";
 				}
 			}
+
+			$tmp_username=$TMP_SESSION['nocc_login'];
+			if( preg_match("/^ssl/",$secure) ) {
+				//With SSL we most probably run into PLAIN SASL AUTH
+				// strip domain part from login user name
+				//  For PLAIN SASL auth we want as a login string:
+				//    authzid\0authcid\0passwd
+				//  If authcid is something like "ad\user" the "ad\" must be stripped from authzid
+				//  For Details about PLAIN SASL see https://www.rfc-editor.org/rfc/rfc4616.html
+				if(
+					isset($conf->domains[$TMP_SESSION['nocc_domainnum']]->from_part) &&
+					strlen($conf->domains[$TMP_SESSION['nocc_domainnum']]->from_part) > 0
+				) {
+					$reg=$conf->domains[$TMP_SESSION['nocc_domainnum']]->from_part;
+					$reg=preg_replace("/\\\/",'\\\\\\',$reg);
+					$tmp_username=preg_replace("/^".$reg."$/","$1",$tmp_username);
+				}
+			}
+
 			if( $pop3 ) {
 				$conn = new Horde_Imap_Client_Socket_Pop3(array(
-						'username' => $TMP_SESSION['nocc_login'],
+						'username' => $tmp_username,
+						'authusername' => $TMP_SESSION['nocc_login'],
 						'password' => decpass($TMP_SESSION['nocc_passwd'], $conf->master_key),
 						'hostspec' => $host,
 						'port' => $port,
@@ -1334,7 +1378,8 @@ class nocc_imap
 			}
 			else {
 				$conn = new Horde_Imap_Client_Socket(array(
-						'username' => $TMP_SESSION['nocc_login'],
+						'username' => $tmp_username,
+						'authusername' => $TMP_SESSION['nocc_login'],
 						'password' => decpass($TMP_SESSION['nocc_passwd'], $conf->master_key),
 						'hostspec' => $host,
 						'port' => $port,
