@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3068 2023-03-07 14:57:08Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3069 2023-03-09 11:14:55Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -530,7 +530,7 @@ $conf->allow_rss = false;
 // This message is added to every message, the user cannot delete it
 // Be careful if you modify this, do not forget to write '\r\n' to switch
 // to the next line !
-$conf->ad = "___________________________________\r\nNOCC, http://nocc.sourceforge.net";
+$conf->ad = "___________________________________\r\nNOCC, https://nocc.sourceforge.net";
 
 // Use old-style forwarding (quote original message, and attach original
 // attachments).
