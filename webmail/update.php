@@ -325,13 +325,20 @@ else {
 					}
 				}
 				echo '<p class="new-version-update-info">Compressing archive: '.$archive_name.'.gz</p>';
-				$archive->compress(Phar::GZ);
+				//the following failes in php 8.2 with Allowed memory size exhausted
+				//$archive->compress(Phar::GZ);
+				$gzfile=gzcompressfile($archive_name);
 				unset($archive);
 				echo '<p class="new-version-update-info">Removing file: '.$archive_name.'</p>';
 				Phar::unlinkArchive($archive_name);
-				$archive=new PharData($archive_name.'.gz');
+
+				$archive_name=gzdecompress($gzfile);
+				$archive=new PharData($archive_name);
+
 				$number_of_files_check=$archive->count();
 				unset($archive);
+				unlink($archive_name);
+
 				if( $number_of_files==$number_of_files_check ) {
 					echo '<p class="new-version-update-ok">Created archive of '.$number_of_files_check.' files successfully: <a href="'.$archive_name.'.gz">'.$archive_name.'.gz</a></p>';
 				}
@@ -407,9 +414,15 @@ else {
 			$archive->close();
 		}
 		else {
-			$archive=new PharData($archive_name);
+			//the following failes in php 8.2 with Allowed memory size exhausted
+			//$archive=new PharData($archive_name);
+
+			$tar_archive_name=gzdecompress($archive_name);
+			$archive=new PharData($tar_archive_name);
+			
 			$archive->extractTo('.');
 			unset($archive);
+			unlink($tar_archive_name);
 		}
 		chdir($target_extract_dir);
 		$file_list=recursive_directory(".","/^.*(?<!\.$)(?<!\.\.$)$/");
@@ -502,5 +515,64 @@ chdir($currentdir);
 require './html/menu_inbox.php';
 require './html/footer.php';
 
+// https://stackoverflow.com/questions/6073397/how-do-you-create-a-gz-file-using-php/56140427#56140427
+function gzcompressfile(string $inFilename, int $level = 9): string
+{
+    // Is the file gzipped already?
+    $extension = pathinfo($inFilename, PATHINFO_EXTENSION);
+    if ($extension == "gz") {
+        return $inFilename;
+    }
 
+    // Open input file
+    $inFile = fopen($inFilename, "rb");
+    if ($inFile === false) {
+        throw new \Exception("Unable to open input file: $inFilename");
+    }
+
+    // Open output file
+    $gzFilename = $inFilename.".gz";
+    $mode = "wb".$level;
+    $gzFile = gzopen($gzFilename, $mode);
+    if ($gzFile === false) {
+        fclose($inFile);
+        throw new \Exception("Unable to open output file: $gzFilename");
+    }
+
+    // Stream copy
+    $length = 512 * 1024; // 512 kB
+    while (!feof($inFile)) {
+        gzwrite($gzFile, fread($inFile, $length));
+    }
+
+    // Close files
+    fclose($inFile);
+    gzclose($gzFile);
+
+    // Return the new filename
+    return $gzFilename;
+}
+// https://stackoverflow.com/questions/3293121/how-can-i-unzip-a-gz-file-with-php
+function gzdecompress(string $file_name): string
+{
+	// Raising this value may increase performance
+	$buffer_size = 4096; // read 4kb at a time
+	$out_file_name = str_replace('.gz', '', $file_name);
+
+	// Open our files (in binary mode)
+	$file = gzopen($file_name, 'rb');
+	$out_file = fopen($out_file_name, 'wb');
+
+	// Keep repeating until the end of the input file
+	while(!gzeof($file)) {
+	    // Read buffer-size bytes
+	    // Both fwrite and gzread and binary-safe
+	    fwrite($out_file, gzread($file, $buffer_size));
+	}
+
+	// Files are done, close files
+	fclose($out_file);
+	gzclose($file);
+	return $out_file_name;
+}
 
