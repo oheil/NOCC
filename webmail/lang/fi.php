@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fi.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: fi.php 3066 2023-03-06 12:12:50Z translatewiki $
  */
 /** Finnish (suomi)
  * 
@@ -79,6 +79,7 @@ $html_manage_filters_link = 'Hallitse sähköpostisuodattimia';
 $html_use_graphical_smilies = 'Käytä graafisia hymiöitä';
 $html_sent_folder_label = 'Kopioi lähetetyt sähköpostit omaan kansioonsa:';
 $html_trash_folder_label = 'Siirrä poistetut sähköpostit omaan kansioonsa:';
+$html_inbox_folder_label = 'Yhdistä valikkokohta Saapuneet tähän kansioon:';
 $html_colored_quotes = 'Värilliset lainaukset';
 $html_display_struct = 'Näytä rakenteinen teksti';
 $html_send_html_mail = 'Lähetä sähköposti HTML-muodossa';
@@ -246,6 +247,7 @@ $html_fd_mailcount = 'Täällä {{PLURAL:$1|0=ei ole sähköpostia|1=on %1$d sä
 $html_fd_mailskip = 'Seuraavat sähköpostit eivät ole osa mbox-tiedoston, kuin ne ylittävät php memory_limit:';
 $html_fd_filesize = 'koko %1$d';
 $html_fd_skipcount = 'jossa %1$d sähköposteja';
+$html_fd_largefolder = 'Latausnopeudestasi riippuen tämä lataus saattaa epäonnistua aikakatkaisun vuoksi.<br /> Tarkista latauksen täydellisyys tai aseta max_execution_time-arvo suuremmaksi php.ini-tiedostossa.';
 $reset_clicked = 'Haluatko varmasti tyhjentää tämän lomakkeen?';
 $html_send_recover = 'Kirjaudu saadaksesi menetetyt luonnokset takaisin';
 $html_send_discard = 'Klikkaa tästä hylätäksesi tallennetun luonnoksen.';
@@ -262,3 +264,6 @@ $html_session_ip_changed = 'koska asiakkaan IP-osoite vaihtui';
 $html_session_expire_time = 'Tämä istunto päättyy automaattisesti';
 $html_inbox_changed = 'Saapuneet-kansiosi sisältö on muuttunut';
 $html_inbox_show_alert = 'Näytä hälytyslaatikko, kun sähköpostien lukumäärä saapuneet-kansiossa muuttuu';
+$lang_horde_require_failed = 'Horde pmap -asiakasohjelmaluokkaa ei löydy';
+$lang_strong_encryption_required = 'Heikko salaus ei ole sallittu';
+$html_default = 'Oletus';
