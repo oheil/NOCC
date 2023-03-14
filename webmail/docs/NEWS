@@ -1,4 +1,11 @@
 
+Latest version is 1.9.14-dev
+
+NOCC 1.9.14  March??????????????
+
+  Bugs
+    * Bug #511 : Auto-Update fails with php 8.2.3 (Oliver Heil).
+
 Latest version is 1.9.13
 
 NOCC 1.9.13  March 03, 2023
