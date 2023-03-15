@@ -325,14 +325,15 @@ else {
 					}
 				}
 				echo '<p class="new-version-update-info">Compressing archive: '.$archive_name.'.gz</p>';
-				//the following failes in php 8.2 with Allowed memory size exhausted
+				//the following fails in php 8.2 with Allowed memory size exhausted
 				//$archive->compress(Phar::GZ);
+				//doing it manually:
 				$gzfile=gzcompressfile($archive_name);
 				unset($archive);
 				echo '<p class="new-version-update-info">Removing file: '.$archive_name.'</p>';
 				Phar::unlinkArchive($archive_name);
 
-				$archive_name=gzdecompress($gzfile);
+				$archive_name=gzdecompressfile($gzfile);
 				$archive=new PharData($archive_name);
 
 				$number_of_files_check=$archive->count();
@@ -414,10 +415,10 @@ else {
 			$archive->close();
 		}
 		else {
-			//the following failes in php 8.2 with Allowed memory size exhausted
+			//the following fails in php 8.2 with Allowed memory size exhausted
 			//$archive=new PharData($archive_name);
-
-			$tar_archive_name=gzdecompress($archive_name);
+			//doing it manually:
+			$tar_archive_name=gzdecompressfile($archive_name);
 			$archive=new PharData($tar_archive_name);
 			
 			$archive->extractTo('.');
@@ -553,7 +554,7 @@ function gzcompressfile(string $inFilename, int $level = 9): string
     return $gzFilename;
 }
 // https://stackoverflow.com/questions/3293121/how-can-i-unzip-a-gz-file-with-php
-function gzdecompress(string $file_name): string
+function gzdecompressfile(string $file_name): string
 {
 	// Raising this value may increase performance
 	$buffer_size = 4096; // read 4kb at a time

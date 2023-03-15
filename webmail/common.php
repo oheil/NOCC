@@ -11,7 +11,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: common.php 3070 2023-03-11 12:33:25Z oheil $
+ * @version    SVN: $Id: common.php 3075 2023-03-15 09:14:06Z oheil $
  */
 
 define('NOCC_DEBUG_LEVEL', 0);
@@ -57,7 +57,7 @@ require_once './utils/crypt.php';
 require_once './utils/translation.php';
 
 $conf->nocc_name = 'NOCC';
-$conf->nocc_version = '1.9.13';
+$conf->nocc_version = '1.9.14';
 $conf->nocc_url = 'http://nocc.sourceforge.net/';
 
 $pwd_to_encrypt = false;
