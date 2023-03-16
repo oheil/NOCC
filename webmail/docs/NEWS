@@ -1,13 +1,16 @@
 
-Latest version is 1.9.14
+Latest version is 1.9.15-dev
+
+NOCC 1.9.15  ??????????????
+
+  Misc
+    * Added sha256 checksum for automatic update (Oliver Heil).
 
 NOCC 1.9.14  March 15, 2023
 
   Bugs
     * Bug #511 : Auto-Update fails with php 8.2.3 (Oliver Heil).
                  Creating an early release before people switch to php 8.2.
-
-Latest version is 1.9.13
 
 NOCC 1.9.13  March 11, 2023
 

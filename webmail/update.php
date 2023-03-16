@@ -259,7 +259,7 @@ if( ! isset($_GET['doUpdate']) || $_GET['doUpdate']!=1 ) {
 		echo '<h4 class="new-version-update-info">Update:</h3>';
 		echo '<ul class="new-version-update-info">';
 		echo '<li class="new-version-update-info">The latest NOCC version will be downloaded automatically from the projects web site: <a href="'.$download_link.'">'.$download_link.'</a></li>';
-		echo '<li class="new-version-update-info">The MD5 checksum will be checked.</li>';
+		echo '<li class="new-version-update-info">The MD5 or SHA256 checksum will be checked.</li>';
 		echo '<li class="new-version-update-info">The downloaded distribution archive will be unpacked overwriting your existing files.</li>';
 		echo '</ul>';
 	}
@@ -385,25 +385,49 @@ else {
 	}
 
 	if( $state_ok ) {
-		echo '<h2 class="new-version-update-info">Checking MD5 checksum</h2>';
-		$ckecksums=file_get_contents('http://nocc.sourceforge.net/checksums.txt');
+		echo '<h2 class="new-version-update-info">Checking checksum</h2>';
+		$ckecksums=file_get_contents('https://nocc.sourceforge.net/checksums.txt');
+		$checksum="";
+		$checksumType="";
 		$matches=array();
-		if( preg_match("/".$archive_name."\t(\S+)\R/",$ckecksums,$matches) ) {
-			$md5sum=$matches[1];
+		if( preg_match("/".$archive_name."\tsha256\t(\S+)\R/",$ckecksums,$matches) ) {
+			$checksum=$matches[1];
+			$checksumType="sha256";
+		}
+		else if( preg_match("/".$archive_name."\tmd5\t(\S+)\R/",$ckecksums,$matches) ) {
+			$checksum=$matches[1];
+			$checksumType="md5";
+		}
+		else if( preg_match("/".$archive_name."\t(\S+)\R/",$ckecksums,$matches) ) {
+			$checksum=$matches[1];
+			$checksumType="md5";
+		}
+		else {
+			echo '<p class="new-version-update-missing">Could not find checksum. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+			$state_ok=false;
+		}
+		if( $checksumType == "md5" ) {
 			$md5sum_check=md5_file($archive_name);
-			if( $md5sum==$md5sum_check) {
-				echo '<p class="new-version-update-ok">MD5 checksums match: '.$md5sum.'. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+			if( $checksum == $md5sum_check) {
+				echo '<p class="new-version-update-ok">MD5 checksums match: '.$checksum.'. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
 			}
 			else {
-				echo '<p class="new-version-update-missing">Failed md5 checksum match: '.$md5sum_check.' should be '.$md5sum.'.</p>';
+				echo '<p class="new-version-update-missing">Failed md5 checksum match: '.$md5sum_check.' should be '.$checksum.'.</p>';
 				echo '<p class="new-version-update-missing">See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
 				$state_ok=false;
 			}
 		}
-		else {
-			echo '<p class="new-version-update-missing">Could not find md5 checksum. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
-			$state_ok=false;
-		}
+		if( $checksumType == "sha256" ) {
+			$sha256sum_check=hash_file("sha256",$archive_name);
+			if( $checksum == $sha256sum_check ) {
+				echo '<p class="new-version-update-ok">sha256 checksums match: '.$checksum.'. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+			}
+			else {
+				echo '<p class="new-version-update-missing">Failed sha256 checksum match: '.$sha256sum_check.' should be '.$checksum.'.</p>';
+				echo '<p class="new-version-update-missing">See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+				$state_ok=false;
+			}
+		}	
 	}
 
 	if( $state_ok ) {
