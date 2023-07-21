@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3069 2023-03-09 11:14:55Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3094 2023-07-21 17:34:05Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -70,6 +70,13 @@ $conf->loaded = true;
 //
 // $conf->domains[$i]->smtp_port = 25;
 //  Port number to connect to smtp server (usually 25)
+//
+//  Examples:
+//    $conf->domains[$i]->smtp = 'smtp.domain.com'
+//    $conf->domains[$i]->smtp_port = 25;
+//
+//    $conf->domains[$i]->smtp = 'ssl://smtp.domain.com'
+//    $conf->domains[$i]->smtp_port = 465
 //
 // $conf->domains[$i]->login_with_domain = false;
 //  Set value to true for 'user<char>domain.com' style logins
