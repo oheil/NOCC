@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 3061 2023-03-05 19:10:10Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3093 2023-07-21 17:05:24Z oheil $
  */
 
 require_once 'exception.php';
@@ -92,10 +92,10 @@ class smtp {
 	if( isset($conf->domains[$domainnum]->smtp_allow_self_signed) && $conf->domains[$domainnum]->smtp_allow_self_signed==true ) {
 		stream_context_set_option($context, "ssl", "allow_self_signed", $conf->domains[$domainnum]->smtp_allow_self_signed);
 	}
-	if( isset($conf->domains[$domainnum]->smtp_verify_peer) && $conf->domains[$domainnum]->smtp_verify_peer==true ) {
+	if( isset($conf->domains[$domainnum]->smtp_verify_peer) && $conf->domains[$domainnum]->smtp_verify_peer==false ) {
 		stream_context_set_option($context, "ssl", "verify_peer", $conf->domains[$domainnum]->smtp_verify_peer);
 	}
-	if( isset($conf->domains[$domainnum]->smtp_verify_peer_name) && $conf->domains[$domainnum]->smtp_verify_peer_name==true ) {
+	if( isset($conf->domains[$domainnum]->smtp_verify_peer_name) && $conf->domains[$domainnum]->smtp_verify_peer_name==false ) {
 		stream_context_set_option($context, "ssl", "verify_peer_name", $conf->domains[$domainnum]->smtp_verify_peer_name);
 	}
 	if( isset($conf->domains[$domainnum]->smtp_peer_name) && $conf->domains[$domainnum]->smtp_peer_name!="" ) {
@@ -166,10 +166,10 @@ class smtp {
 		&& $conf->domains[$_SESSION['nocc_domainnum']]->smtp_user_without_domain==true
 	) {
 		$domain_char='@';
-		if( isset($conf->domains[$i]->login_with_domain_character) 
-			&& strlen($conf->domains[$i]->login_with_domain_character)>0
+		if( isset($conf->domains[$_SESSION['nocc_domainnum']]->login_with_domain_character) 
+			&& strlen($conf->domains[$_SESSION['nocc_domainnum']]->login_with_domain_character)>0
 		) {
-			$domain_char=$conf->domains[$i]->login_with_domain_character;
+			$domain_char=$conf->domains[$_SESSION['nocc_domainnum']]->login_with_domain_character;
 		}
 		$user=preg_replace("/".$domain_char.".*?$/","",$user);
 	}
