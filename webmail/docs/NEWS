@@ -6,6 +6,13 @@ NOCC 1.9.15  ??????????????
   Misc
     * Added sha256 checksum for automatic update (Oliver Heil).
 
+  Bugs
+    * setting ssl context options for ssl smtp connection were not changeable
+      to anything else than the default value, which doesn't make sense,
+      see discussion
+      https://sourceforge.net/p/nocc/discussion/38301/thread/ac827e8c9e/
+      (Oliver Heil)
+
 NOCC 1.9.14  March 15, 2023
 
   Bugs
