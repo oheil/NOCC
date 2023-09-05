@@ -14,7 +14,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_smtp.php 3093 2023-07-21 17:05:24Z oheil $
+ * @version    SVN: $Id: class_smtp.php 3097 2023-09-05 10:44:26Z oheil $
  */
 
 require_once 'exception.php';
@@ -192,6 +192,39 @@ class smtp {
 			return new NoccException($html_smtp_error_unexpected . ' : ' . $response); 
 		}
 		return (true);
+		break;
+          case 'NTLM':
+		fputs($smtp, "helo " . $_SERVER['SERVER_NAME'] . "\r\n"); 
+		$response="";
+		if( $this->check_response("STARTTLS HELO",$smtp,$response) ) {
+			return new NoccException($html_smtp_error_unexpected . ' : ' . $response); 
+		}
+		fputs($smtp, "AUTH NTLM\r\n"); 
+		$response="";
+		if( $this->check_response("STARTTLS AUTH NTLM",$smtp,$response) ) {
+			return new NoccException($html_smtp_error_unexpected . ' : ' . $response); 
+		}
+
+		$message=NTLM_type1message();
+		fputs($smtp, base64_encode($message)."\r\n"); 
+		$response="";
+		if( $this->check_response("NTLMSSP",$smtp,$response) ) {
+			return new NoccException($html_smtp_error_unexpected . ' : ' . $response); 
+		}
+		$matches=array();
+		if( preg_match("/^NTLMSSP:334\s+(.*)\s+|$/",$response,$matches) ) {
+			$response=$matches[1];
+		}
+		$response=base64_decode($response);
+
+		$message=NTLM_type3message($response,"","",$user, $password);
+		fputs($smtp, base64_encode($message)."\r\n"); 
+		$response="";
+		if( $this->check_response("NTLMSSP",$smtp,$response) ) {
+			return new NoccException($html_smtp_error_unexpected . ' : ' . $response); 
+		}
+
+		return(true);
 		break;
           case 'TLS':
 		fputs($smtp, "STARTTLS\r\n");
