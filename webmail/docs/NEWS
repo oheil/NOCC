@@ -5,6 +5,7 @@ NOCC 1.9.15  ??????????????
 
   Misc
     * Added sha256 checksum for automatic update (Oliver Heil).
+    * Added (minimal) NTLM authentication for SMTP (Oliver Heil).
 
   Bugs
     * setting ssl context options for ssl smtp connection were not changeable

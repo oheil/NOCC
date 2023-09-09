@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3094 2023-07-21 17:34:05Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3098 2023-09-09 16:45:42Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -119,7 +119,8 @@ $conf->loaded = true;
 //   '' : no authentification method
 //   'PLAIN' : AUTH PLAIN method
 //   'LOGIN' : AUTH LOGIN method
-//   'TLS' : STARTTLS with normal login
+//   'TLS'   : STARTTLS with normal login
+//   'NTLM'  : NTLM method (minimal)
 //
 // $conf->domains[$i]->imap_namespace = 'INBOX.';
 //  Select IMAP Namespace
