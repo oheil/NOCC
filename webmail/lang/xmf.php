@@ -22,20 +22,21 @@
  * @ingroup Language
  * @file
  *
+ * @author Narazeni
  * @author Silovan
  */
 
 $default_date_format = '%Y-%m-%d';
 $no_locale_date_format = '%Y-%m-%d';
 $default_time_format = '%I:%M %p';
-$err_user_empty = 'ჯოხოშ ველი ცაიორი რე';
-$err_passwd_empty = 'პაროლიშ ველი ცაიორი რე';
+$err_user_empty = 'ჯოხოშ ვე ცაიორი რე';
+$err_passwd_empty = 'პაროლიშ ვე ცაიორი რე';
 $alt_delete = 'დოლასით გიშაგორილი ნაჭარეფი';
 $alt_delete_one = 'დოლასით თე წერილეფი';
 $alt_new_msg = 'ახალი ნაჭარა';
 $alt_reply = 'უგამით ავტორს';
 $alt_reply_all = 'უგამით არძას';
-$alt_forward = 'წიმი';
+$alt_forward = 'გინოჯღონუა';
 $alt_next = 'უკული';
 $alt_prev = 'კინოხიანი';
 $title_next_page = 'უკულიანი ხასჷლა >>';

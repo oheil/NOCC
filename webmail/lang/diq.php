@@ -14,7 +14,7 @@
  * @license    http://www.gnu.org/licenses/ GNU General Public License
  * @version    SVN: $Id: $
  */
-/** Zazaki (Zazaki)
+/** Dimli (Zazaki)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
@@ -26,6 +26,7 @@
  * @author Asmen
  * @author Erdemaslancan
  * @author Gambollar
+ * @author GolyatGeri
  * @author Gorizon
  * @author Gırd
  * @author Kumkumuk
@@ -266,6 +267,7 @@ $html_session_expired = 'Wahde nê ronıştışi biyo pır';
 $html_session_ip_changed = 'Waştoğ poğta vuriyayışê IP ra';
 $html_session_expire_time = 'No otomatikman terix de baş beno';
 $html_inbox_changed = 'Zerrekê qutiya şımaya ameyışi vurniya';
-$html_inbox_show_alert = 'Dora mesacanê ameyanê de amarê postaya vuriyena se dora iqazi bımocne';
+$html_inbox_show_alert = 'Wexto ke amarê e-nameyan qutiya ameyışi de vurriya, qutiya heşari nişan ke';
 $lang_horde_require_failed = 'Sınıfa waştoğê \'\'horde pmap\'\'i nêvêniye';
 $lang_strong_encryption_required = 'Bêitimad parola kerdışi rê mısade nêdeyeno';
+$html_default = 'Standard';

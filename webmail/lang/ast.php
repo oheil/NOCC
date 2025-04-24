@@ -24,6 +24,7 @@
  *
  * @author Fitoschido
  * @author Xuacu
+ * @author YoaR
  */
 
 $default_date_format = '%d-%m-%Y';
@@ -98,7 +99,7 @@ $html_filter_cc = 'Campu CC';
 $html_filter_from = 'Campu De';
 $html_filter_change_tip = 'Para cambiar un filtru, simplemente sobreescríbilu.';
 $html_reapply_filters = 'Re-aplicar tolos filtros';
-$html_filter_contains = 'contien';
+$html_filter_contains = 'contién';
 $html_filter_name = 'Nome del filtru';
 $html_filter_action = 'Aición del filtru';
 $html_filter_moveto = 'Mover a';
@@ -160,7 +161,7 @@ $html_cc_label = 'Cc:';
 $html_bcc_label = 'Cct:';
 $html_nosubject = 'Sin asuntu';
 $html_send = 'Unviar';
-$html_cancel = 'Encaboxar';
+$html_cancel = 'Zarrar';
 $html_no_mail = 'Dengún mensaxe.';
 $html_logout = 'Salir';
 $html_msg = 'Mensaxe';
@@ -261,3 +262,4 @@ $html_inbox_changed = 'El conteníu de la bandexa d\'entrada cambió';
 $html_inbox_show_alert = 'Amosar un cuadru d\'alerta cuando cambia\'l númberu de correos electrónicos na bandexa d\'entrada';
 $lang_horde_require_failed = 'Nun s\'alcontró la clase de cliente Horde pmap';
 $lang_strong_encryption_required = 'Nun se permite\'l cifráu inseguru';
+$html_default = 'Predetermináu';

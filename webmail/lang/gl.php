@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: gl.php 3038 2022-12-19 12:11:58Z translatewiki $
+ * @version    SVN: $Id: gl.php 3099 2023-09-21 11:23:33Z translatewiki $
  */
 /** Galician (galego)
  * 
@@ -249,7 +249,7 @@ $html_fd_largefolder = 'Dependiendo da túa velocidade de descarga, esta descarg
 $reset_clicked = 'Está seguro de querer borrar este formulario?';
 $html_send_recover = 'Inicie sesión para recuperar o borrador perdidoǃ';
 $html_send_discard = 'Prema aquí para descartar o borrador gardado.';
-$html_collect_label = 'Autorecoller direccións de correo:';
+$html_collect_label = 'Autorecoller enderezos de correo:';
 $html_collect_option0 = 'Nunca';
 $html_collect_option1 = 'Só de correos electrónicos saintes';
 $html_collect_option2 = 'Só de correos abertos';

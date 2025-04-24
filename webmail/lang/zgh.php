@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author AguzulH
  * @author Brahim-essaidi
  * @author Hakim1bal
  */
@@ -33,7 +34,7 @@ $alt_forward = 'ⵙⵙⵉⴼⴹ';
 $html_theme_label = 'ⴰⵙⴳⵓⵎ:';
 $html_welcome = 'ⴱⵔⵔⴽ ⵖⵓⵔ %1$s';
 $html_login = 'ⴽⵛⵎ';
-$html_user_label = 'ⴰⵏⵙⵙⵎⵔⵙ:';
+$html_user_label = 'ⴰⵏⵙⵎⵔⴰⵙ:';
 $html_passwd_label = 'ⵜⴰⴳⵓⵔⵉ ⵏ ⵓⵣⵔⴰⵢ:';
 $html_submit = 'ⴰⵣⵏ';
 $html_help = 'ⵜⵉⵡⵉⵙⵉ';

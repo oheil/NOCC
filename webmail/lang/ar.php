@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ar.php 3023 2022-09-12 11:11:56Z translatewiki $
+ * @version    SVN: $Id: ar.php 3143 2024-12-19 12:12:47Z translatewiki $
  */
 /** Arabic (العربية)
  * 
@@ -128,7 +128,7 @@ $html_view_header = 'المقدمة';
 $html_remove_header = 'ءاخفاء المقدمة';
 $html_inbox = 'صندوق الرسائل';
 $html_new_msg = 'رسالة جديدة';
-$html_reply = 'رُد';
+$html_reply = 'رد';
 $html_reply_short = 'رد:';
 $html_reply_all = 'ءاجابة للكل';
 $html_forward = 'تحويل الرسالة ءالى';
@@ -257,7 +257,7 @@ $reset_clicked = 'هل تريد حقا أن تمسح هذا النموذج؟';
 $html_send_recover = 'تسجيل الدخول لاستعادة المسودة المفقودة!';
 $html_send_discard = 'انقر هنا لتجاهل المسودة المحفوظة.';
 $html_collect_label = 'تجميع عناوين البريد الإلكتروني تلقائيا:';
-$html_collect_option0 = 'أبدًا';
+$html_collect_option0 = 'أبدا';
 $html_collect_option1 = 'من رسائل البريد الإلكتروني الصادرة فقط';
 $html_collect_option2 = 'من رسائل البريد الإلكتروني المفتوحة فقط';
 $html_collect_option3 = 'دائمًا';

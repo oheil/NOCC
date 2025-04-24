@@ -12,9 +12,9 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: gsw.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: gsw.php 3096 2023-08-17 11:18:44Z translatewiki $
  */
-/** Swiss German (Alemannisch)
+/** Alemannic (Alemannisch)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net

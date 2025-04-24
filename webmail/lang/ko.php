@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ko.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ko.php 3118 2024-03-11 12:14:02Z translatewiki $
  */
 /** Korean (한국어)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Dr1t jg
  * @author Gusdud25
  * @author Hym411
  * @author Klutzy
@@ -86,6 +87,7 @@ $html_manage_filters_link = '이메일 필터 관리';
 $html_use_graphical_smilies = '그림 이모티콘 사용';
 $html_sent_folder_label = '보낸 이메일을 전용 폴더 안으로 복사:';
 $html_trash_folder_label = '삭제된 이메일을 전용 폴더 안으로 이동:';
+$html_inbox_folder_label = '메뉴 항목 받은 편지함을 폴더에 연결:';
 $html_colored_quotes = '색이 있는 인용';
 $html_display_struct = '구문된 텍스트 표시';
 $html_send_html_mail = 'HTML 형식으로 이메일 보내기';
@@ -270,4 +272,6 @@ $html_session_ip_changed = '클라이언트의 IP 변경으로 인해';
 $html_session_expire_time = '이 세션은 다음 시간에 자동으로 만료됩니다:';
 $html_inbox_changed = '받은 편지함의 내용이 변경되었습니다';
 $html_inbox_show_alert = '받은 편지함의 이메일의 수가 변경되면 경고 상자를 표시합니다';
+$lang_horde_require_failed = 'Horde pmap 클라이언트 클래스를 찾을 수 없음';
 $lang_strong_encryption_required = '안전하지 않은 암호화는 허용되지 않습니다';
+$html_default = '기본값';

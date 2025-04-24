@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: pt.php 3024 2022-09-19 11:12:48Z translatewiki $
+ * @version    SVN: $Id: pt.php 3142 2024-12-05 12:11:15Z translatewiki $
  */
 /** Portuguese (português)
  * 
@@ -34,6 +34,7 @@
  * @author MokaAkashiyaPT
  * @author Ntunzine
  * @author Paulo Matos <paulo.matos@fct.unl.pt>
+ * @author RodrigoMoreira2008
  * @author Ti4goc
  * @author Vitorvicentevalente
  * @author Waldir
@@ -264,8 +265,8 @@ $html_send_recover = 'Inicie a sessão para recuperar o rascunho perdido!';
 $html_send_discard = 'Clique aqui para ignorar o rascunho guardado.';
 $html_collect_label = 'Recolher automaticamente os endereços de correio eletrónico:';
 $html_collect_option0 = 'Nunca';
-$html_collect_option1 = 'Somente correios eletrónicos enviados';
-$html_collect_option2 = 'Somente correios eletrónicos abertos';
+$html_collect_option1 = 'Apenas de e-mails de saída';
+$html_collect_option2 = 'Apenas de e-mails abertos';
 $html_collect_option3 = 'Sempre';
 $html_version_message1 = 'Estamos a usar a versão mais recente';
 $html_version_message2 = 'Não é possível obter a versão mais recente';

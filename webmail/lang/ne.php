@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3031 2022-10-20 11:12:49Z translatewiki $
+ * @version    SVN: $Id: ne.php 3129 2024-07-04 12:14:21Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -25,6 +25,7 @@
  * @author Bada Kaji
  * @author Krish Dulal
  * @author RajeshPandey
+ * @author पर्वत सुबेदी
  * @author बडा काजी
  * @author राम प्रसाद जोशी
  * @author सरोज कुमार ढकाल
@@ -86,7 +87,7 @@ $html_folders_create_failed = 'फोल्डर श्रृजना गर�
 $html_folders_sub_failed = 'फोल्डरको ग्राह्यता प्राप्त गर्न सकिएन !';
 $html_folders_unsub_failed = 'फोल्डरको ग्राह्यता बदर गर्न सकिएन !';
 $html_folders_rename_failed = 'फोल्डर पुन: नामाकरण गर्न सकिएन !';
-$html_folders_updated = 'फोल्षरहरु पुन: नामाकरण गरिए';
+$html_folders_updated = 'फोल्डरहरू अद्यावधिक गरियो';
 $html_folder_subscribe = 'ग्राह्यता';
 $html_folder_rename = 'पुन: नामाकरण';
 $html_folder_create = 'नाम गरिएको नयाँ फोल्डर श्रृजना गर्ने';

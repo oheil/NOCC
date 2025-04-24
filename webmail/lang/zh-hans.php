@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hans.php 2959 2021-10-07 11:09:16Z translatewiki $
+ * @version    SVN: $Id: zh-hans.php 3112 2024-01-15 12:15:33Z translatewiki $
  */
 /** Simplified Chinese (中文（简体）)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Anterdc99
  * @author Cathypilot0117
  * @author Hydra
  * @author Liu Hong <loyaliu@21cn.com>
@@ -268,3 +269,4 @@ $html_inbox_changed = '您的收件箱的内容已更改';
 $html_inbox_show_alert = '当收件箱中的电子邮件数量更改时显示提示框';
 $lang_horde_require_failed = '未找到 Horde pmap 客户端类';
 $lang_strong_encryption_required = '不允许不安全的加密';
+$html_default = '默认';

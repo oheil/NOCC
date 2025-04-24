@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fa.php 3023 2022-09-12 11:11:56Z translatewiki $
+ * @version    SVN: $Id: fa.php 3127 2024-06-17 12:14:34Z translatewiki $
  */
 /** Persian (فارسی)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Alirezaaa
  * @author Beginneruser
+ * @author Ebrahim
  * @author Ebraminio
  * @author FarsiNevis
  * @author Huji
@@ -83,7 +84,7 @@ $html_reply_leadin_label = 'نتیجه پاسخ:';
 $html_prefs_updated = 'تنطيمات بروز شد';
 $html_manage_folders_link = 'IMAP مدیریت پوشه های';
 $html_manage_filters_link = 'مدیریت فیلترهای ایمیل';
-$html_use_graphical_smilies = 'استفاده از شکلک های گرافیکی';
+$html_use_graphical_smilies = 'استفاده از شکلک‌های گرافیکی';
 $html_sent_folder_label = 'کپی ایمیل‌های ارسال شده به پوشه اختصاصی:';
 $html_trash_folder_label = 'انتقال ایمیل‌های حذف شده به پوشه اختصاصی:';
 $html_colored_quotes = 'نقل‌قول رنگی';
@@ -94,7 +95,7 @@ $html_folders_create_failed = 'شاخه نمىتواند ايجاد شود';
 $html_folders_sub_failed = 'نمی‌تواند پوشه را تصدیق کند!';
 $html_folders_unsub_failed = 'نمی‌تواند بدون تصدیق از پوشه!';
 $html_folders_rename_failed = 'شاخه نمىتواند تغيير نام يابد';
-$html_folders_updated = 'شاخه ها بروز شدند';
+$html_folders_updated = 'شاخه‌ها بروز شدند';
 $html_folder_subscribe = 'اشتراک در';
 $html_folder_rename = 'تغيير نام';
 $html_folder_create = 'ساختن شاخه جديد صدا شد';
@@ -217,7 +218,7 @@ $html_contact_list = 'فهرست تماس %1$s';
 $html_contact_del = 'از لیست تماس';
 $html_contact_count = '%1$d تماس‌ها';
 $html_contact_err1 = 'حداکثر تعداد تماس "%1$d"';
-$html_contact_err2 = 'شما نمی توانید یک تماس جدید را اضافه کنید';
+$html_contact_err2 = 'شما نمی‌توانید یک تماس جدید را اضافه کنید';
 $html_contact_err3 = 'شما حقوق دسترسی به لیست تماس ندارد';
 $html_contact_none = 'هیچ تماسی یافت نشده است.';
 $html_contact_ruler_top = 'بالا';
@@ -229,7 +230,7 @@ $html_del_msg = 'پاک کردن پيغامهاى انتخاب شده';
 $html_down_mail = 'دریافت';
 $original_msg = '--پیام اصلی--';
 $to_empty = 'بخش \'به\' نبایدخالی باشد!';
-$html_images_warning = 'برای امنیت بیشتر خود ، ورود از راه دور نشان داده نمی شوند.';
+$html_images_warning = 'برای امنیت بیشتر خود، ورود از راه دور نشان داده نمی‌شوند.';
 $html_images_display = 'نمایش تصاویر';
 $html_smtp_error_no_conn = 'نمىتوانم اتصال SMTP را باز کنم';
 $html_smtp_error_unexpected = 'جواب غير قابل انتظار SMTP:';

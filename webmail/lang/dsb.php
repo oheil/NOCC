@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: dsb.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: dsb.php 3086 2023-05-25 11:13:58Z translatewiki $
  */
 /** Lower Sorbian (dolnoserbski)
  * 
@@ -73,6 +73,7 @@ $html_manage_filters_link = 'E-mailowe filtry zastojaś';
 $html_use_graphical_smilies = 'Grafiske smějacki wužywaś';
 $html_sent_folder_label = 'Pósłane e-maile do póstajonego zarědnika kopěrowaś:';
 $html_trash_folder_label = 'Wulašowane e-maile do póstajonego zarědnika pśesunuś:';
+$html_inbox_folder_label = 'Menijowy zapisk dochada posta ze zarědnikom zwězaś:';
 $html_colored_quotes = 'Barwojte citaty';
 $html_display_struct = 'Strukturěrowany tekst zwobrazniś';
 $html_send_html_mail = 'E-mail w HTML-formaśe pósłaś';
@@ -143,7 +144,7 @@ $html_date = 'Datum';
 $html_date_label = 'Datum:';
 $html_sent_label = 'Pósłany:';
 $html_wrote = 'jo napisał';
-$html_quote_wrote = '%1$s jo %2$s napisał:';
+$html_quote_wrote = '%1$s %2$s jo %3$s napisał:';
 $html_size = 'Wjelikosć';
 $html_totalsize = 'Cełkowna wjelikosć';
 $html_kb = 'KB';
@@ -207,6 +208,13 @@ $html_contact_err1 = 'Maksimalna licba kontaktow jo "%1$d"';
 $html_contact_err2 = 'Njamóžoš nowy kontakt pśidaś';
 $html_contact_err3 = 'Njamaš pśistupne pšawa za lisćinu kontaktow';
 $html_contact_none = 'Njejo móžno było kontakty namakaś.';
+$html_contact_ruler_top = 'Górjejce';
+$html_contact_listcheck_title = 'Markěrowaś, aby se mejlka lisćinje pśidała.';
+$html_contact_list_add = 'Lisćinje pśidaś';
+$html_contact_listname = 'Mě lisćiny';
+$html_contact_listonly = 'Jano lisćiny';
+$html_contact_all = 'Wšykne pokazaś';
+$html_contact_add_confirm = 'Mejlki k eksistěrujcej lisćinje pśipowjesyś?';
 $html_del_msg = 'Wubrane powěsći lašowaś?';
 $html_down_mail = 'Ześěgnuś';
 $original_msg = '-- Originalna powěsć --';
@@ -229,9 +237,27 @@ $lang_err_send_delay = 'Musyš mjazy dwěma e-mailoma cakaś (%1$d sekundow)';
 $html_search = 'Pytaś';
 $html_new_session = 'Pśiduce pósejźenje';
 $html_fd_filename = '%1$s ześěgnuś';
-$html_fd_mailcount = '{{PLURAL:%1$d|Jo %1$d mailka|Stej %1$d mailce|Su %1$d mailki|Jo %1$d mailkow}} w zarědniku.';
+$html_fd_mailcount = '{{PLURAL:$1|0=Jo žedna mejlka|1=Je %1$d mejlka|2=Stej %1$d mejlce|3=Su %1$d mejlki|Jo %1$d mejlkow}} w zarědniku.';
 $html_fd_mailskip = 'Slědujuce mailki njebudu źěl mbox-dataje, dokulaž budu memory_limit PHP pśekšacowaś:';
 $html_fd_filesize = 'wjelikosć %1$d';
 $html_fd_skipcount = 'z %1$d mailkami';
 $html_fd_largefolder = 'We wótwisnosći wót twójeje ześěgnjeńskeje malsnosći, njeby se toś to ześěgnjenje pśekšocenja skriptowego casa dla  raźiło.<br />Pšosym pśeglědajśo swój ześěgnjenje za dopołnosću abo stajśo max_execution_time w php.ini na wušu gódnotu.';
 $reset_clicked = 'Cośo napšawdu toś ten formular prozniś?';
+$html_send_recover = 'Pśizjawśo se, aby zgubjone nacerjenje wótnowił!';
+$html_send_discard = 'Klikniśo how, aby skłaźone nacerjenje zachyśił.';
+$html_collect_label = 'E-mailowe adrese awtomatiski gromaźiś:';
+$html_collect_option0 = 'Nigda';
+$html_collect_option1 = 'Jano z wuchadajucych mejlkow';
+$html_collect_option2 = 'Jano z wócynjonych mejlkow';
+$html_collect_option3 = 'Pśecej';
+$html_version_message1 = 'Wužywamy nejnowšu wersiju';
+$html_version_message2 = 'Nejnowša wersija njedajo se wótwołaś';
+$html_version_message3 = 'Nowa wersija jo k dispoziciji';
+$html_session_expired = 'Toś to pósejźenje jo wótběgnuło';
+$html_session_ip_changed = 'změny klientowego IP dla';
+$html_session_expire_time = 'Toś to pósejźenje awtomatiski slědujucy casowy dypk wótběgnjo:';
+$html_inbox_changed = 'Wopśimjeśe wašogo dochada posta jo se změniło';
+$html_inbox_show_alert = 'Powěźeńku pokazaś, gaž se licba mejlkow w dochaźe posta změnja';
+$lang_horde_require_failed = 'Klasa Imap-klienta Horde njejo se namakała';
+$lang_strong_encryption_required = 'Njewěste koděrowanje njejo dowólone';
+$html_default = 'Standard';

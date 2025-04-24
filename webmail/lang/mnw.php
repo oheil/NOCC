@@ -14,7 +14,7 @@
  * @license    http://www.gnu.org/licenses/ GNU General Public License
  * @version    SVN: $Id: $
  */
-/** Mon (ဘာသာ မန်)
+/** Mon (ဘာသာမန်)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net
@@ -24,6 +24,7 @@
  *
  * @author Aue Nai
  * @author Iriman
+ * @author 咽頭べさ
  */
 
 $alt_next = 'ဂတ';
@@ -70,7 +71,7 @@ $html_view_header = 'ဗဵု က္ဍိုပ်';
 $html_remove_header = 'ဗဒန် က္ဍိုပ်';
 $html_inbox = 'ပ္ဍဲကဠာ';
 $html_new_msg = 'ချူ';
-$html_reply = 'ကလေၚ်';
+$html_reply = 'ကလေၚ်သွဟ်';
 $html_reply_short = 'ကလေၚ်:';
 $html_reply_all = 'ကလေၚ်ဏာဖအိုတ်';
 $html_delete = 'ပလီု';

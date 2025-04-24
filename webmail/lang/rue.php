@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: rue.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: rue.php 3137 2024-10-07 12:12:49Z translatewiki $
  */
 /** Rusyn (русиньскый)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Constraque
  * @author Gazeb
  */
 
@@ -52,7 +53,7 @@ $html_help = 'Поміч';
 $html_server_label = 'Сервер:';
 $html_wrong = 'Лоґін або гесло ся не згодує';
 $html_retry = 'Повторити';
-$html_remember = 'Памятати наштелёваня';
+$html_remember = 'Памятати наставлїня';
 $html_lang_label = 'Язык:';
 $html_msgperpage_label = 'Повідомлїнь на сторінку:';
 $html_preferences = 'Наставлїня';
@@ -67,7 +68,7 @@ $html_use_signature = 'Хосновати підпис';
 $html_signature = 'Підпис';
 $html_signature_label = 'Підпис:';
 $html_reply_leadin_label = 'Головка одповідї:';
-$html_prefs_updated = 'Наштелёваня актуалізоване';
+$html_prefs_updated = 'Наставлїня актуалізоване';
 $html_manage_folders_link = 'Адміністровати IMAP адресарї';
 $html_manage_filters_link = 'Адміністровати імейловы філтры';
 $html_use_graphical_smilies = 'Хосновати ґрафічных смішків';

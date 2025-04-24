@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3056 2023-03-02 12:15:27Z translatewiki $
+ * @version    SVN: $Id: lb.php 3146 2025-01-13 12:12:21Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -44,7 +44,7 @@ $title_next_page = 'Nächst Säit';
 $title_prev_page = 'Vireg Säit';
 $title_next_msg = 'Nächste Message';
 $title_prev_msg = 'Virege Message';
-$html_theme_label = 'Thema:';
+$html_theme_label = 'Theema:';
 $html_welcome = 'Wëllkomm op %1$s';
 $html_login = 'Aloggen';
 $html_user_label = 'Benotzer:';
@@ -115,7 +115,7 @@ $html_totalsize = 'Gesamtgréisst';
 $html_kb = 'KB';
 $html_mb = 'MB';
 $html_gb = 'GB';
-$html_bytes = 'Byten';
+$html_bytes = 'Byte';
 $html_filename = 'Numm vum Fichier';
 $html_nosubject = 'Kee Sujet';
 $html_send = 'Schécken';
@@ -147,7 +147,7 @@ $html_unread = 'net gelies';
 $html_add = 'Derbäisetzen';
 $html_contacts = 'Kontakten';
 $html_modify = 'Änneren';
-$html_back = 'Zréck';
+$html_back = 'Zeréck';
 $html_contact_add = 'Neie Kontakt derbäisetzen';
 $html_contact_mod = 'E Kontakt änneren';
 $html_contact_first = 'Virnumm';
@@ -160,6 +160,8 @@ $html_contact_count = '%1$d Kontakten';
 $html_contact_err2 = 'Dir kënnt keen neie Kontakt derbäisetzen';
 $html_contact_none = 'Et konnte keng Kontakte fonnt ginn.';
 $html_contact_ruler_top = 'Uewen';
+$html_contact_list_add = 'Op d\'Lëscht derbäisetzen';
+$html_contact_listonly = 'Nëmme Lëschten';
 $html_contact_all = 'Alles weisen';
 $html_del_msg = 'Den erausgesichte Message läschen?';
 $html_down_mail = 'Eroflueden';

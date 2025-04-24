@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sk.php 2954 2021-07-29 11:10:01Z translatewiki $
+ * @version    SVN: $Id: sk.php 3152 2025-02-24 12:12:35Z translatewiki $
  */
 /** Slovak (slovenčina)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Helix84
  * @author Mikulas1
+ * @author Oujon
  * @author Peter Sochna <sochna@telecom.sk>
  * @author Yardom78
  */
@@ -264,3 +265,4 @@ $html_inbox_changed = 'Obsah Vášho priečinka s doručenou poštou sa zmenil';
 $html_inbox_show_alert = 'Zobraziť upozornenie keď sa určitý počet mailov v doručenej pošte zmení';
 $lang_horde_require_failed = 'Nenašlo sa Horde pmap client class';
 $lang_strong_encryption_required = 'Nie je povolené nezabezpečené kódovanie';
+$html_default = 'Predvolené';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ta.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ta.php 3110 2023-12-25 12:18:20Z translatewiki $
  */
 /** Tamil (தமிழ்)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Fahimrazick
  * @author Kanags
  * @author Naveen
  * @author Rakeshonwiki
@@ -66,11 +67,11 @@ $html_email_address_label = 'மின்னஞ்சல் முகவரி:'
 $html_bccself = 'Bcc self';
 $html_hide_addresses = 'முகவரியை மறை';
 $html_outlook_quoting = 'அவுட்லுக் மாதிரி அமை';
-$html_reply_to = 'இந்த முகவரிக்கு பதில் அளி';
+$html_reply_to = 'இந்த முகவரிக்குப் பதிலளி';
 $html_use_signature = 'கையெழுத்தை பயன்படுத்து';
 $html_signature = 'கையெழுத்து';
 $html_signature_label = 'கையெழுத்து  :';
-$html_reply_leadin_label = 'பதில் அளி  :';
+$html_reply_leadin_label = 'பதிலளி:';
 $html_prefs_updated = 'விருப்பத்தேர்வுகள் புதுபிக்கப்பட்டது';
 $html_manage_folders_link = 'ஐமாப் உறைகளை நிர்வாகி';
 $html_manage_filters_link = 'மின் அஞ்சல் வடிகட்டிகளை நிர்வாகி';
@@ -90,9 +91,9 @@ $html_folder_subscribe = 'சந்தா செய்';
 $html_folder_rename = 'பெயர் மாற்றம் செய்';
 $html_folder_create = 'புதிய உறையை குறிபிடப்படும் பெயரில் உருவாக்கு';
 $html_folder_remove = 'பதிவு நீக்கம் செய்';
-$html_folder_delete = 'நீக்கவும்';
+$html_folder_delete = 'நீக்கு';
 $html_folder_to = 'அனுப்புனர் முகவரி';
-$html_filter_remove = 'நீக்கவும்';
+$html_filter_remove = 'நீக்கு';
 $html_filter_body = 'செய்தியின் மூல பகுதி';
 $html_filter_subject = 'தகவலின் பொருள்';
 $html_filter_to = 'பெறுநரின் முகவரி பகுதி';
@@ -120,15 +121,15 @@ $html_view_header = 'வழிகாட்டியை பார்வையி�
 $html_remove_header = 'வழிகாட்டியை மறை';
 $html_inbox = 'மின் அஞ்சல்கள் வரும் பெட்டி';
 $html_new_msg = 'எழுது';
-$html_reply = 'பதில் அளி';
+$html_reply = 'பதிலளி';
 $html_reply_short = 'பதில்:';
-$html_reply_all = 'எல்லோருக்கும் பதில் அளி';
+$html_reply_all = 'யாவருக்கும் பதிலளி';
 $html_forward = 'எல்லோருக்கும் மாற்றம் செய்யாமல் அனுப்பு';
 $html_forward_short = 'எல்லோருக்கும் மாற்றம் செய்யாமல் அனுப்பு  :';
 $html_forward_info = 'எல்லோருக்கும் மாற்றம் செய்யாமல் அனுப்பப்படும் தகவல் இதற்கு இணைப்பாக அனுப்பபடும்';
-$html_delete = 'அழி';
+$html_delete = 'நீக்கு';
 $html_new = 'புதிய';
-$html_mark = 'அழி';
+$html_mark = 'நீக்கு';
 $html_att_label = 'இணைப்பு';
 $html_atts_label = 'இணைப்புகள்';
 $html_unknown = '[அறியாத]';
@@ -196,7 +197,7 @@ $html_encoding_label = 'எழுத்து குறியேற்றம்'
 $html_add = 'சேறு';
 $html_contacts = '%1$s தொடர்புகள்';
 $html_modify = 'திருத்தம் செய்';
-$html_back = 'பின் செல்';
+$html_back = 'பின்னே';
 $html_contact_add = 'புதிய தொடர்பை சேறு';
 $html_contact_mod = 'தொடர்பை திருத்தம் செய்';
 $html_contact_first = 'முதல் (தங்கள்) பெயர்';

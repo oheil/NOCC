@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ms.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ms.php 3132 2024-08-26 12:12:27Z translatewiki $
  */
 /** Malay (Bahasa Melayu)
  * 
@@ -23,6 +23,7 @@
  * @file
  *
  * @author Anakmalaysia
+ * @author Hakimi97
  * @author Tofeiku
  * @author Zamwan
  */
@@ -113,7 +114,7 @@ $html_messages_to = 'pesanan-pesanan yang terpilih ke';
 $html_gotopage = 'Pergi ke Halaman';
 $html_gotofolder = 'Pergi ke Folder';
 $html_other_folders = 'Senarai Folder';
-$html_page = 'Halaman';
+$html_page = 'Laman';
 $html_of = 'daripada';
 $html_view_header = 'Paparkan pengatas';
 $html_remove_header = 'Sorokkan pengatas';
@@ -259,6 +260,7 @@ $html_session_expired = 'Sesi anda telah habis tempoh';
 $html_session_ip_changed = 'kerana perubahan IP pelanggan';
 $html_session_expire_time = 'Sesi ini habis tempoh secara automatik pada';
 $html_inbox_changed = 'Kandungan peti masuk anda telah diubah';
-$html_inbox_show_alert = 'Tunjukkan peti amaran apabila bilangan e-mel dalam peti masuk berubah';
+$html_inbox_show_alert = 'Tunjukkan kotak peringatan apabila bilangan e-mel dalam peti masuk berubah';
 $lang_horde_require_failed = 'Kelas pelanggan pmap horde tidak dijumpai';
 $lang_strong_encryption_required = 'Penyulitan tidak selamat tidak dibenarkan';
+$html_default = 'Lalai';

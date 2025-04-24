@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ro.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ro.php 3154 2025-03-13 12:12:38Z translatewiki $
  */
 /** Romanian (română)
  * 
@@ -27,6 +27,7 @@
  * @author Minisarm
  * @author Nicu Buculei <nicubunu@yahoo.com>
  * @author Stelistcristi
+ * @author Valentin JJ.
  */
 
 $lang_locale = 'ro_RO.UTF-8';
@@ -48,7 +49,7 @@ $title_prev_page = 'Precedenta pagină';
 $title_next_msg = 'Mesaj urmator';
 $title_prev_msg = 'Mesaj anterior';
 $html_theme_label = 'Tema:';
-$html_welcome = 'Bun venit la %1$s';
+$html_welcome = 'Bun-venit la %1$s';
 $html_login = 'Autentificare';
 $html_user_label = 'Utilizator:';
 $html_passwd_label = 'Parola:';
@@ -156,3 +157,4 @@ $original_msg = '-- Mesaj original --';
 $to_empty = 'Campul \'To\' nu poate fi gol !';
 $html_smtp_error_no_conn = 'Nu se poate deschide conexiunea';
 $html_smtp_error_unexpected = 'Raspuns neasteptate:';
+$html_session_expired = 'Sesiunea dvs. a expirat';

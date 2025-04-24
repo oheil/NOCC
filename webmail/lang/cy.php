@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: cy.php 2950 2021-06-03 13:22:54Z translatewiki $
+ * @version    SVN: $Id: cy.php 3131 2024-08-19 12:14:19Z translatewiki $
  */
 /** Welsh (Cymraeg)
  * 
@@ -22,6 +22,8 @@
  * @ingroup Language
  * @file
  *
+ * @author Afalau
+ * @author Ceirios
  * @author Lloffiwr
  * @author Pwyll
  * @author Robin Owain
@@ -264,3 +266,4 @@ $html_session_expire_time = 'Mae\'r sesiwn yma\'n dod i ben yn awtomatig am';
 $html_inbox_changed = 'Mae cynnwys eich blwch derbyn wedi newid';
 $html_inbox_show_alert = 'Dangos blwch rhybuddio pan fydd nifer yr ebyst yn y blwch derbyn yn newid';
 $lang_strong_encryption_required = 'Ni chaniateir amgryptiad anniogel';
+$html_default = 'Diofyn';

@@ -14,7 +14,7 @@
  * @license    http://www.gnu.org/licenses/ GNU General Public License
  * @version    SVN: $Id: $
  */
-/** Shan (ၽႃႇသႃႇတႆး )
+/** Shan (တႆး)
  * 
  * See the qqq 'language' for message documentation incl. usage of parameters
  * To improve a translation please visit https://translatewiki.net

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: hu.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: hu.php 3117 2024-02-26 12:14:50Z translatewiki $
  */
 /** Hungarian (magyar)
  * 
@@ -269,4 +269,5 @@ $html_session_ip_changed = 'mert a kliens IP címe megváltozott';
 $html_session_expire_time = 'A munkamenet automatikusan lejár';
 $html_inbox_changed = 'A postafiók tartalma megváltozott';
 $html_inbox_show_alert = 'Jelezze, ha a postafiókban az emailek száma megváltozik';
+$lang_strong_encryption_required = 'Nem biztonságos rejtjelezés nem engedélyezett';
 $html_default = 'Alapértelmezett';

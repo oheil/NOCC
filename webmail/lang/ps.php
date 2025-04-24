@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: ps.php 3156 2025-04-17 12:12:27Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -23,6 +23,7 @@
  * @file
  *
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ * @author شاه زمان پټان
  */
 
 $default_date_format = '%Y-%m-%d';
@@ -57,13 +58,14 @@ $html_lang_label = 'ژبه:';
 $html_msgperpage_label = 'په يوه مخ د پيغامونو شمېر:';
 $html_preferences = 'غوره توبونه';
 $html_full_name_label = 'بشپړ نوم:';
-$html_email_address_label = 'برېښليک پته:';
+$html_email_address_label = 'برېښليک‌پته:';
 $html_hide_addresses = 'پتې پټول';
 $html_reply_to = 'ځواب اخيستونکی';
 $html_reply_to_label = 'ځواب اخيستونکی:';
 $html_use_signature = 'لاسليک کارول';
 $html_signature = 'لاسليک';
 $html_signature_label = 'لاسليک:';
+$html_manage_filters_link = ' برېښليک چاڼگرې ترتيبول';
 $html_use_graphical_smilies = 'گرافيکي موسکاگانې کارول';
 $html_colored_quotes = 'رنګينې وراشې';
 $html_send_html_mail = 'برېښليک د HTML په بڼه لېږل';
@@ -181,7 +183,7 @@ $html_down_mail = 'ښکته کول';
 $original_msg = '-- آرنی پيغام --';
 $html_images_display = 'انځورونه ښکاره کول';
 $lang_invalid_msg_num = 'د بد پيغام شمېر';
-$html_invalid_email_address = 'ناسمه برېښليک پته';
+$html_invalid_email_address = 'ناسمه برېښليک‌پته';
 $html_search = 'پلټل';
 $html_fd_filename = '%1$s ښکته کول';
 $html_collect_option0 = 'هېڅکله';

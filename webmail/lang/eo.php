@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: eo.php 3003 2022-03-28 11:11:38Z translatewiki $
+ * @version    SVN: $Id: eo.php 3107 2023-11-30 12:15:19Z translatewiki $
  */
 /** Esperanto (Esperanto)
  * 
@@ -26,6 +26,7 @@
  * @author Mirin
  * @author Robin van der Vliet
  * @author Yekrats
+ * @author Ziko
  */
 
 $default_date_format = '%Y-%m-%d';
@@ -263,3 +264,4 @@ $html_inbox_changed = 'Ŝanĝiĝis la enhavo de via enirkesto';
 $html_inbox_show_alert = 'Montri atentigan skatolon se ŝanĝiĝas la nombro de retmesaĝoj en la enirkesto';
 $lang_horde_require_failed = 'Horde pmap-klientklaso ne trovita';
 $lang_strong_encryption_required = 'Malsekura ĉifrado ne estas permesita';
+$html_default = 'Defaŭlta';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 2959 2021-10-07 11:09:16Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3155 2025-03-31 12:12:54Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -139,7 +139,7 @@ $html_attach = 'Далучыць';
 $html_attach_forget = 'Вы павінны далучыць Ваш файл перад дасылкай Вашага паведамленьня!';
 $html_attach_delete = 'Выдаліць выбраныя';
 $html_attach_none = 'Вам неабходна выбраць файл для далучэньня!';
-$html_sort_by = 'Сартаваць па';
+$html_sort_by = 'Сартаваць паводле';
 $html_sort = 'Сартаваць';
 $html_from = 'Ад';
 $html_from_label = 'Ад:';
@@ -265,3 +265,4 @@ $html_inbox_changed = 'Зьмест вашай скрыні зьмяніўся';
 $html_inbox_show_alert = 'Паказваць акно з паведамленьнем, калі колькасьць лістоў у скрыні зьмяняецца';
 $lang_horde_require_failed = 'Ня знойдзены кляс pmap-кліента Horde';
 $lang_strong_encryption_required = 'Небясьпечнае шыфраваньне недапушчальнае';
+$html_default = 'Дапомна';

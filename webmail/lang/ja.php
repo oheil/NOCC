@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ja.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: ja.php 3085 2023-05-08 11:20:38Z translatewiki $
  */
 /** Japanese (日本語)
  * 
@@ -226,8 +226,8 @@ $lang_could_not_connect = 'サーバーに接続できません。';
 $lang_invalid_msg_num = '間違ったメッセージ番号';
 $html_file_upload_attack = 'ファイルアップロード攻撃の可能性';
 $html_invalid_email_address = '無効なメールアドレスです。';
-$html_invalid_msg_per_page = '不正なページ中メッセージ番号です。';
-$html_invalid_wrap_msg = '不正なメッセージ折り返し幅です。';
+$html_invalid_msg_per_page = '無効なページ内メッセージ数です。';
+$html_invalid_wrap_msg = '無効なメッセージ折り返し幅です。';
 $html_seperate_msg_win = '分離ウィンドウのメッセージ';
 $html_err_file_contacts = 'アドレス帳を書き込むためにファイルを開けませんでした。';
 $html_session_file_error = 'セッションファイルを書き込みのために開くことができません。';

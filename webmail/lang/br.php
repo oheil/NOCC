@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: br.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: br.php 3083 2023-04-13 11:15:35Z translatewiki $
  */
 /** Breton (brezhoneg)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Adriendelucca
  * @author Fohanno
  * @author Fulup
  * @author Gwenn-Ael
@@ -264,3 +265,4 @@ $html_inbox_changed = 'Kemmet eo bet danvez ho poest-degemer';
 $html_inbox_show_alert = 'Diskouez ur c\'hemenn-diwall pa cheñch an niver a bosteloù er voest-degemer';
 $lang_horde_require_failed = 'N\'eo ket bet kavet kevrennad arval pmap Horde';
 $lang_strong_encryption_required = 'N\'eo ket aotreet ar sifradur amsur';
+$html_default = 'Dre ziouer';

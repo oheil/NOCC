@@ -23,6 +23,7 @@
  * @file
  *
  * @author Ajeje Brazorf
+ * @author GianAntonucci
  * @author Sarvaturi
  */
 
@@ -87,7 +88,7 @@ $html_contact_list_add = 'Agghiunci a l\'elencu';
 $html_contact_listname = 'Nomu di l\'elencu';
 $html_contact_all = 'Ammustra tuttu';
 $html_down_mail = 'Scàrrica';
-$html_search = 'Arricerca';
+$html_search = 'Riscedi';
 $html_fd_filename = 'Scàrrica %1$s';
 $html_collect_option0 = 'Mai';
 $html_collect_option3 = 'Sempri';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: hsb.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: hsb.php 3086 2023-05-25 11:13:58Z translatewiki $
  */
 /** Upper Sorbian (hornjoserbsce)
  * 
@@ -74,6 +74,7 @@ $html_manage_filters_link = 'E-mejlowe filtry zrjadować';
 $html_use_graphical_smilies = 'Grafiske smějački wužiwać';
 $html_sent_folder_label = 'Pósłane e-mejle do postajeneho rjadowaka kopěrować:';
 $html_trash_folder_label = 'Zničene e-mejle do postajeneho přesunyć:';
+$html_inbox_folder_label = 'Menijowy zapisk dochada pósta z rjadowakom zwjazać:';
 $html_colored_quotes = 'Barbne citaty';
 $html_display_struct = 'Strukturowany tekst zwobraznić';
 $html_send_html_mail = 'E-mejl w HTML-formaće pósłać';
@@ -237,7 +238,7 @@ $lang_err_send_delay = 'Dyrbiš mjez dwěmaj e-mejlomaj čakać (%1$d {{PLURAL:%
 $html_search = 'Pytać';
 $html_new_session = 'Přichodne posedźenje';
 $html_fd_filename = '%1$s sćahnyć';
-$html_fd_mailcount = '{{PLURAL:%1$d|Je 0=Je žana mejlka|1=Je %1$d mejlka|2=Stej %1$d mejlce|3=Su %1$d mejlki|Je %1$d emejlkow}} w rjadowaku.';
+$html_fd_mailcount = '{{PLURAL:$1|Je 0=Je žana mejlka|1=Je %1$d mejlka|2=Stej %1$d mejlce|3=Su %1$d mejlki|Je %1$d mejlkow}} w rjadowaku.';
 $html_fd_mailskip = 'Slědowace e-mejlki njebudu dźěl mbox-dataje, dokelž budu memory_limit PHP překročować:';
 $html_fd_filesize = 'wulkosć %1$d';
 $html_fd_skipcount = 'z %1$d e-mejlkami';
@@ -250,3 +251,14 @@ $html_collect_option0 = 'Ženje';
 $html_collect_option1 = 'Jenož z wuchadźacych e-mejlkow';
 $html_collect_option2 = 'Jenož z wočinjenych e-mejlkow';
 $html_collect_option3 = 'Přeco';
+$html_version_message1 = 'Wužiwamy najnowšu wersiju';
+$html_version_message2 = 'Najnowša wersija njeda so wotwołać';
+$html_version_message3 = 'Nowa wersija je k dispoziciji';
+$html_session_expired = 'Tute posedźenje je wotběžało';
+$html_session_ip_changed = 'změny klientoweho IP dla';
+$html_session_expire_time = 'Tute posedźenje awtomatisce slědowacy časowy dypk wotbězi:';
+$html_inbox_changed = 'Wobsah wašeho dochada pósta je so změnił';
+$html_inbox_show_alert = 'Zdźělenku pokazać, hdyž so ličba mejlkow w dochadźe pósta měnja';
+$lang_horde_require_failed = 'Klasa Imap-klienta Horde njeje so namakała';
+$lang_strong_encryption_required = 'Njewěste zaklučowanje dowolene njeje';
+$html_default = 'Standard';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: it.php 3051 2023-02-27 12:10:54Z translatewiki $
+ * @version    SVN: $Id: it.php 3147 2025-01-23 12:11:40Z translatewiki $
  */
 /** Italian (italiano)
  * 
@@ -29,6 +29,7 @@
  * @author Francesco Andreozzi <ozzo@lauratiamo.it>
  * @author Gianfranco
  * @author Guido Venturini <guido@technojuice.com>
+ * @author LametinoWiki
  * @author Lucas2
  * @author Nastoshka
  * @author Ontsed
@@ -174,7 +175,7 @@ $html_nosubject = 'Nessun oggetto';
 $html_send = 'Invia';
 $html_cancel = 'Annulla';
 $html_no_mail = 'Nessun messaggio.';
-$html_logout = 'Disconnetti';
+$html_logout = 'Esci';
 $html_msg = 'Messaggio';
 $html_msgs = 'Messaggi';
 $html_configuration = 'Questo server non è configurato correttamente!';
@@ -273,3 +274,4 @@ $html_inbox_changed = 'Il contenuto della tua posta in arrivo è cambiato';
 $html_inbox_show_alert = 'Mostra una finestra di avviso quando il numero delle e-mail cambia';
 $lang_horde_require_failed = 'Classe client horde pmap non trovata';
 $lang_strong_encryption_required = 'La crittografia non sicura non è permessa';
+$html_default = 'Predefinito';
