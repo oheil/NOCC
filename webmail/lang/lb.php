@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3146 2025-01-13 12:12:21Z translatewiki $
+ * @version    SVN: $Id: lb.php 3158 2025-05-12 12:14:29Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -59,7 +59,7 @@ $html_lang_label = 'Sprooch:';
 $html_msgperpage_label = 'Message pro Säit:';
 $html_preferences = 'Astellungen';
 $html_full_name_label = 'Ganzen Numm:';
-$html_email_address_label = 'E-Mailadress:';
+$html_email_address_label = 'E-Mail-Adress:';
 $html_hide_addresses = 'Adresse verstoppen';
 $html_use_signature = 'Ënnerschrëft benotzen';
 $html_signature = 'Ënnerschrëft';
@@ -153,7 +153,7 @@ $html_contact_mod = 'E Kontakt änneren';
 $html_contact_first = 'Virnumm';
 $html_contact_last = 'Familljennumm';
 $html_contact_nick = 'Spëtznumm';
-$html_contact_mail = 'E-Mailadress';
+$html_contact_mail = 'E-Mail-Adress';
 $html_contact_list = 'Kontakt-Lëscht vum %1$s';
 $html_contact_del = 'vun der Kontaktlëscht';
 $html_contact_count = '%1$d Kontakten';
@@ -171,7 +171,7 @@ $html_smtp_error_no_conn = 'D\'SMTP Verbindung konnt net opgemaach ginn';
 $html_smtp_error_unexpected = 'Onerwarten SMTP-Äntwert:';
 $lang_could_not_connect = 'De Server konnt net erreecht ginn';
 $lang_invalid_msg_num = 'Falsche Nummer vum Messsage';
-$html_invalid_email_address = 'Net valabel e-Mailadress';
+$html_invalid_email_address = 'Ongülteg E-Mail-Adress';
 $html_seperate_msg_win = 'Messagen a separate Fënsteren';
 $lang_err_send_delay = 'Dir musst tëschent 2 Maile waarden (%1$d Sekonnen)';
 $html_search = 'Sichen';
