@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: hu.php 3117 2024-02-26 12:14:50Z translatewiki $
+ * @version    SVN: $Id: hu.php 3160 2025-06-05 12:17:03Z translatewiki $
  */
 /** Hungarian (magyar)
  * 
@@ -269,5 +269,6 @@ $html_session_ip_changed = 'mert a kliens IP címe megváltozott';
 $html_session_expire_time = 'A munkamenet automatikusan lejár';
 $html_inbox_changed = 'A postafiók tartalma megváltozott';
 $html_inbox_show_alert = 'Jelezze, ha a postafiókban az emailek száma megváltozik';
+$lang_horde_require_failed = 'Horde pmap kliens osztály nem található';
 $lang_strong_encryption_required = 'Nem biztonságos rejtjelezés nem engedélyezett';
 $html_default = 'Alapértelmezett';

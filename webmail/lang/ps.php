@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 3156 2025-04-17 12:12:27Z translatewiki $
+ * @version    SVN: $Id: ps.php 3161 2025-06-09 12:14:00Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -79,7 +79,7 @@ $html_folder_delete = 'ړنگول';
 $html_folder_to = 'ترلاسه کوونکی';
 $html_filter_remove = 'ړنگول';
 $html_filter_body = 'د پيغام جوسه';
-$html_filter_subject = 'د پيغام موضوع';
+$html_filter_subject = 'د پيغام سکالو';
 $html_filter_to = 'اخيستونکی ډاگ';
 $html_filter_from = 'استونکی ډاگ';
 $html_filter_contains = 'مېنځپانگه';
