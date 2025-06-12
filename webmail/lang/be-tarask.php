@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3155 2025-03-31 12:12:54Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3162 2025-06-12 12:14:34Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -57,7 +57,7 @@ $html_help = 'Дапамога';
 $html_server_label = 'Сэрвэр:';
 $html_wrong = 'Імя карыстальніка альбо пароль ня слушны';
 $html_retry = 'Паспрабаваць ізноў';
-$html_remember = 'Запомніць настройкі';
+$html_remember = 'Запомніць мяне';
 $html_lang_label = 'Мова:';
 $html_msgperpage_label = 'Паведамленьняў на старонцы:';
 $html_preferences = 'Налады';
@@ -87,7 +87,7 @@ $html_folders_create_failed = 'Немагчыма стварыць папку!';
 $html_folders_sub_failed = 'Немагчыма далучыць папку!';
 $html_folders_unsub_failed = 'Немагчыма адлучыць папку!';
 $html_folders_rename_failed = 'Немагчыма перайменаваць папку!';
-$html_folders_updated = 'Папкі абноўлены';
+$html_folders_updated = 'Папкі абноўленыя';
 $html_folder_subscribe = 'Падпісацца на';
 $html_folder_rename = 'Перайменаваць';
 $html_folder_create = 'Стварыць новую папку';
