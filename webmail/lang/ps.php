@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 3161 2025-06-09 12:14:00Z translatewiki $
+ * @version    SVN: $Id: ps.php 3164 2025-06-26 12:14:55Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -53,7 +53,7 @@ $html_help = 'لارښود';
 $html_server_label = 'پالنگر:';
 $html_wrong = 'د ننوتلو نوم يا پټنوم مو سم نه دی';
 $html_retry = 'بيا هڅه کول';
-$html_remember = 'امستنې په ياد ساتل';
+$html_remember = 'اوڼنې ياد ساتل';
 $html_lang_label = 'ژبه:';
 $html_msgperpage_label = 'په يوه مخ د پيغامونو شمېر:';
 $html_preferences = 'غوره توبونه';
@@ -170,7 +170,7 @@ $html_contact_mail = 'برېښليک';
 $html_contact_list = 'د %1$s د اړيکو لړليک';
 $html_contact_del = 'د اړيکو له لړليک نه';
 $html_contact_count = 'د %1$d اړيکې';
-$html_contact_err1 = 'د اړيکو حد اکثر شمېر "%1$d"';
+$html_contact_err1 = 'د اړيکو ډېر تر ډېره شمېر "%1$d"';
 $html_contact_err2 = 'تاسې يوه نوې اړيکه نه شی ورګډولای';
 $html_contact_none = 'هېڅ اړيکې و نه موندل شوې.';
 $html_contact_ruler_top = 'پورته';
