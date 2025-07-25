@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3158 2025-05-12 12:14:29Z translatewiki $
+ * @version    SVN: $Id: lb.php 3167 2025-07-21 12:13:24Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -99,8 +99,8 @@ $html_unknown = '[onbekannt]';
 $html_attach = 'Drunhänken';
 $html_attach_delete = 'Déi Erausgesichten ewechhuelen';
 $html_attach_none = 'Dir musst e Fichier eraussiche fir drunzehänken!';
-$html_sort_by = 'Zortéieren no';
-$html_sort = 'Zortéieren';
+$html_sort_by = 'Sortéieren no';
+$html_sort = 'Sortéieren';
 $html_from = 'Vum';
 $html_from_label = 'Vum:';
 $html_subject = 'Sujet';
