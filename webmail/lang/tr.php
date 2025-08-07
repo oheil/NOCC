@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: tr.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: tr.php 3169 2025-08-07 12:14:08Z translatewiki $
  */
 /** Turkish (Türkçe)
  * 
@@ -32,6 +32,7 @@
  * @author Meelo
  * @author MuratTheTurkish
  * @author Stonecy
+ * @author ToprakM
  * @author Uncitoyen
  * @author Uğurkent
  * @author Vito Genovese
@@ -196,7 +197,7 @@ $html_select_contacts = 'Kişileri seç';
 $html_loading_image = 'Resim yükle';
 $html_send_confirmed = 'İletiniz başarı ile gönderildi';
 $html_no_sendaction = 'Bir aksiyon şey seçilmedi. JavaScriptini seçin ve tekrar deneyin.';
-$html_error_occurred = 'Bir hata oluştu';
+$html_error_occurred = 'Bir hata meydana geldi';
 $html_prefs_file_error = 'Tercihler dosyası yazmayı açılamıyor';
 $html_wrap = 'Giden mesajlar için sözcük kaydırma karakter sayısı:';
 $html_wrap_none = 'Sözcük kaydırma yok';
