@@ -23,6 +23,7 @@
  * @file
  *
  * @author Aue Nai
+ * @author Htawmonzel
  * @author Iriman
  * @author 咽頭べさ
  */
@@ -71,7 +72,7 @@ $html_view_header = 'ဗဵု က္ဍိုပ်';
 $html_remove_header = 'ဗဒန် က္ဍိုပ်';
 $html_inbox = 'ပ္ဍဲကဠာ';
 $html_new_msg = 'ချူ';
-$html_reply = 'ကလေၚ်သွဟ်';
+$html_reply = 'လိက်ကလေင်';
 $html_reply_short = 'ကလေၚ်:';
 $html_reply_all = 'ကလေၚ်ဏာဖအိုတ်';
 $html_delete = 'ပလီု';
@@ -88,7 +89,7 @@ $html_sort = 'ဖျေဟ်ဒၞာဲ';
 $html_from = 'နူ';
 $html_from_label = 'နူ';
 $html_subject = 'ပရူပရာ';
-$html_subject_label = 'ပရူပရာ:';
+$html_subject_label = 'ပရူပရာ-';
 $html_date = 'စၟတ်တ္ၚဲ';
 $html_date_label = 'စၟတ်တ္ၚဲ :';
 $html_sent_label = 'ပြၚ်:';
