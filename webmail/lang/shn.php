@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Oheil
  * @author Saimawnkham
  */
 
@@ -139,7 +140,7 @@ $html_from = 'မႃးတီႈ :';
 $html_from_label = 'မႃးတီႈ :';
 $html_subject = 'လွင်ႈတၢင်း :';
 $html_subject_label = 'လွင်ႈတၢင်း :';
-$html_date = 'ဝၼ်းထီႉ';
+$html_date = 'ဝၼ်းထိ';
 $html_date_label = 'ဝၼ်းထီႉ:';
 $html_sent_label = 'သူင်ႇယဝ်ႉ:';
 $html_wrote = 'တႅမ်ႈမႃး';
