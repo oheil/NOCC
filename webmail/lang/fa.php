@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fa.php 3127 2024-06-17 12:14:34Z translatewiki $
+ * @version    SVN: $Id: fa.php 3176 2025-10-20 05:25:12Z translatewiki $
  */
 /** Persian (فارسی)
  * 
@@ -29,6 +29,7 @@
  * @author FarsiNevis
  * @author Huji
  * @author Iriman
+ * @author LordProfo
  * @author Mjbmr
  * @author Mohammad ebz
  * @author Mskf1383
@@ -65,7 +66,7 @@ $html_submit = 'ارسال';
 $html_help = 'راهنما';
 $html_server_label = 'سرور :';
 $html_wrong = 'شناسهٔ کاربر یا اسم رمز، نادرست است';
-$html_retry = 'سعى دوباره';
+$html_retry = 'تلاش دوباره';
 $html_remember = 'تنظیمات را به یاد داشته باشید';
 $html_lang_label = 'زبان:';
 $html_msgperpage_label = 'پيغامها به ازاء هر صفحه';
