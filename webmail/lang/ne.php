@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3129 2024-07-04 12:14:21Z translatewiki $
+ * @version    SVN: $Id: ne.php 3177 2025-10-27 12:24:27Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -54,7 +54,7 @@ $html_welcome = '%1$sमा स्वागत छ';
 $html_login = 'प्रवेश गर्ने';
 $html_user_label = 'प्रयोगकर्ता :';
 $html_passwd_label = 'प्रवेशशव्द:';
-$html_submit = 'बुझाउने';
+$html_submit = 'पेस गर्नुहोस्';
 $html_help = 'सहायता';
 $html_server_label = 'सर्भर:';
 $html_wrong = 'प्रवेश या प्रवेशशव्द गलत छ';
