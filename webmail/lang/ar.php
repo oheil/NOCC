@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ar.php 3143 2024-12-19 12:12:47Z translatewiki $
+ * @version    SVN: $Id: ar.php 3179 2025-11-06 12:23:13Z translatewiki $
  */
 /** Arabic (العربية)
  * 
@@ -26,6 +26,7 @@
  * @author Hhaboh162002
  * @author Meno25
  * @author Mohamed Hadrouj <mohamed.hadrouj@wanadoo.co.ma>
+ * @author Mohammed Qays
  * @author Moud hosny
  * @author OsamaK
  * @author Tala Ali
@@ -78,7 +79,7 @@ $html_use_signature = 'استخدم التوقيع';
 $html_signature = 'التوقيع';
 $html_signature_label = 'التوقيع:';
 $html_reply_leadin_label = 'الرد الأساسي:';
-$html_prefs_updated = 'تم تحديث التفضيلات';
+$html_prefs_updated = 'حُدثَت التفضيلات';
 $html_manage_folders_link = 'أدر مجلدات IMAP';
 $html_manage_filters_link = 'أدر مرشحات البريد الإلكتروني';
 $html_use_graphical_smilies = 'استخدم الابتسامات الرسومية';
