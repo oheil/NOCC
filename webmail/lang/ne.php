@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3177 2025-10-27 12:24:27Z translatewiki $
+ * @version    SVN: $Id: ne.php 3182 2025-11-17 12:23:42Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Bada Kaji
  * @author Krish Dulal
+ * @author Oheil
  * @author RajeshPandey
  * @author पर्वत सुबेदी
  * @author बडा काजी
@@ -51,14 +52,14 @@ $title_next_msg = 'पछिको सन्देश';
 $title_prev_msg = 'अघिको सन्देश';
 $html_theme_label = 'विषय सार:';
 $html_welcome = '%1$sमा स्वागत छ';
-$html_login = 'प्रवेश गर्ने';
+$html_login = 'प्रवेश गर्नुहोस्';
 $html_user_label = 'प्रयोगकर्ता :';
 $html_passwd_label = 'प्रवेशशव्द:';
 $html_submit = 'पेस गर्नुहोस्';
 $html_help = 'सहायता';
 $html_server_label = 'सर्भर:';
 $html_wrong = 'प्रवेश या प्रवेशशव्द गलत छ';
-$html_retry = 'पुन: प्रयास गर्ने';
+$html_retry = 'पुन: प्रयास गर्नुहोस्';
 $html_remember = 'स्थिती सम्झने';
 $html_lang_label = 'भाषा:';
 $html_msgperpage_label = 'प्रति पृष्ठ सन्देश:';
@@ -130,7 +131,7 @@ $html_forward_short = 'Fwd:';
 $html_forward_info = 'अगाडि पठाएका सन्देशहरू यस सन्देशमा जोडेर पठाइने छ ।';
 $html_delete = 'मेटाउने';
 $html_new = 'नयाँ';
-$html_mark = 'मेटाउने';
+$html_mark = 'मेट्नुहोस्';
 $html_att_label = 'यसमा जोडिएको:';
 $html_atts_label = 'यसमा जोडिएकाहरु:';
 $html_unknown = '[अज्ञात]';
@@ -163,7 +164,7 @@ $html_cc_label = 'Cc:';
 $html_bcc_label = 'Bcc:';
 $html_nosubject = 'विषय बिना';
 $html_send = 'पठाउनुहोस्';
-$html_cancel = 'बदर गर्ने';
+$html_cancel = 'रद्द गर्नुहोस्';
 $html_no_mail = 'सन्देश बिना।';
 $html_logout = 'बाहिरिने';
 $html_msg = 'सन्देश';
