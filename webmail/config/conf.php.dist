@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Configuration
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: conf.php.dist 3098 2023-09-09 16:45:42Z oheil $
+ * @version    SVN: $Id: conf.php.dist 3187 2025-12-02 16:27:49Z oheil $
  */
 
 // ################### This is the main configuration for NOCC ########## //
@@ -213,7 +213,12 @@ $conf->loaded = true;
 //  This optional setting allows RSS feed for this domain if set to true
 //  See global setting $conf->allow_rss
 //
-
+// $conf->domains[$i]->max_search_folders_per_page = 5;
+//  If $conf->allow_js_folder_search is set to true this option is ignored.
+//  Only search in this maximum number of folders at once. If this value is high enough
+//  a timeout is likely to occur as searching is expensive. This value depends on your
+//  php configuration of max_execution_time.
+//
 
 $i = 0;
 
@@ -246,6 +251,7 @@ $conf->domains[$i]->horde_imap_client = false;
 $conf->domains[$i]->allow_address_change = true;
 $conf->domains[$i]->from_part = '';
 $conf->domains[$i]->allow_rss = false;
+$conf->domains[$i]->max_search_folders_per_page = 5;
 
 // If you want to add more domains, uncomment the following
 // lines and fill them in
@@ -278,6 +284,7 @@ $conf->domains[$i]->allow_rss = false;
 //$conf->domains[$i]->allow_address_change = true;
 //$conf->domains[$i]->from_part = '';
 //$conf->domains[$i]->allow_rss = false;
+//$conf->domains[$i]->max_search_folders_per_page = 5;
 
 //$i++;
 //$conf->domains[$i] = new stdClass();
@@ -307,6 +314,7 @@ $conf->domains[$i]->allow_rss = false;
 //$conf->domains[$i]->allow_address_change = true;
 //$conf->domains[$i]->from_part = '';
 //$conf->domains[$i]->allow_rss = false;
+//$conf->domains[$i]->max_search_folders_per_page = 5;
 
 // $conf->utf8_decode = true;
 //  if you have login problems because of special or language specific characters
@@ -383,6 +391,11 @@ $conf->check_client_ip=true;
 //  don't poll too frequently, the mail server may block
 //  set to 0 to switch off
 $conf->check_inbox_timer=600;
+
+// allow searching in all folders sequentially using javascript ajax calls
+//  if true searching through all imap folders is more convenient
+//  set it to false if you expect problems for your clients
+$conf->allow_js_folder_search = true;
 
 // ###
 // ### Optional parameters ###

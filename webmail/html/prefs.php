@@ -1,4 +1,4 @@
-<!-- start of $Id: prefs.php 3016 2022-08-25 11:00:42Z oheil $ -->
+<!-- start of $Id: prefs.php 3187 2025-12-02 16:27:49Z oheil $ -->
 <?php
   if (!isset($conf->loaded))
     die('Hacking attempt');
@@ -180,7 +180,7 @@ if (count($big_list) > 1) {
       <legend><?php echo convertLang2Html($html_signature); ?></legend>
       <table>
          <tr>
-           <td class="prefsLabel"><label for="signature"><?php echo convertLang2Html($html_signature_label) ?></label></td>
+           <td class="prefsLabel"><?php echo convertLang2Html($html_signature_label) ?></td>
            <td class="prefsData">
              <?php if (NOCC_Session::getSendHtmlMail() && file_exists('ckeditor.php') && ! $conf->ckeditor5) {
                include 'ckeditor.php';
@@ -302,6 +302,18 @@ if (count($big_list) > 1) {
            </td>
          </tr>
          <?php } ?>
+         <tr>
+           <td class="prefsLabel"><label for="new_window_width"><?php echo convertLang2Html($html_window_width_label) ?></label></td>
+           <td class="prefsData">
+             <input class="button" type="text" name="new_window_width" id="new_window_width" value="<?php echo (isset($user_prefs->new_window_width)) ? $user_prefs->new_window_width : 900 ?>" size="4" />
+           </td>
+         </tr>
+         <tr>
+           <td class="prefsLabel"><label for="new_window_height"><?php echo convertLang2Html($html_window_height_label) ?></label></td>
+           <td class="prefsData">
+             <input class="button" type="text" name="new_window_height" id="new_window_height" value="<?php echo (isset($user_prefs->new_window_height)) ? $user_prefs->new_window_height : 400 ?>" size="4" />
+           </td>
+         </tr>
       </table>
     </fieldset>
            <?php
@@ -333,4 +345,4 @@ if (count($big_list) > 1) {
      </div>
    </form>
  </div>
-<!-- end of $Id: prefs.php 3016 2022-08-25 11:00:42Z oheil $ -->
+<!-- end of $Id: prefs.php 3187 2025-12-02 16:27:49Z oheil $ -->

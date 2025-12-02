@@ -3,11 +3,40 @@ Latest version is 1.9.15-dev
 
 NOCC 1.9.15  ??????????????
 
+  Feature Requests
+    * RFE #82 : search emails for keyword (Oliver Heil).
+      - search for a single string.
+      - search in header only (default) or full body.
+      - search in current folder (default) or in all folders (imap only).
+      - search using async javascript (default) to avoid server timeouts.
+      - new configuration options in config/conf.php.dist:
+         allow_js_folder_search (default=true):
+           Use JavaScript for subsequent folder search.
+         max_search_folders_per_page (default=5):
+           If allow_js_folder_search=false only search in 5 folders at once
+           to avoid timeouts with many imap folders.
+
   Misc
+    * allow for auto update test before release (Oliver Heil).
+    * none.png added at root displayed when images in emails are switched
+      off to avoid 404 with just none as img src. Old behaviour can easily
+      be restored by removing none.png (Oliver Heil).
+    * minimal <DOCTYPE...> and <html...> should be ok today (Oliver Heil).
+    * New user preference for size of new windows like contacts (Oliver Heil).
+    * Compatibility with php-8.5 (Oliver Heil).
+    * Compatibility with php-8.4 (Oliver Heil).
+    * Compatibility with php-8.3 (Oliver Heil).
     * Added sha256 checksum for automatic update (Oliver Heil).
     * Added (minimal) NTLM authentication for SMTP (Oliver Heil).
 
   Bugs
+    * restrict cookies to root path (classes/nocc_session.php) (Oliver Heil).
+    * show S/MIME signed messages, at least show something, still needs improvement
+      (utils/functions.php:pkcs7_attachment_view) (Oliver Heil).
+    * additional check if given encoding is supported in PHP and auto-changing encoding
+      US-ASCII to ASCII (classes/class_local.php:2011) (Oliver Heil).
+    * wrong checking if mail part with index 0 exists (classes/nocc_mailparts.php:170)
+      (Oliver Heil).
     * setting ssl context options for ssl smtp connection were not changeable
       to anything else than the default value, which doesn't make sense,
       see discussion

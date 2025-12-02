@@ -16,7 +16,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: class_local.php 3068 2023-03-07 14:57:08Z oheil $
+ * @version    SVN: $Id: class_local.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 
@@ -1620,6 +1620,16 @@ class nocc_imap
 	}
     }
 
+    public function logout() {
+	if( ! $this->is_horde() ) {
+	}
+	else {
+		// horde provides a logout, php imap not
+		// logout is needed for search when having horde used
+		$this->conn->logout();
+	}
+    }
+
     /**
      * ...
      * @return bool Is IMAP?
@@ -1997,6 +2007,16 @@ class nocc_imap
 					else {
 						$element_charset = 'ISO-8859-1';
 					}
+				}
+				$element_charset = str_ireplace('us-','',$element_charset);
+				$allowed_encodings = mb_list_encodings();				
+				if( ! in_array(strtolower($element_charset),array_map('strtolower',$allowed_encodings)) ) {
+					$log_string='NOCC: php does not support encoding '.$element_charset;
+					error_log($log_string);
+					if( isset($conf->syslog) && $conf->syslog ) {
+						syslog(LOG_INFO,$log_string);
+					}
+					$element_charset = null;
 				}
 				if( $decode ) {
 					//$element_converted = os_iconv($element_charset, 'UTF-8', $source[$j]->text);

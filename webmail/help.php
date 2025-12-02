@@ -12,7 +12,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: help.php 2373 2011-01-04 15:06:58Z gerundt $
+ * @version    SVN: $Id: help.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once './common.php';
@@ -20,8 +20,8 @@ $lang = $_SESSION['nocc_lang'];
 
 $theme = new NOCC_Theme($_SESSION['nocc_theme']);
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang ?>" lang="<?php echo $lang ?>">
+<!DOCTYPE html>
+<html lang="<?php echo $lang ?>">
 <head>
   <title>NOCC - Webmail - <?php echo $html_help ?></title>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />

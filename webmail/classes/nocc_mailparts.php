@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_mailparts.php 2979 2021-12-15 10:06:49Z oheil $
+ * @version    SVN: $Id: nocc_mailparts.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once 'nocc_mailstructure.php';
@@ -167,11 +167,13 @@ class NOCC_MailParts {
 			$skip_message=true;
 		}
 		$num_parts=-1;
-		if( ! $isHorde && isset($mailstructure_parts[0]->parts) ) {
-			$num_parts = count($mailstructure_parts[0]->parts);
-		}
-		if( $isHorde ) {
-                	$num_parts = count($mailstructure_parts[0]->getParts());
+		if( isset($mailstructure_parts[0]->parts) ) {
+			if( ! $isHorde ) {
+				$num_parts = count($mailstructure_parts[0]->parts);
+			}
+			else {
+       		         	$num_parts = count($mailstructure_parts[0]->getParts());
+			}
 		}
                 for ($i = 0; $i < $num_parts; $i++) {
 			if( ! $isHorde ) {

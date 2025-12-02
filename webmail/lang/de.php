@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: de.php 3018 2022-08-25 11:16:17Z oheil $
+ * @version    SVN: $Id: de.php 3187 2025-12-02 16:27:49Z oheil $
  */
 /** German (Deutsch)
  * 
@@ -274,3 +274,15 @@ $html_inbox_show_alert = 'Hinweis anzeigen, wenn sich die Anzahl der E-Mails im 
 $lang_horde_require_failed = 'Horde Imap Client Klasse nicht gefunden';
 $lang_strong_encryption_required = 'Unsichere Verschlüsselung ist nicht erlaubt';
 $html_default = 'Standard';
+$html_window_width_label = 'Startbreite(px) von neuen Fenstern';
+$html_window_height_label = 'Starthöhe(px) von neuen Fenstern';
+$html_invalid_new_window = 'Falsche Größenangabe(px) für neue Fenster';
+$html_search_result = 'Ergebnis';
+$html_subject_only = 'nur im Header';
+$html_all_folders = 'in allen Ordnern oder nur in';
+$html_max_folders = 'in %1$s Ordnern auf einmal';
+$html_search_finished = 'Suche beendet';
+$html_search_more = 'Mehr anzeigen';
+$html_stop = 'Beenden';
+$html_pause = 'Pause';
+$html_hide_empty = 'Leere Ordner ausblenden';

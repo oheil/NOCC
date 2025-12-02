@@ -13,7 +13,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: action.php 3016 2022-08-25 11:00:42Z oheil $
+ * @version    SVN: $Id: action.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once './common.php';
@@ -516,6 +516,11 @@ switch($action) {
 	                $_SESSION['nocc_theme'] = $_REQUEST['theme'];
 		}
             }
+
+            if( isset($_REQUEST['new_window_width']) )
+                $user_prefs->new_window_width = $_REQUEST['new_window_width'];
+            if( isset($_REQUEST['new_window_height']) )
+                $user_prefs->new_window_height = $_REQUEST['new_window_height'];
 
             if ($conf->prefs_dir) {
                 // Commit preferences

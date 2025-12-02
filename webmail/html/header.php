@@ -21,8 +21,8 @@ if(file_exists($custom_header)) {
 }
 else {
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang ?>" lang="<?php echo $lang ?>">
+<!DOCTYPE html>
+<html lang="<?php echo $lang ?>">
     <head>
         <title>NOCC - Webmail</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -129,4 +129,4 @@ else {
 <?php
 }
 ?>
-<!-- end of $Id: header.php 2981 2021-12-22 08:53:00Z oheil $ -->
+<!-- end of $Id: header.php 3187 2025-12-02 16:27:49Z oheil $ -->

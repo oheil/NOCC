@@ -1,4 +1,4 @@
-<!-- start of $Id: send.php 2967 2021-12-10 14:24:34Z oheil $ -->
+<!-- start of $Id: send.php 3187 2025-12-02 16:27:49Z oheil $ -->
 <?php
 	if (!isset($conf->loaded)) die('Hacking attempt');
 
@@ -73,7 +73,7 @@
        <td class="sendData">
          <input class="button" type="text" name="mail_to" id="mail_to" size="60" value="<?php echo (isset($mail_to) ? stripslashes(htmlspecialchars($mail_to,ENT_COMPAT | ENT_SUBSTITUTE)) : ''); ?>" />
          <?php if ($conf->prefs_dir && isset($conf->contact_number_max) && $conf->contact_number_max != 0 ) { ?>
-           <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_to&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=900,height=400')"><?php echo $html_select_contacts ?></a>
+           <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_to&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=<?php echo (isset($user_prefs->new_window_width)) ? $user_prefs->new_window_width : 900; ?>,height=<?php echo (isset($user_prefs->new_window_height)) ? $user_prefs->new_window_height : 400; ?>')"><?php echo $html_select_contacts ?></a>
          <?php } ?>
        </td>
      </tr>
@@ -82,7 +82,7 @@
        <td class="sendData">
          <input class="button" type="text" name="mail_cc" id="mail_cc" size="60" value="<?php echo (isset($mail_cc) ? htmlspecialchars($mail_cc,ENT_COMPAT | ENT_SUBSTITUTE) : '') ?>" />
          <?php if ($conf->prefs_dir && isset($conf->contact_number_max) && $conf->contact_number_max != 0 ) { ?>
-            <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_cc&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=900,height=400')"><?php echo $html_select_contacts ?></a>
+            <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_cc&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=<?php echo (isset($user_prefs->new_window_width)) ? $user_prefs->new_window_width : 900; ?>,height=<?php echo (isset($user_prefs->new_window_height)) ? $user_prefs->new_window_height : 400; ?>')"><?php echo $html_select_contacts ?></a>
          <?php } ?>
        </td>
      </tr>
@@ -91,7 +91,7 @@
        <td class="sendData">
          <input class="button" type="text" name="mail_bcc" id="mail_bcc" size="60" value="<?php echo (isset($mail_bcc) ? htmlspecialchars($mail_bcc,ENT_COMPAT | ENT_SUBSTITUTE) : '') ?>" />
          <?php if ($conf->prefs_dir && isset($conf->contact_number_max) && $conf->contact_number_max != 0 ) { ?>
-           <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_bcc&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=900,height=400')"><?php echo $html_select_contacts ?></a>
+           <a href="javascript:void(0);" onclick="window.open('contacts.php?<?php echo NOCC_Session::getUrlGetSession();?>&field=mail_bcc&amp;<?php echo NOCC_Session::getUrlQuery(); ?>','','scrollbars=yes,resizable=yes,width=<?php echo (isset($user_prefs->new_window_width)) ? $user_prefs->new_window_width : 900; ?>,height=<?php echo (isset($user_prefs->new_window_height)) ? $user_prefs->new_window_height : 400; ?>')"><?php echo $html_select_contacts ?></a>
          <?php } ?>
        </td>
      </tr>
@@ -311,4 +311,4 @@ function checkSendDelay() {
 
 //-->
 </script>
-<!-- end of $Id: send.php 2967 2021-12-10 14:24:34Z oheil $ -->
+<!-- end of $Id: send.php 3187 2025-12-02 16:27:49Z oheil $ -->

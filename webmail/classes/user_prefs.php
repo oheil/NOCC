@@ -12,7 +12,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: user_prefs.php 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: user_prefs.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once 'exception.php';
@@ -161,6 +161,9 @@ class NOCCUserPrefs {
     var $lang;
     // TODO: Hide behind get/setTheme()!
     var $theme;
+
+    var $new_window_width;
+    var $new_window_height;
 
     // Set when preferences have not been commit
     // TODO: Hide behind get/setIsDirty()!
@@ -686,6 +689,12 @@ class NOCCUserPrefs {
                 case 'theme':
                     $prefs->theme = $value;
                     break;
+                case 'new_window_width':
+                    $prefs->new_window_width = $value * 1;
+                    break;
+                case 'new_window_height':
+                    $prefs->new_window_height = $value * 1;
+                    break;
             }
         }
         fclose($file);
@@ -758,6 +767,8 @@ class NOCCUserPrefs {
         fwrite($file, "collect=".$this->_collect."\n");
         fwrite($file, "lang=".$this->lang."\n");
         fwrite($file, "theme=".$this->theme."\n");
+        fwrite($file, "new_window_width=".$this->new_window_width."\n");
+        fwrite($file, "new_window_height=".$this->new_window_height."\n");
         fclose($file);
 
         $this->dirty_flag = 0;
@@ -769,6 +780,7 @@ class NOCCUserPrefs {
      * @global string $html_invalid_email_address
      * @global string $html_invalid_msg_per_page
      * @global string $html_invalid_wrap_msg
+     * @global string $html_invalid_new_window
      * @param object $ev Exception
      */
     public function validate(&$ev) {
@@ -776,6 +788,7 @@ class NOCCUserPrefs {
         global $html_invalid_email_address;
         global $html_invalid_msg_per_page;
         global $html_invalid_wrap_msg;
+        global $html_invalid_new_window;
 
 	$allow_address_change=(
 		( isset($conf->domains[$_SESSION['nocc_domainnum']]->allow_address_change) && $conf->domains[$_SESSION['nocc_domainnum']]->allow_address_change )
@@ -798,6 +811,15 @@ class NOCCUserPrefs {
 
         if (isset($this->_wrapMessages) && !preg_match("/^(0|72|80)$/", $this->_wrapMessages)) {
             $ev = new NoccException($html_invalid_wrap_msg);
+            return;
+        }
+
+        if(
+		(isset($this->new_window_width) && !is_numeric($this->new_window_width)) ||
+		(isset($this->new_window_height) && !is_numeric($this->new_window_height)) ||
+		false
+	) {
+            $ev = new NoccException($html_invalid_new_window);
             return;
         }
 

@@ -157,7 +157,9 @@ if( $state_ok ) {
 			'robots.txt',
 			'rss.php',
 			'send.php',
-			'update.php'
+			'update.php',
+			'search.php',
+			'none.png',
 			);
 		$file_list=array_merge($file_list,recursive_directory("htmlpurifier","/^.*(?<!\.$)(?<!\.\.$)(?<!~)(?<!\.htaccess)$/i"));
 		$file_list=array_merge($file_list,["htmlpurifier"]);
@@ -238,14 +240,14 @@ if( ! isset($_GET['doUpdate']) || $_GET['doUpdate']!=1 ) {
 		}
 		//unpacking zip file with Phar does not work on windows
 		if( strncasecmp(PHP_OS,"win",3)==0 ) {
-			$download_link='http://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.zip';
+			$download_link='https://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.zip';
 		}
 		else {
-			$download_link='http://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.tar.gz';
+			$download_link='https://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.tar.gz';
 		}
 		echo '<h2 class="new-version-update-info"><a href="update.php?'.NOCC_Session::getUrlGetSession().'&doUpdate=1">Click here to automatically backup and update your existing NOCC installation. ONLY CLICK ONCE AND WAIT!</a></h2>';
 		echo '<h3 class="new-version-update-info">Change Log:</h3>';
-		$news=file_get_contents('http://nocc.sourceforge.net/docs/NEWS?v='.$conf->nocc_version);
+		$news=file_get_contents('https://nocc.sourceforge.net/docs/NEWS?v='.$conf->nocc_version);
 		echo '<textarea cols="100" rows="20" readonly>'.$news.'</textarea>';
 		echo '<h3 class="new-version-update-info">What will happen:</h3>';
 		echo '<h4 class="new-version-update-info">Backup:</h3>';
@@ -363,11 +365,11 @@ else {
 		//unpacking zip file with Phar does not work on windows
 		if( strncasecmp(PHP_OS,"win",3)==0 ) {
 			$archive_name='nocc-'.$new_version.'.zip';
-			$download_link='http://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.zip';
+			$download_link='https://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.zip';
 		}
 		else {
 			$archive_name='nocc-'.$new_version.'.tar.gz';
-			$download_link='http://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.tar.gz';
+			$download_link='https://downloads.sourceforge.net/project/nocc/NOCC/'.$new_version.'/nocc-'.$new_version.'.tar.gz';
 		}
 		if( ! is_file($archive_name) ) {
 			$fpc=file_put_contents($archive_name,fopen($download_link,'r'));
@@ -403,28 +405,28 @@ else {
 			$checksumType="md5";
 		}
 		else {
-			echo '<p class="new-version-update-missing">Could not find checksum. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+			echo '<p class="new-version-update-missing">Could not find checksum. See also <a href="https://nocc.sourceforge.net/download/" target="_blank">https://nocc.sourceforge.net/download/</a></p>';
 			$state_ok=false;
 		}
 		if( $checksumType == "md5" ) {
 			$md5sum_check=md5_file($archive_name);
 			if( $checksum == $md5sum_check) {
-				echo '<p class="new-version-update-ok">MD5 checksums match: '.$checksum.'. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+				echo '<p class="new-version-update-ok">MD5 checksums match: '.$checksum.'. See also <a href="https://nocc.sourceforge.net/download/" target="_blank">https://nocc.sourceforge.net/download/</a></p>';
 			}
 			else {
 				echo '<p class="new-version-update-missing">Failed md5 checksum match: '.$md5sum_check.' should be '.$checksum.'.</p>';
-				echo '<p class="new-version-update-missing">See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+				echo '<p class="new-version-update-missing">See also <a href="https://nocc.sourceforge.net/download/" target="_blank">https://nocc.sourceforge.net/download/</a></p>';
 				$state_ok=false;
 			}
 		}
 		if( $checksumType == "sha256" ) {
 			$sha256sum_check=hash_file("sha256",$archive_name);
 			if( $checksum == $sha256sum_check ) {
-				echo '<p class="new-version-update-ok">sha256 checksums match: '.$checksum.'. See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+				echo '<p class="new-version-update-ok">sha256 checksums match: '.$checksum.'. See also <a href="https://nocc.sourceforge.net/download/" target="_blank">https://nocc.sourceforge.net/download/</a></p>';
 			}
 			else {
 				echo '<p class="new-version-update-missing">Failed sha256 checksum match: '.$sha256sum_check.' should be '.$checksum.'.</p>';
-				echo '<p class="new-version-update-missing">See also <a href="http://nocc.sourceforge.net/download/" target="_blank">http://nocc.sourceforge.net/download/</a></p>';
+				echo '<p class="new-version-update-missing">See also <a href="https://nocc.sourceforge.net/download/" target="_blank">https://nocc.sourceforge.net/download/</a></p>';
 				$state_ok=false;
 			}
 		}	

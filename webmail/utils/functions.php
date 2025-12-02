@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Utilities
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: functions.php 3060 2023-03-05 19:06:00Z oheil $
+ * @version    SVN: $Id: functions.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once './classes/class_local.php';
@@ -26,6 +26,21 @@ require_once './classes/nocc_attachedfile.php';
 
 require_once './htmlpurifier/library/HTMLPurifier.auto.php';
 
+
+class HTMLPurifier_URIScheme_cid extends HTMLPurifier_URIScheme {
+	public $browsable = true;
+	public $allowed_types = array(
+		'image/jpeg' => true,
+		'image/gif' => true,
+		'image/png' => true,
+		'application/octet-stream' => true,
+	);
+	public $may_omit_host = true;
+	public function doValidate(&$uri, $config, $context) {
+		return true;
+	}
+}
+HTMLPurifier_URISchemeRegistry::instance()->register("cid", new HTMLPurifier_URIScheme_cid());
 
 
 /**
@@ -52,15 +67,18 @@ function recursive_directory($dir="",$regExpression="/.*/") {
 function version() {
 	global $conf;
 	if( isset($_SESSION['auto_update']) && $_SESSION['auto_update'] ) {
-		if( isset($_SESSION['auto_update_new']) ) {
+		if( isset($_SESSION['auto_update_new']) && ! is_file("NEW_VERSION") ) {
 			return $_SESSION['auto_update_new'];
 		}
 		else {
 			if( ini_get("allow_url_fopen")==1 ) {
-				$news=file_get_contents('http://nocc.sourceforge.net/docs/NEWS?v='.$conf->nocc_version); 
+				$news=file_get_contents('https://nocc.sourceforge.net/docs/NEWS?v='.$conf->nocc_version); 
 				$matches[]=array();
 				if( preg_match("/Latest version is (.*)\R/",$news,$matches) ) {
 					$new_version=str_ireplace("-dev","",trim($matches[1]));
+					if( is_file("NEW_VERSION") ) {
+						$new_version=file_get_contents("NEW_VERSION");
+					}
 					$new_v=explode('.',$new_version);
 					$old_v=explode('.',str_ireplace("-dev","",$conf->nocc_version));
 					$old_dev_version=false;
@@ -185,7 +203,7 @@ function inbox(&$pop, $skip = 0) {
  * @return array
  * @todo Rename!
  */
-function aff_mail(&$pop, $mail, $verbose, &$attachmentParts = null) {
+function aff_mail(&$pop, $mail, $verbose, &$attachmentParts = null, $remove_stuff = true ) {
     global $conf;
     global $lang_invalid_msg_num;
 
@@ -244,7 +262,9 @@ function aff_mail(&$pop, $mail, $verbose, &$attachmentParts = null) {
           $body_charset = $_REQUEST['user_charset'];
         }
 
-        $body = remove_stuff($body,$body_mime,$body_charset);
+	if( $remove_stuff) {
+	        $body = remove_stuff($body,$body_mime,$body_charset);
+	}
 
         //TODO: Move to a own function!?
         $body_converted = os_iconv($body_charset, 'UTF-8', $body);
@@ -436,21 +456,6 @@ function remove_stuff($body,$mime,$charset='UTF-8') {
 	$body=trim($body);
 	$body='<span style="white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;">'.$body.'</span>';
     }
-
-	class HTMLPurifier_URIScheme_cid extends HTMLPurifier_URIScheme {
-		public $browsable = true;
-		public $allowed_types = array(
-			'image/jpeg' => true,
-			'image/gif' => true,
-			'image/png' => true,
-			'application/octet-stream' => true,
-		);
-		public $may_omit_host = true;
-		public function doValidate(&$uri, $config, $context) {
-			return true;
-		}
-	}
-	HTMLPurifier_URISchemeRegistry::instance()->register("cid", new HTMLPurifier_URIScheme_cid());
 
 	$hp_config = HTMLPurifier_Config::createDefault();
 	$hp_config->set('Core.Encoding',$charset);
@@ -838,15 +843,27 @@ function pkcs7_attachment_view(&$pop,$mail,$part_no,&$content_type,&$charset,&$v
 			'Content-Transfer-Encoding: base64'."\n\n";
 		file_put_contents($ciphertext_file,$head);
 		file_put_contents($ciphertext_file,$body,FILE_APPEND);
+		if( is_file($ciphertext_file) ) {
+			$cont = file_get_contents($ciphertext_file);
+		}
 		openssl_pkcs7_verify($ciphertext_file,0,$ciphertext_file.'.cert');
 
-		$verified=openssl_pkcs7_verify($ciphertext_file,0,$ciphertext_file.'.cert',array(),$ciphertext_file.'.cert',$ciphertext_file.'.out');
+		if( is_file($ciphertext_file.'.cert') ) {
+			$verified=openssl_pkcs7_verify($ciphertext_file,0,$ciphertext_file.'.cert',array(),$ciphertext_file.'.cert',$ciphertext_file.'.out');
+		}
+		else {
+			$verified=openssl_pkcs7_verify($ciphertext_file,PKCS7_NOVERIFY,null,array(),null,$ciphertext_file.'.out',null);
+		}
 
 		$body=file_get_contents($ciphertext_file.'.out');
 
 		unlink($ciphertext_file);
-		unlink($ciphertext_file.'.cert');
-		unlink($ciphertext_file.'.out');
+		if( is_file($ciphertext_file.'.cert') ) {
+			unlink($ciphertext_file.'.cert');
+		}
+		if( is_file($ciphertext_file.'.out') ) {
+			unlink($ciphertext_file.'.out');
+		}
 
 		$match=array();
 		if( preg_match('/Content-Type:\s*(\S+);/i',$body,$match) ) {
@@ -1362,6 +1379,32 @@ function isRssAllowed() {
 		$is_domain_allowed=true;
 	}
 	return $is_globally_allowed & $is_domain_allowed;
+}
+/**
+ * Call htmlspecialchars and mark result with $_REQUEST['mail_search_query']
+ * @param string $data
+ * @param int $options
+ * @return string
+ */
+function htmlspecialchars_search($data,$options) {
+	$r = htmlspecialchars($data,$options);
+	if( isset($_REQUEST['mail_search_query']) && strlen($_REQUEST['mail_search_query']) > 0 ) {
+		$r = preg_replace('/('.$_REQUEST['mail_search_query'].')/i','<span style="color:black;background-color:orange;">$1</span>',$r);
+	}
+	return $r;
+}
+
+/**
+ * Mark string with $_REQUEST['mail_search_query']
+ * @param string $data
+ * @return string
+ */
+function highlight_search($data) {
+	$r = $data;
+	if( isset($_REQUEST['mail_search_query']) && strlen($_REQUEST['mail_search_query']) > 0 ) {
+		$r = preg_replace('/('.$_REQUEST['mail_search_query'].')/i','<span style="color:black;background-color:orange;">$1</span>',$r);
+	}
+	return $r;
 }
 
 

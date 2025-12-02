@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: en.php 3016 2022-08-25 11:00:42Z oheil $
+ * @version    SVN: $Id: en.php 3187 2025-12-02 16:27:49Z oheil $
  */
 /** English (English)
  * 
@@ -263,3 +263,16 @@ $html_inbox_show_alert = 'Show alert box when number of emails in inbox change';
 $lang_horde_require_failed = 'Horde pmap client class not found';
 $lang_strong_encryption_required = 'Unsecure encryption is not allowed';
 $html_default = 'Default';
+$html_window_width_label = 'Initial width(px) of new windows';
+$html_window_height_label = 'Initial height(px) of new windows';
+$html_invalid_new_window = 'Invalid size in px for new windows';
+$html_search_result = 'Result';
+$html_subject_only = 'in headers only';
+$html_all_folders = 'in all folders or only in';
+$html_max_folders = 'in %1$s folders at once';
+$html_search_finished = 'Search finished';
+$html_search_more = 'Show more';
+$html_stop = 'Stop';
+$html_pause = 'Pause';
+$html_hide_empty = 'Hide empty folders';
+

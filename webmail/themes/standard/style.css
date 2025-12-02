@@ -189,7 +189,7 @@ table {
 }
 
 .mainmenu ul li {
-  display: inline;
+  display: inline-block;
 }
 
 .mainmenu ul li a,

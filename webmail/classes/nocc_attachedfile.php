@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_attachedfile.php 2552 2012-05-28 13:23:16Z gerundt $
+ * @version    SVN: $Id: nocc_attachedfile.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 /**
@@ -53,7 +53,7 @@ class NOCC_AttachedFile {
         $this->bytes = $bytes;
         $this->mimeType = $mimeType;
         if (empty($mimeType)) {
-            $attachedFile->mimeType = trim(`file -b $tmpFile`);
+            $attachedFile->mimeType = trim(shell_exec('file -b $tmpFile'));
         }
     }
     

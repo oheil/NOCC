@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_session.php 2985 2021-12-27 10:05:54Z oheil $
+ * @version    SVN: $Id: nocc_session.php 3187 2025-12-02 16:27:49Z oheil $
  */
 require_once 'horde_autoloader.php';
 require_once 'user_prefs.php';
@@ -29,6 +29,10 @@ class NOCC_Session {
     public static function start($persistent=0) {
 	global $conf;
 
+	$path_elements=explode('/',$_SERVER['PHP_SELF']);
+	array_pop($path_elements);
+	$path=implode('/',$path_elements).'/';
+
 	$cookie_lifetime=0;
 	if( $persistent==1 ) {
 		$cookie_lifetime=60*60*24*7*4; //4weeks
@@ -43,7 +47,7 @@ class NOCC_Session {
 			if( preg_match("/^NOCC_/",$cookie_key) ) {
 				$sname=$cookie_key;
 				session_name($sname);
-				session_set_cookie_params($cookie_lifetime,'/','',false);
+				session_set_cookie_params($cookie_lifetime,$path,'',false);
 				session_start();
 
 				$_SESSION['sname']=$sname;
@@ -80,7 +84,7 @@ class NOCC_Session {
 		if( isset($_REQUEST['sname']) && strlen($_REQUEST['sname'])>0 ) {
 			$sname=$_REQUEST['sname'];
 			session_name($sname);
-			session_set_cookie_params($cookie_lifetime,'/','',false);
+			session_set_cookie_params($cookie_lifetime,$path,'',false);
 			session_start();
 
 			if( isset($_SESSION['send_backup']) && ! isset($_GET['discard']) ) {
@@ -129,7 +133,7 @@ class NOCC_Session {
 				if( preg_match("/^NOCCLI_/",$cookie_key) ) {
 					$sname=$cookie_key;
 					session_name($sname);
-					session_set_cookie_params($cookie_lifetime,'/','',false);
+					session_set_cookie_params($cookie_lifetime,$path,'',false);
 					session_start();
 					if( isset($_SESSION['send_backup']) ) {
 						$send_backup=$_SESSION['send_backup'];
@@ -329,7 +333,11 @@ class NOCC_Session {
 			$_SESSION['sname']=$sname;
 			$_SESSION['svalue']=$svalue;
 
-			setcookie($old_sname, '', time() - 3600, '/', '', false);
+			$path_elements=explode('/',$_SERVER['PHP_SELF']);
+			array_pop($path_elements);
+			$path=implode('/',$path_elements).'/';
+
+			setcookie($old_sname, '', time() - 3600, $path, '', false);
 			//return true;
 			return $sname;
 		}
@@ -345,6 +353,11 @@ class NOCC_Session {
 	 */
 	public static function new_session($persistent=0) {
 		global $conf;
+
+		$path_elements=explode('/',$_SERVER['PHP_SELF']);
+		array_pop($path_elements);
+		$path=implode('/',$path_elements).'/';
+
 		$cookie_lifetime=0;
 		if( $persistent==1 ) {
 			$cookie_lifetime=60*60*24*7*4; //4weeks
@@ -354,7 +367,7 @@ class NOCC_Session {
 		}
 		$sname='NOCC_'.md5(uniqid(rand(),true));
 		session_name($sname);
-		session_set_cookie_params($cookie_lifetime,'/','',false);
+		session_set_cookie_params($cookie_lifetime,$path,'',false);
 		session_start();
 		$svalue=session_id();
 		$_SESSION['sname']=$sname;
@@ -519,12 +532,17 @@ class NOCC_Session {
 		$sname=$_SESSION['sname'];
 	}
         //session_name($sname);
+
+	$path_elements=explode('/',$_SERVER['PHP_SELF']);
+	array_pop($path_elements);
+	$path=implode('/',$path_elements).'/';
+
 	NOCC_Session::remove_session_file();
         if ($forceSessionStart) {
-		session_set_cookie_params(0,'/','',false);
+		session_set_cookie_params(0,$path,'',false);
             session_start();
         }
-	setcookie($sname, '', time() - 3600, '/', '', false);
+	setcookie($sname, '', time() - 3600, $path, '', false);
 
         $_SESSION = array();
         session_destroy();
@@ -548,7 +566,12 @@ class NOCC_Session {
 		$sname=$_SESSION['sname'];
 	}
 	$svalue=session_id();
-	setcookie($sname,$svalue,$cookie_lifetime, '/', '', false);
+
+	$path_elements=explode('/',$_SERVER['PHP_SELF']);
+	array_pop($path_elements);
+	$path=implode('/',$path_elements).'/';
+
+	setcookie($sname,$svalue,$cookie_lifetime, $path, '', false);
     }
     
     /**
@@ -560,7 +583,11 @@ class NOCC_Session {
 	if( isset($_SESSION['sname']) && strlen($_SESSION['sname'])>0 ) {
 		$sname=$_SESSION['sname'];
 	}
-        setcookie($sname, '', time() - 3600, '/', '', false);
+	$path_elements=explode('/',$_SERVER['PHP_SELF']);
+	array_pop($path_elements);
+	$path=implode('/',$path_elements).'/';
+
+        setcookie($sname, '', time() - 3600, $path, '', false);
     }
     
     /**

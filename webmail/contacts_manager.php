@@ -13,7 +13,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: contacts_manager.php 2969 2021-12-10 19:43:58Z oheil $
+ * @version    SVN: $Id: contacts_manager.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once './common.php';
@@ -45,8 +45,8 @@ $all_lists=array();
 
 $query_str = NOCC_Session::getUrlQuery();
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $lang ?>" lang="<?php echo $lang ?>">
+<!DOCTYPE html>
+<html lang="<?php echo $lang ?>">
 <head>
   <title>NOCC - Webmail - <?php echo i18n_message($html_contact_list, $_SESSION['nocc_user']); ?></title>
   <link href="<?php echo $theme->getStylesheet(); ?>" rel="stylesheet" type="text/css" />

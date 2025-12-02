@@ -10,7 +10,7 @@
  *
  * @package    NOCC
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nocc_security.php 2967 2021-12-10 14:24:34Z oheil $
+ * @version    SVN: $Id: nocc_security.php 3187 2025-12-02 16:27:49Z oheil $
  */
 
 require_once dirname(__FILE__).'/../utils/htmLawed.php';
@@ -28,9 +28,9 @@ class NOCC_Security {
      * @static
      */
     public static function disableHtmlImages($body) {
-        $body = preg_replace('|src[\s]*=[\s]*["\']?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*["\']?|i', 'src="none"', $body); //src = "xyz" OR src = 'xyz' OR src = xyz
-        $body = preg_replace('|background[\s]*=[\s]*["\']?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*["\']?|i', 'background="none"', $body); //background = "xyz" OR background = 'xyz' OR background = xyz
-        $body = preg_replace('|url[\s]*\([\s]*\'?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*\'?[\s]*\)|i', 'url(none)', $body); //url ( xzy ) OR url ( 'xyz' )
+        $body = preg_replace('|src[\s]*=[\s]*["\']?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*["\']?|i', 'src="none.png"', $body); //src = "xyz" OR src = 'xyz' OR src = xyz
+        $body = preg_replace('|background[\s]*=[\s]*["\']?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*["\']?|i', 'background="none.png"', $body); //background = "xyz" OR background = 'xyz' OR background = xyz
+        $body = preg_replace('|url[\s]*\([\s]*\'?[\s]*[A-Za-z]+://[^<>\s]+[A-Za-z0-9/][\s]*\'?[\s]*\)|i', 'url(none.png)', $body); //url ( xzy ) OR url ( 'xyz' )
         return $body;
     }
     
@@ -42,7 +42,7 @@ class NOCC_Security {
      */
     public static function hasDisabledHtmlImages($body) {
 	if( $body != null ) {
-		if (preg_match('/src="none"|background="none"|url\(none\)/i', $body)) { //if src="none", background="none", url(none)...
+		if (preg_match('/src="none.png"|background="none.png"|url\(none.png\)/i', $body)) { //if src="none", background="none", url(none)...
 			return true;
 		}
 	}
