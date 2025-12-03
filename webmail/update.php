@@ -93,6 +93,9 @@ if( $state_ok ) {
 		unset($_SESSION['auto_update_new']);
 		$state_ok=false;
 	}
+	if( isset($_SESSION['auto_update_new']) && is_file("NEW_VERSION") ) {
+		unset($_SESSION['auto_update_new']);
+	}
 }
 
 if( $state_ok ) {
@@ -529,7 +532,9 @@ else {
 	}
 	else {
 		echo '<h2 class="new-version-update-info">Update took '.$diff_time.' seconds to finish successfully.</p>';
-		unset($_SESSION['auto_update_new']);
+		if( is_file("NEW_VERSION") ) {
+			unlink("NEW_VERSION");
+		}
 	}
 
 	if( ! $nocc_update_running && is_file("NOCC_UPDATE_RUNNING") ) {

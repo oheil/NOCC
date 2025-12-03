@@ -14,7 +14,7 @@
  * @package    NOCC
  * @subpackage Utilities
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: functions.php 3187 2025-12-02 16:27:49Z oheil $
+ * @version    SVN: $Id: functions.php 3190 2025-12-03 13:48:45Z oheil $
  */
 
 require_once './classes/class_local.php';
@@ -77,7 +77,9 @@ function version() {
 				if( preg_match("/Latest version is (.*)\R/",$news,$matches) ) {
 					$new_version=str_ireplace("-dev","",trim($matches[1]));
 					if( is_file("NEW_VERSION") ) {
-						$new_version=file_get_contents("NEW_VERSION");
+						$nv = fopen("NEW_VERSION",'r');
+						$new_version=trim(fgets($nv));
+						fclose($nv);
 					}
 					$new_v=explode('.',$new_version);
 					$old_v=explode('.',str_ireplace("-dev","",$conf->nocc_version));
