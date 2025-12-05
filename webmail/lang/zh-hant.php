@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hant.php 3037 2022-12-15 12:12:17Z translatewiki $
+ * @version    SVN: $Id: zh-hant.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Traditional Chinese (中文（繁體）)
  * 
@@ -276,3 +276,15 @@ $html_inbox_show_alert = '當在信箱的郵件數量變更時顯示警告訊息
 $lang_horde_require_failed = '找不到 Horde pmap 客戶端類別';
 $lang_strong_encryption_required = '不允許不安全的加密';
 $html_default = '預設';
+$html_window_width_label = '新視窗的初始寬度（像素）';
+$html_window_height_label = '新視窗的初始高度（像素）';
+$html_invalid_new_window = '新視窗的尺寸（像素）無效';
+$html_search_result = '結果';
+$html_subject_only = '僅在標頭';
+$html_all_folders = '在所有資料夾中或是僅在';
+$html_max_folders = '一次在 %1$s 個資料夾中';
+$html_search_finished = '搜尋結束';
+$html_search_more = '顯示更多';
+$html_stop = '停止';
+$html_pause = '暫停';
+$html_hide_empty = '隱藏空資料夾';

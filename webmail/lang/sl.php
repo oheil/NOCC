@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sl.php 3044 2023-01-23 12:11:32Z translatewiki $
+ * @version    SVN: $Id: sl.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Slovenian (slovenščina)
  * 
@@ -267,3 +267,15 @@ $html_inbox_show_alert = 'Prikaži obvestilo, ko se število e-poštnih sporoči
 $lang_horde_require_failed = 'Razred odjemalnika pmap Horde ni najden';
 $lang_strong_encryption_required = 'Ne-varno šifriranje ni dovoljeno';
 $html_default = 'Privzeto';
+$html_window_width_label = 'Začetna širina (px) novih oken';
+$html_window_height_label = 'Začetna višina (px) novih oken';
+$html_invalid_new_window = 'Neveljavna velikost v px za nova okna';
+$html_search_result = 'Rezultat';
+$html_subject_only = 'samo v naslovih';
+$html_all_folders = 'v vseh mapah ali samo v';
+$html_max_folders = 'v %1$s mapah hkrati';
+$html_search_finished = 'Iskanje končano';
+$html_search_more = 'Prikaži več';
+$html_stop = 'Ustavi';
+$html_pause = 'Premor';
+$html_hide_empty = 'Skrij prazne mape';

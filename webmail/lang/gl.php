@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: gl.php 3099 2023-09-21 11:23:33Z translatewiki $
+ * @version    SVN: $Id: gl.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Galician (galego)
  * 
@@ -265,3 +265,15 @@ $html_inbox_show_alert = 'Mostrar unha alerta cando cambia o número de correos 
 $lang_horde_require_failed = 'Non se atopou a clase do cliente pmap de Horde';
 $lang_strong_encryption_required = 'Non se permite o cifrado non seguro';
 $html_default = 'Por defecto';
+$html_window_width_label = 'Largura inicial (px) das xanelas novas';
+$html_window_height_label = 'Altura inicial (px) das xanelas novas';
+$html_invalid_new_window = 'Tamaño non válido en píxeles para as xanelas novas';
+$html_search_result = 'Resultado';
+$html_subject_only = 'só nas cabeceiras';
+$html_all_folders = 'en todos os cartafoles ou só en';
+$html_max_folders = 'en %1$s cartafoles á vez';
+$html_search_finished = 'Busca rematada';
+$html_search_more = 'Mostrar máis';
+$html_stop = 'Deter';
+$html_pause = 'Pausar';
+$html_hide_empty = 'Agochar cartafoles baleiros';

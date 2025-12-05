@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: zh-hans.php 3112 2024-01-15 12:15:33Z translatewiki $
+ * @version    SVN: $Id: zh-hans.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Simplified Chinese (中文（简体）)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Anterdc99
  * @author Cathypilot0117
+ * @author GuoPC
  * @author Hydra
  * @author Liu Hong <loyaliu@21cn.com>
  * @author Liuxinyu970226
@@ -270,3 +271,15 @@ $html_inbox_show_alert = '当收件箱中的电子邮件数量更改时显示提
 $lang_horde_require_failed = '未找到 Horde pmap 客户端类';
 $lang_strong_encryption_required = '不允许不安全的加密';
 $html_default = '默认';
+$html_window_width_label = '新窗口的初始宽度（像素）';
+$html_window_height_label = '新窗口的初始高度（像素）';
+$html_invalid_new_window = '新窗口的尺寸（像素）无效';
+$html_search_result = '结果';
+$html_subject_only = '仅在邮件头';
+$html_all_folders = '在所有文件夹中或是仅在';
+$html_max_folders = '一次在%1$s个文件夹中';
+$html_search_finished = '搜索结束';
+$html_search_more = '显示更多';
+$html_stop = '停止';
+$html_pause = '暂停';
+$html_hide_empty = '隐藏空文件夹';

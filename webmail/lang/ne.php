@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3186 2025-11-27 12:16:03Z translatewiki $
+ * @version    SVN: $Id: ne.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -196,7 +196,7 @@ $html_mark_as = 'रुपमा चिनो लगाउने';
 $html_read = 'पढिएको';
 $html_unread = 'नपढिएको';
 $html_encoding_label = 'क्यारेक्टर इन्कोडिङ्ग:';
-$html_add = 'थप्ने';
+$html_add = 'थप्नुहोस्';
 $html_contacts = '%1$s सम्पर्कहरु';
 $html_modify = 'सच्याउने';
 $html_back = 'पछाडि';
@@ -234,3 +234,6 @@ $html_login_not_allowed = 'यो प्रवेश सञ्जाल नि�
 $lang_err_send_delay = 'तपाईंले दुई इमेलको बीचमा (%1$d सेकेन्ड) कुर्नुपर्छ ।';
 $html_search = 'खोजी';
 $html_default = 'पूर्वनिर्धारित';
+$html_search_result = 'परिणाम';
+$html_search_more = 'थप देखाउनुहोस्';
+$html_stop = 'रोक्नुहोस्';

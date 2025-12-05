@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: mk.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: mk.php 3194 2025-12-04 12:15:38Z translatewiki $
  */
 /** Macedonian (македонски)
  * 
@@ -265,3 +265,15 @@ $html_inbox_show_alert = 'Прикажувај напомена кога ќе с
 $lang_horde_require_failed = 'Не ја пронајдов клиентската класа Horde pmap';
 $lang_strong_encryption_required = 'Не се допушта небезбедна енкрипција';
 $html_default = 'По основно';
+$html_window_width_label = 'Почетна ширина (px) на нови прозорци';
+$html_window_height_label = 'Почетна висина (px) на нови прозорци';
+$html_invalid_new_window = 'Неважечка големина во px за нови прозорци';
+$html_search_result = 'Исход';
+$html_subject_only = 'само во заглавија';
+$html_all_folders = 'во сите папки или само во';
+$html_max_folders = 'во %1$s папки наеднаш';
+$html_search_finished = 'Пребарувањето заврши';
+$html_search_more = 'Прикажи повеќе';
+$html_stop = 'Запри';
+$html_pause = 'Паузирај';
+$html_hide_empty = 'Сокриј празни папки';
