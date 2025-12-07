@@ -142,6 +142,33 @@ if( $ajx_search == 0 ) {
 	display:var(--display-empty);
 }
 </style>
+<script type="text/javascript">
+	function toggle_checkbox(id) {
+		el=document.getElementById(id);
+		if(el){
+			if(el.checked){
+				el.checked=false;
+			}
+			else{
+				el.checked=true;
+			}
+		}
+		return el.checked;
+	}
+	function set_empty_style(id){
+		el=document.getElementById(id);
+		if(el){
+			if(el.checked){
+				document.documentElement.style.setProperty('--display-empty','none');
+			}
+			else{
+				document.documentElement.style.setProperty('--display-empty','inline');
+			}
+		}
+		return;
+	}
+</script>
+
 </head>
 
 <body id="popup" dir="<?php echo $lang_dir; ?>">
@@ -178,7 +205,10 @@ if( ! $use_ajax_js ) {
 
 <div style="text-align:center;">
 <h2 style="text-align:center;"><?php echo i18n_message($html_search_result,''); ?></h2>
-<h3><input type="checkbox" name="hide_empty" id="hide_empty" value="hide_empty" /><a href="" onclick="el=document.getElementById('hide_empty');if(el){if(el.checked){el.checked=false;document.documentElement.style.setProperty('--display-empty','inline');}else{el.checked=true;document.documentElement.style.setProperty('--display-empty','none');}};return false;"><?php echo convertLang2Html($html_hide_empty); ?></a></h3>
+<h3>
+<input type="checkbox" name="hide_empty" id="hide_empty" value="hide_empty" onclick="set_empty_style('hide_empty');" />
+<a href="" onclick="toggle_checkbox('hide_empty');set_empty_style('hide_empty');return false;"><?php echo convertLang2Html($html_hide_empty); ?></a>
+</h3>
 </div>
 
 </div>
