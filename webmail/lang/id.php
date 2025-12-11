@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: id.php 2937 2021-03-12 06:05:32Z translatewiki $
+ * @version    SVN: $Id: id.php 3196 2025-12-11 12:15:47Z translatewiki $
  */
 /** Indonesian (Bahasa Indonesia)
  * 
@@ -29,13 +29,14 @@
  * @author IvanLanin
  * @author Kenrick95
  * @author Mihxil
+ * @author Penyuwangi
  */
 
 $default_date_format = '%d-%m-%Y';
 $no_locale_date_format = '%d-%m-%Y';
 $default_time_format = '%I:%M %p';
 $err_user_empty = 'Bagian login kosong';
-$err_passwd_empty = 'Bagian password kosong';
+$err_passwd_empty = 'Bidang kata sandi kosong';
 $alt_delete = 'Hapus pesan terpilih';
 $alt_delete_one = 'Hapus pesan';
 $alt_new_msg = 'Pesan baru';
@@ -217,7 +218,7 @@ $original_msg = '-- Pesan Asli --';
 $to_empty = 'Kotak \'Kepada\' jangan dikosongkan!';
 $html_images_warning = 'Demi keamanan Anda, gambar tertentu tidak ditampilkan.';
 $html_images_display = 'Tampilkan gambar';
-$html_smtp_error_no_conn = 'Tidak bisa membuka koneksi SMTP';
+$html_smtp_error_no_conn = 'Tidak bisa membuka sambungan SMTP';
 $html_smtp_error_unexpected = 'Respon SMTP tak terduga:';
 $lang_could_not_connect = 'Tak dapat menghubungi server';
 $lang_invalid_msg_num = 'Nomor pesan buruk';
@@ -228,6 +229,6 @@ $html_invalid_wrap_msg = 'Lebar bungkus pesan salah';
 $html_seperate_msg_win = 'Pesan di jendela lain';
 $html_err_file_contacts = 'Tidak bisa membuka berkas kontak untuk menulis.';
 $html_session_file_error = 'Tidak bisa membuka berkas sesi untuk menulis.';
-$html_login_not_allowed = 'Masuk log belum diperbolehkan karena masalah koneksi.';
+$html_login_not_allowed = 'Masuk log belum diperbolehkan karena masalah sambungan.';
 $lang_err_send_delay = 'Anda harus menunggu antara dua surel (%1$d detik)';
 $html_search = 'Cari';

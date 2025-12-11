@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: dsb.php 3086 2023-05-25 11:13:58Z translatewiki $
+ * @version    SVN: $Id: dsb.php 3196 2025-12-11 12:15:47Z translatewiki $
  */
 /** Lower Sorbian (dolnoserbski)
  * 
@@ -261,3 +261,15 @@ $html_inbox_show_alert = 'Powěźeńku pokazaś, gaž se licba mejlkow w dochaź
 $lang_horde_require_failed = 'Klasa Imap-klienta Horde njejo se namakała';
 $lang_strong_encryption_required = 'Njewěste koděrowanje njejo dowólone';
 $html_default = 'Standard';
+$html_window_width_label = 'Zachopna šyrokosć (px) nowych woknow';
+$html_window_height_label = 'Zachopna wusokosć (px) nowych woknow';
+$html_invalid_new_window = 'Njepłaśiwa wjelikosć w px za nowe wokna';
+$html_search_result = 'Wuslědk';
+$html_subject_only = 'jano w głowach';
+$html_all_folders = 'we wšych zarědnikach abo jano w';
+$html_max_folders = 'w zarědnikach naraz: %1$s';
+$html_search_finished = 'Pytanje jo dokóńcone';
+$html_search_more = 'Wěcej pokazaś';
+$html_stop = 'Zastajiś';
+$html_pause = 'Pawza';
+$html_hide_empty = 'Prozne zarědniki schowaś';

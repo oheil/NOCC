@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: hsb.php 3086 2023-05-25 11:13:58Z translatewiki $
+ * @version    SVN: $Id: hsb.php 3196 2025-12-11 12:15:47Z translatewiki $
  */
 /** Upper Sorbian (hornjoserbsce)
  * 
@@ -262,3 +262,15 @@ $html_inbox_show_alert = 'Zdźělenku pokazać, hdyž so ličba mejlkow w dochad
 $lang_horde_require_failed = 'Klasa Imap-klienta Horde njeje so namakała';
 $lang_strong_encryption_required = 'Njewěste zaklučowanje dowolene njeje';
 $html_default = 'Standard';
+$html_window_width_label = 'Spočatna šěrokosć (px) nowych woknow';
+$html_window_height_label = 'Spočatna wysokosć (px) nowych woknow';
+$html_invalid_new_window = 'Njepłaćiwa wulkosć w px za nowe wokna';
+$html_search_result = 'Wuslědk';
+$html_subject_only = 'jenož we hłowach';
+$html_all_folders = 'we wšěch rjadowakach abo jenož w';
+$html_max_folders = 'w rjadowakach naraz: %1$s';
+$html_search_finished = 'Pytanje je dokónčene';
+$html_search_more = 'Wjace pokazać';
+$html_stop = 'Zastajić';
+$html_pause = 'Přestawka';
+$html_hide_empty = 'Prózdne rjadowaki schować';
