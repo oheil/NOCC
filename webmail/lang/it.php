@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: it.php 3147 2025-01-23 12:11:40Z translatewiki $
+ * @version    SVN: $Id: it.php 3197 2025-12-15 12:17:41Z translatewiki $
  */
 /** Italian (italiano)
  * 
@@ -23,6 +23,7 @@
  * @file
  *
  * @author Ajeje Brazorf
+ * @author Asteralee
  * @author Beta16
  * @author Dansita
  * @author Darth Kule
@@ -275,3 +276,6 @@ $html_inbox_show_alert = 'Mostra una finestra di avviso quando il numero delle e
 $lang_horde_require_failed = 'Classe client horde pmap non trovata';
 $lang_strong_encryption_required = 'La crittografia non sicura non è permessa';
 $html_default = 'Predefinito';
+$html_search_result = 'Risultato';
+$html_stop = 'Ferma';
+$html_pause = 'Pausa';

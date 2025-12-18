@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fr.php 3035 2022-12-01 12:11:33Z translatewiki $
+ * @version    SVN: $Id: fr.php 3197 2025-12-15 12:17:41Z translatewiki $
  */
 /** French (français)
  * 
@@ -22,6 +22,7 @@
  * @ingroup Language
  * @file
  *
+ * @author Asteralee
  * @author Gomoko
  * @author Hashar
  * @author IAlex
@@ -272,3 +273,4 @@ $html_inbox_show_alert = 'Afficher une fenêtre d’alerte quand le nombre de co
 $lang_horde_require_failed = 'Classe du client pmap de Horde non trouvée';
 $lang_strong_encryption_required = 'Le chiffrement non sécurisé n’est pas autorisé';
 $html_default = 'Par défaut';
+$html_stop = 'Arrêter';
