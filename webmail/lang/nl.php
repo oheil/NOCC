@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 3048 2023-02-06 12:13:24Z translatewiki $
+ * @version    SVN: $Id: nl.php 3199 2025-12-22 12:17:24Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -274,3 +274,15 @@ $html_inbox_show_alert = 'Melding weergeven als het aantal emails in het postvak
 $lang_horde_require_failed = 'Horde pmap client klasse niet gevonden.';
 $lang_strong_encryption_required = 'Niet beveiligde encryptie is niet toegestaan';
 $html_default = 'Standaard';
+$html_window_width_label = 'Aanvankelijke breedte (px) van nieuwe vensters';
+$html_window_height_label = 'Aanvankelijke hoogte (px) van nieuwe vensters';
+$html_invalid_new_window = 'Ongeldige afmetingen in pixels voor nieuwe vensters';
+$html_search_result = 'Resultaat';
+$html_subject_only = 'alleen in kopteksten';
+$html_all_folders = 'in alle mappen of alleen in';
+$html_max_folders = 'in %1$s mappen tegelijk';
+$html_search_finished = 'Zoeken voltooid';
+$html_search_more = 'Meer weergeven';
+$html_stop = 'Stoppen';
+$html_pause = 'Pauzeren';
+$html_hide_empty = 'Lege mappen verbergen';

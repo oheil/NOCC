@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ar.php 3179 2025-11-06 12:23:13Z translatewiki $
+ * @version    SVN: $Id: ar.php 3199 2025-12-22 12:17:24Z translatewiki $
  */
 /** Arabic (العربية)
  * 
@@ -273,3 +273,15 @@ $html_inbox_show_alert = 'عرض صندوق تنبيه عندما يتغير ع�
 $lang_horde_require_failed = '.لم يتم العثور على فئة العميل';
 $lang_strong_encryption_required = 'التشفير غير الآمن غير مسموح به';
 $html_default = 'افتراضي';
+$html_window_width_label = 'العرض الأولي (بكسل) للنوافذ الجديدة';
+$html_window_height_label = 'الارتفاع الأولي (بكسل) للنوافذ الجديدة';
+$html_invalid_new_window = 'حجم غير صالح بالبكسل للنوافذ الجديدة';
+$html_search_result = 'نتيجة';
+$html_subject_only = 'في العناوين فقط';
+$html_all_folders = 'في جميع المجلدات أو فقط في';
+$html_max_folders = 'في مجلدات %1$s دفعة واحدة';
+$html_search_finished = 'تم الانتهاء من البحث';
+$html_search_more = 'عرض المزيد';
+$html_stop = 'قف';
+$html_pause = 'يوقف';
+$html_hide_empty = 'إخفاء المجلدات الفارغة';
