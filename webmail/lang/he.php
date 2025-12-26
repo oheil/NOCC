@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: he.php 3030 2022-10-17 11:10:41Z translatewiki $
+ * @version    SVN: $Id: he.php 3200 2025-12-25 12:17:13Z translatewiki $
  */
 /** Hebrew (עברית)
  * 
@@ -265,3 +265,15 @@ $html_inbox_show_alert = 'הצגת תיבת התראה כאשר מספר ההו�
 $lang_horde_require_failed = 'מחלקת לקוח Imap של Horde לא נמצאה';
 $lang_strong_encryption_required = 'הצפנה בלתי מאובטחת אינה מורשית';
 $html_default = 'ברירת המחדל';
+$html_window_width_label = 'רוחב התחלתי (בפיקסלים) של חלונות חדשים';
+$html_window_height_label = 'גובה התחלתי (בפיקסלים) של חלונות חדשים';
+$html_invalid_new_window = 'גודל שגוי בפיקסלים לחלונות חדשים';
+$html_search_result = 'תוצאה';
+$html_subject_only = 'בכותרות בלבד';
+$html_all_folders = 'בכל התיקיות או רק בתוך';
+$html_max_folders = 'ב־%1$s תיקיות בבת־אחת';
+$html_search_finished = 'החיפוש הסתיים';
+$html_search_more = 'להציג עוד';
+$html_stop = 'עצירה';
+$html_pause = 'הפוגה';
+$html_hide_empty = 'הסתרת תיקיות ריקות';
