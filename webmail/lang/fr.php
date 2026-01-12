@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fr.php 3197 2025-12-15 12:17:41Z translatewiki $
+ * @version    SVN: $Id: fr.php 3202 2026-01-12 12:14:40Z translatewiki $
  */
 /** French (français)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Asteralee
  * @author Gomoko
+ * @author Grandasse
  * @author Hashar
  * @author IAlex
  * @author Od1n
@@ -206,7 +207,7 @@ $html_encoding_label = 'Encodage du texte :';
 $html_add = 'Ajouter';
 $html_contacts = 'Contacts sur %1$s';
 $html_modify = 'Modifier';
-$html_back = 'Arrière';
+$html_back = 'Retour';
 $html_contact_add = 'Ajouter un nouveau contact';
 $html_contact_mod = 'Modifier un contact';
 $html_contact_first = 'Prénom';
@@ -273,4 +274,14 @@ $html_inbox_show_alert = 'Afficher une fenêtre d’alerte quand le nombre de co
 $lang_horde_require_failed = 'Classe du client pmap de Horde non trouvée';
 $lang_strong_encryption_required = 'Le chiffrement non sécurisé n’est pas autorisé';
 $html_default = 'Par défaut';
+$html_window_width_label = 'Largeur initiale (px) des nouvelles fenêtres';
+$html_window_height_label = 'Hauteur initiale (px) des nouvelles fenêtres';
+$html_invalid_new_window = 'Taille invalide en px pour les nouvelles fenêtres';
+$html_search_result = 'Résultat';
+$html_subject_only = 'uniquement dans les en-têtes';
+$html_all_folders = 'dans tous les dossiers ou seulement dans';
+$html_search_finished = 'Recherche terminée';
+$html_search_more = 'Afficher plus';
 $html_stop = 'Arrêter';
+$html_pause = 'Pause';
+$html_hide_empty = 'Masquer les dossiers vides';

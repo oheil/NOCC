@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sv.php 3034 2022-11-24 12:11:19Z translatewiki $
+ * @version    SVN: $Id: sv.php 3201 2026-01-05 12:13:47Z translatewiki $
  */
 /** Swedish (svenska)
  * 
@@ -31,6 +31,7 @@
  * @author Poxnar
  * @author Robert Niska <r.niska@redbox.d2g.nu>
  * @author Sabelöga
+ * @author Stefan2255
  * @author Twobee
  * @author WikiPhoenix
  */
@@ -273,3 +274,15 @@ $html_inbox_show_alert = 'Visa en notis när antalet meddelanden i din inkorg f�
 $lang_horde_require_failed = 'Horde pmap-klientklass hittades inte';
 $lang_strong_encryption_required = 'Osäker kryptering är inte tillåten';
 $html_default = 'Standard';
+$html_window_width_label = 'Inledande bredd (px) för nya fönster';
+$html_window_height_label = 'Inledande höjd (px) för nya fönster';
+$html_invalid_new_window = 'Ogiltig storlek i px för nya fönster';
+$html_search_result = 'Resultat';
+$html_subject_only = 'endast i rubriker';
+$html_all_folders = 'i alla mappar eller bara i';
+$html_max_folders = 'i %1$s mappar samtidigt';
+$html_search_finished = 'Sökningen är klar';
+$html_search_more = 'Visa mer';
+$html_stop = 'Stopp';
+$html_pause = 'Pausa';
+$html_hide_empty = 'Dölj tomma mappar';
