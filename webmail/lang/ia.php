@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ia.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: ia.php 3204 2026-01-22 12:18:17Z translatewiki $
  */
 /** Interlingua (interlingua)
  * 
@@ -262,3 +262,15 @@ $html_inbox_show_alert = 'Monstrar un quadro de alerta quando le numero de messa
 $lang_horde_require_failed = 'Classe del cliente pmap de Horde non trovate';
 $lang_strong_encryption_required = 'Le cryptation non secur non es permittite';
 $html_default = 'Predefinite';
+$html_window_width_label = 'Latitude initial (in px) de nove fenestras';
+$html_window_height_label = 'Altitude initial (in px) de nove fenestras';
+$html_invalid_new_window = 'Dimension invalide in px pro nove fenestras';
+$html_search_result = 'Resultato';
+$html_subject_only = 'in capites solmente';
+$html_all_folders = 'in tote le dossiers o solmente in';
+$html_max_folders = 'in %1$s dossiers simultaneemente';
+$html_search_finished = 'Recerca terminate';
+$html_search_more = 'Monstrar plus';
+$html_stop = 'Stoppar';
+$html_pause = 'Pausar';
+$html_hide_empty = 'Celar dossiers vacue';

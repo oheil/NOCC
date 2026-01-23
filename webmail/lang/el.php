@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: el.php 2995 2022-02-21 12:10:24Z translatewiki $
+ * @version    SVN: $Id: el.php 3203 2026-01-19 12:14:31Z translatewiki $
  */
 /** Greek (Ελληνικά)
  * 
@@ -28,6 +28,7 @@
  * @author Dead3y3
  * @author Evropi
  * @author Glavkos
+ * @author Jimkats
  * @author NikosLikomitros
  * @author Nikosgranturismogt
  * @author Omnipaedista
@@ -248,9 +249,33 @@ $html_search = 'Αναζήτηση';
 $html_new_session = 'Επόμενη συνεδρία';
 $html_fd_filename = 'Λήψη του %1$s';
 $html_fd_mailcount = '{{PLURAL:$1|0=Δεν υπάρχει κανένα email|1=Υπάρχει %1$d email|Υπάρχουν %1$d emails}} στο φάκελο.';
+$html_fd_mailskip = 'Τα ακόλουθα email δεν θα αποτελέσουν μέρος του αρχείου mbox, καθώς θα υπερβαίνουν το php memory_limit:';
 $html_fd_filesize = 'μέγεθος %1$d';
 $html_fd_skipcount = 'με %1$d διευθύνσεις ηλ. ταχυδρομείου';
+$html_fd_largefolder = 'Ανάλογα με την ταχύτητα λήψης, αυτή η λήψη ενδέχεται να αποτύχει λόγω λήξης του χρονικού ορίου του σεναρίου.<br />Ελέγξτε την πληρότητα της λήψης σας ή ορίστε το max_execution_time σε υψηλότερη τιμή στο php.ini.';
 $reset_clicked = 'Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτή τη φόρμα;';
+$html_send_recover = 'Συνδεθείτε για να ανακτήσετε το χαμένο προσχέδιο!';
+$html_send_discard = 'Πατήστε εδώ για να απορρίψετε το αποθηκευμένο προσχέδιο.';
+$html_collect_label = 'Αυτόματη συλλογή διευθύνσεων email:';
 $html_collect_option0 = 'Ποτέ';
+$html_collect_option1 = 'Μόνο από εξερχόμενα email';
+$html_collect_option2 = 'Μόνο από ανοιγμένα email';
 $html_collect_option3 = 'Πάντα';
+$html_version_message1 = 'Χρησιμοποιούμε την τελευταία έκδοση';
+$html_version_message2 = 'Δεν είναι δυνατή η ανάκτηση της τελευταίας έκδοσης';
 $html_version_message3 = 'Eίναι διαθέσιμη νέα έκδοση';
+$html_session_expired = 'Αυτή η συνεδρία έχει λήξει';
+$html_session_ip_changed = 'λόγω αλλαγής IP πελάτη';
+$html_session_expire_time = 'Αυτή η συνεδρία λήγει αυτόματα στις';
+$html_inbox_changed = 'Το περιεχόμενο των εισερχομένων σας έχει αλλάξει';
+$lang_strong_encryption_required = 'Δεν επιτρέπεται η μη ασφαλής κρυπτογράφηση';
+$html_default = 'Προεπιλογή';
+$html_search_result = 'Αποτέλεσμα';
+$html_subject_only = 'μόνο σε κεφαλίδες';
+$html_all_folders = 'σε όλους τους φακέλους ή μόνο σε';
+$html_max_folders = 'σε %1$s φακέλους ταυτόχρονα';
+$html_search_finished = 'Η αναζήτηση ολοκληρώθηκε';
+$html_search_more = 'Εμφάνιση περισσότερων';
+$html_stop = 'Διακοπή';
+$html_pause = 'Παύση';
+$html_hide_empty = 'Απόκρυψη κενών φακέλων';
