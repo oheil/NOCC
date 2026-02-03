@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 3165 2025-07-07 12:13:56Z translatewiki $
+ * @version    SVN: $Id: ps.php 3206 2026-02-02 12:14:51Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -218,7 +218,7 @@ $html_contact_listonly = 'يوازې لړليکونه';
 $html_contact_all = 'ټول ښکاره کول';
 $html_contact_add_confirm = 'شته لړليک سره برېښليکونه يوځاي کړي؟';
 $html_del_msg = 'آيا ټاکلي پيغامونه ړنگول غواړئ؟';
-$html_down_mail = 'ښکته کول';
+$html_down_mail = 'راکښته‌کول';
 $original_msg = '-- آرنی پيغام --';
 $to_empty = 'د \'تر\' ډگر باید تش نه وي!';
 $html_images_warning = 'ستاسو خونديتوب لپاره، لرې پراته انځورونه نه ښودل‌کېږي.';

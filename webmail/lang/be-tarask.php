@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3200 2025-12-25 12:17:13Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3206 2026-02-02 12:14:51Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -26,6 +26,7 @@
  * @author Jim-by
  * @author Red Winged Duck
  * @author Renessaince
+ * @author Ucukor
  * @author Wizardist
  */
 
@@ -138,7 +139,7 @@ $html_part_x = 'Частка %s';
 $html_attach = 'Далучыць';
 $html_attach_forget = 'Вы павінны далучыць Ваш файл перад дасылкай Вашага паведамленьня!';
 $html_attach_delete = 'Выдаліць выбраныя';
-$html_attach_none = 'Вам неабходна выбраць файл для далучэньня!';
+$html_attach_none = 'Патрэбна выбраць файл для далучэньня!';
 $html_sort_by = 'Сартаваць паводле';
 $html_sort = 'Сартаваць';
 $html_from = 'Ад';
@@ -230,7 +231,7 @@ $html_smtp_error_no_conn = 'Немагчыма стварыць SMTP-злучэ�
 $html_smtp_error_unexpected = 'Нечаканы SMTP-адказ:';
 $lang_could_not_connect = 'Немагчыма далучыцца да сэрвэра';
 $lang_invalid_msg_num = 'Няслушны нумар паведамленьня';
-$html_file_upload_attack = 'Верагодная атака праз загрузку файла';
+$html_file_upload_attack = 'Мажлівая атака праз адпраўку файлу';
 $html_invalid_email_address = 'Няслушны адрас электроннай пошты';
 $html_invalid_msg_per_page = 'Няслушная колькасьць паведамленьняў на старонцы';
 $html_invalid_wrap_msg = 'Няслушная шырыня радку ў паведамленьні';
