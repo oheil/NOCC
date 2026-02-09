@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fi.php 3066 2023-03-06 12:12:50Z translatewiki $
+ * @version    SVN: $Id: fi.php 3208 2026-02-09 12:14:23Z translatewiki $
  */
 /** Finnish (suomi)
  * 
@@ -28,6 +28,7 @@
  * @author Olli
  * @author Pyscowicz
  * @author Silvonen
+ * @author Yupik
  */
 
 $lang_locale = 'fi_FI.UTF-8';
@@ -267,3 +268,4 @@ $html_inbox_show_alert = 'Näytä hälytyslaatikko, kun sähköpostien lukumää
 $lang_horde_require_failed = 'Horde pmap -asiakasohjelmaluokkaa ei löydy';
 $lang_strong_encryption_required = 'Heikko salaus ei ole sallittu';
 $html_default = 'Oletus';
+$html_search_more = 'Näytä lisää';

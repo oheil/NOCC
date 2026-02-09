@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3206 2026-02-02 12:14:51Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3207 2026-02-05 12:14:19Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -267,3 +267,10 @@ $html_inbox_show_alert = 'Паказваць акно з паведамлень�
 $lang_horde_require_failed = 'Ня знойдзены кляс pmap-кліента Horde';
 $lang_strong_encryption_required = 'Небясьпечнае шыфраваньне недапушчальнае';
 $html_default = 'Перадвызначана';
+$html_search_result = 'Вынік';
+$html_subject_only = 'толькі ў загалоўках';
+$html_search_finished = 'Пошук скончаны';
+$html_search_more = 'Паказаць болей';
+$html_stop = 'Спыніць';
+$html_pause = 'Паўза';
+$html_hide_empty = 'Схаваць пустыя тэчкі';
