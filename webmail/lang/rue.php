@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: rue.php 3137 2024-10-07 12:12:49Z translatewiki $
+ * @version    SVN: $Id: rue.php 3209 2026-02-23 12:16:57Z translatewiki $
  */
 /** Rusyn (русиньскый)
  * 
@@ -24,6 +24,7 @@
  *
  * @author Constraque
  * @author Gazeb
+ * @author Oujon
  */
 
 $default_date_format = '%d.%m.%Y';
@@ -227,3 +228,4 @@ $html_session_file_error = 'Не годен отворити файл сеанс
 $html_login_not_allowed = 'Тот хоснователь не мать поволене приголошіня.';
 $lang_err_send_delay = 'Мусите почекати %1$d секунд перед одосланым далшой пошты';
 $html_search = 'Глядати';
+$html_pause = 'Пауза';
