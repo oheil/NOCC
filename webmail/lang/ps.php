@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 3206 2026-02-02 12:14:51Z translatewiki $
+ * @version    SVN: $Id: ps.php 3211 2026-03-05 12:14:23Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -262,3 +262,12 @@ $html_inbox_changed = 'ستاسو د ليک‌بکس منځپانگه بدله �
 $html_inbox_show_alert = 'کله چې په ليک‌بکس کې د برېليیکونو شمېر بدل شي؛ نو خبربکس وښایاست';
 $lang_strong_encryption_required = 'ناخوندي کوډ کولو ته اجازه نشته';
 $html_default = 'تلواليز';
+$html_search_result = 'پايله';
+$html_subject_only = 'يوازې په سرليکونو';
+$html_all_folders = 'په ټولو پوښيو کې يا يوازې په';
+$html_max_folders = 'په %1$s پوښيو کې په يوځل';
+$html_search_finished = 'لټون پای ته ورسېد';
+$html_search_more = 'نور ښودل';
+$html_stop = 'درول';
+$html_pause = 'درول‌';
+$html_hide_empty = 'تشۍ پوښۍ پټول';
