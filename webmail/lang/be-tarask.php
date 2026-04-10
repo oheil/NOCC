@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3207 2026-02-05 12:14:19Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3213 2026-04-09 12:14:58Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -222,7 +222,7 @@ $html_contact_listonly = 'Толькі сьпісы';
 $html_contact_all = 'Паказаць усе';
 $html_contact_add_confirm = 'Дадаць адрасы электроннай пошты да існага сьпісу?';
 $html_del_msg = 'Выдаліць выбраныя паведамленьні?';
-$html_down_mail = 'Загрузіць';
+$html_down_mail = 'Сьцягнуць';
 $original_msg = '-- Арыгінальнае паведамленьне --';
 $to_empty = 'Поле \'Каму\' ня можа быць пустым!';
 $html_images_warning = 'Для Вашай бясьпекі, вонкавыя выявы не паказваюцца.';
@@ -247,7 +247,7 @@ $html_fd_mailcount = 'У тэчцы {{PLURAL:$1|0=няма лістоў|1=зна
 $html_fd_mailskip = 'Наступныя лісты электроннай пошты ня будуць часткай mbox-файла, бо яны перавышаюць зьменную php memory_limit:';
 $html_fd_filesize = 'памер %1$d';
 $html_fd_skipcount = 'з %1$d лістамі';
-$html_fd_largefolder = 'У залежнасьці ад вашай хуткасьці спампоўкі, загрузка можа не атрымацца празь перавышэньне часу працы сцэнара.<br />Калі ласка, праверце паўнату загрузкі або пазначце большае значэньне max_execution_time ў php.ini.';
+$html_fd_largefolder = 'У залежнасьці ад вашай хуткасьці сьцягваньня, яно можа не атрымацца празь перавышэньне часу працы сцэнара.<br />Калі ласка, праверце паўнату сьцягваньня або пазначце большае значэньне max_execution_time ў php.ini.';
 $reset_clicked = 'Вы сапраўды хочаце ачысьціць гэтую форму?';
 $html_send_recover = 'Увайдзіце, каб аднавіць згублены чарнавік!';
 $html_send_discard = 'Націсьніце тут, каб выдаліць захаваны чарнавік.';
