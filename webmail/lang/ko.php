@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ko.php 3118 2024-03-11 12:14:02Z translatewiki $
+ * @version    SVN: $Id: ko.php 3215 2026-04-20 12:16:06Z translatewiki $
  */
 /** Korean (한국어)
  * 
@@ -30,6 +30,7 @@
  * @author Mhha
  * @author Revi
  * @author Roh,Kyoung-Min <rohbin@dreamwiz.com>
+ * @author Tensama0415
  * @author Wtspout
  * @author Ykhwong
  * @author Yknok29
@@ -275,3 +276,10 @@ $html_inbox_show_alert = '받은 편지함의 이메일의 수가 변경되면 �
 $lang_horde_require_failed = 'Horde pmap 클라이언트 클래스를 찾을 수 없음';
 $lang_strong_encryption_required = '안전하지 않은 암호화는 허용되지 않습니다';
 $html_default = '기본값';
+$html_window_width_label = '새 창의 초기 너비(px)';
+$html_window_height_label = '새 창의 초기 높이(px)';
+$html_search_result = '결과';
+$html_search_more = '더 보기';
+$html_stop = '중지';
+$html_pause = '일시 정지';
+$html_hide_empty = '빈 폴더 숨기기';
