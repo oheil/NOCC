@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ru.php 3020 2022-09-01 11:12:45Z translatewiki $
+ * @version    SVN: $Id: ru.php 3214 2026-04-16 12:13:58Z translatewiki $
  */
 /** Russian (русский)
  * 
@@ -278,3 +278,15 @@ $html_inbox_show_alert = 'Показывать окно предупрежден
 $lang_horde_require_failed = 'Не найден класс pmap-клиента Horde';
 $lang_strong_encryption_required = 'Небезопасное шифрование не допускается';
 $html_default = 'По умолчанию';
+$html_window_width_label = 'Начальная ширина (в пикселях) новых окон';
+$html_window_height_label = 'Начальная высота (в пикселях) новых окон';
+$html_invalid_new_window = 'Неверный размер в пикселях для новых окон';
+$html_search_result = 'Результат';
+$html_subject_only = 'только в заголовках';
+$html_all_folders = 'во всех папках или только в';
+$html_max_folders = 'в %1$s папках одновременно';
+$html_search_finished = 'Поиск завершён';
+$html_search_more = 'Показать больше';
+$html_stop = 'Остановить';
+$html_pause = 'Пауза';
+$html_hide_empty = 'Скрыть пустые папки';
