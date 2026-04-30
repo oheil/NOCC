@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ko.php 3215 2026-04-20 12:16:06Z translatewiki $
+ * @version    SVN: $Id: ko.php 3217 2026-04-30 12:13:49Z translatewiki $
  */
 /** Korean (한국어)
  * 
@@ -278,7 +278,12 @@ $lang_strong_encryption_required = '안전하지 않은 암호화는 허용되�
 $html_default = '기본값';
 $html_window_width_label = '새 창의 초기 너비(px)';
 $html_window_height_label = '새 창의 초기 높이(px)';
+$html_invalid_new_window = '새 창의 크기가 잘못되었습니다 (픽셀 단위).';
 $html_search_result = '결과';
+$html_subject_only = '헤더에만';
+$html_all_folders = '모든 폴더에서 또는 다음 폴더에서만';
+$html_max_folders = '%1$s개의 폴더에서 한 번에';
+$html_search_finished = '검색 완료';
 $html_search_more = '더 보기';
 $html_stop = '중지';
 $html_pause = '일시 정지';
