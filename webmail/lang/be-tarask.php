@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3213 2026-04-09 12:14:58Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3218 2026-05-07 12:12:18Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -74,24 +74,24 @@ $html_signature = 'Подпіс';
 $html_signature_label = 'Подпіс:';
 $html_reply_leadin_label = 'Загаловак адказу:';
 $html_prefs_updated = 'Настройкі захаваныя';
-$html_manage_folders_link = 'Кіраваньне папкамі IMAP';
+$html_manage_folders_link = 'Кіраваньне тэчкамі IMAP';
 $html_manage_filters_link = 'Кіраваньне паштовымі фільтрамі';
 $html_use_graphical_smilies = 'Выкарыстоўваць графічнымі ўсьмешкамі';
-$html_sent_folder_label = 'Капіяваць дасланыя лісты у адмысловую папку:';
-$html_trash_folder_label = 'Пераносіць выдаленыя лісты у адмысловую папку:';
+$html_sent_folder_label = 'Капіяваць дасланыя лісты у адмысловую тэчку:';
+$html_trash_folder_label = 'Пераносіць выдаленыя лісты у адмысловую тэчку:';
 $html_inbox_folder_label = 'Злучыць элемэнт мэню «Скрыня» з тэчкай:';
 $html_colored_quotes = 'Каляровыя цытаты';
 $html_display_struct = 'Паказваць структураваны тэкст';
 $html_send_html_mail = 'Даслаць ліст у фармаце HTML';
-$html_folders = 'Папкі';
-$html_folders_create_failed = 'Немагчыма стварыць папку!';
-$html_folders_sub_failed = 'Немагчыма далучыць папку!';
-$html_folders_unsub_failed = 'Немагчыма адлучыць папку!';
-$html_folders_rename_failed = 'Немагчыма перайменаваць папку!';
-$html_folders_updated = 'Папкі абноўленыя';
+$html_folders = 'Тэчкі';
+$html_folders_create_failed = 'Немагчыма стварыць тэчку!';
+$html_folders_sub_failed = 'Немагчыма далучыць тэчку!';
+$html_folders_unsub_failed = 'Немагчыма адлучыць тэчку!';
+$html_folders_rename_failed = 'Немагчыма перайменаваць тэчку!';
+$html_folders_updated = 'Тэчкі абноўленыя';
 $html_folder_subscribe = 'Падпісацца на';
 $html_folder_rename = 'Перайменаваць';
-$html_folder_create = 'Стварыць новую папку';
+$html_folder_create = 'Стварыць новую тэчку';
 $html_folder_remove = 'Адпісацца ад';
 $html_folder_delete = 'Выдаліць';
 $html_folder_to = 'да';
@@ -115,7 +115,7 @@ $html_move = 'Перанесьці';
 $html_copy = 'Скапіяваць';
 $html_messages_to = 'выбраныя паведамленьні да';
 $html_gotopage = 'Перайсьці на старонку';
-$html_gotofolder = 'Перайсьці ў папку';
+$html_gotofolder = 'Перайсьці ў тэчку';
 $html_other_folders = 'Сьпіс папак';
 $html_page = 'Старонка';
 $html_of = 'з';
