@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 3199 2025-12-22 12:17:24Z translatewiki $
+ * @version    SVN: $Id: nl.php 3219 2026-05-11 12:14:05Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -237,10 +237,10 @@ $html_images_display = 'Afbeeldingen weergeven';
 $html_smtp_error_no_conn = 'Het is niet mogelijk een SMTP-verbinding te openen';
 $html_smtp_error_unexpected = 'Onverwacht SMTP-antwoord:';
 $lang_could_not_connect = 'Er kan geen verbinding gemaakt worden met de server';
-$lang_invalid_msg_num = 'Ongeldig berichtnummer';
+$lang_invalid_msg_num = 'Onjuist berichtnummer';
 $html_file_upload_attack = 'Mogelijk illegale poging om bestand te uploaden';
-$html_invalid_email_address = 'Ongeldig e-mailadres';
-$html_invalid_msg_per_page = 'Ongeldig aantal berichten per pagina';
+$html_invalid_email_address = 'Onjuist e-mailadres';
+$html_invalid_msg_per_page = 'Onjuist aantal berichten per pagina';
 $html_invalid_wrap_msg = 'Ongeldige terugloopbreedte van het bericht';
 $html_seperate_msg_win = 'Berichten in nieuw venster weergeven';
 $html_err_file_contacts = 'Er kan niet naar de contactenlijst geschreven worden.';
