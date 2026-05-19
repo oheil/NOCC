@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: uk.php 3019 2022-08-29 11:11:41Z translatewiki $
+ * @version    SVN: $Id: uk.php 3221 2026-05-18 12:42:03Z translatewiki $
  */
 /** Ukrainian (українська)
  * 
@@ -271,3 +271,15 @@ $html_inbox_show_alert = 'Показати вікно попередження, 
 $lang_horde_require_failed = 'Не знайдено класу pmap-клієнта Horde.';
 $lang_strong_encryption_required = 'Не дозволене незахищене шифрування';
 $html_default = 'За замовчуванням';
+$html_window_width_label = 'Початкова ширина (у пікселях) нових вікон';
+$html_window_height_label = 'Початкова висота (у пікселях) нових вікон';
+$html_invalid_new_window = 'Недійсний розмір у пікселях для нових вікон';
+$html_search_result = 'Результат';
+$html_subject_only = 'лише в заголовках';
+$html_all_folders = 'у всіх теках або лише в';
+$html_max_folders = 'у %1$s теках одночасно';
+$html_search_finished = 'Пошук завершено';
+$html_search_more = 'Показати більше';
+$html_stop = 'Зупинити';
+$html_pause = 'Пауза';
+$html_hide_empty = 'Приховати порожні теки';

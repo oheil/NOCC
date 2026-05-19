@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: be-tarask.php 3218 2026-05-07 12:12:18Z translatewiki $
+ * @version    SVN: $Id: be-tarask.php 3220 2026-05-14 12:13:52Z translatewiki $
  */
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца))
  * 
@@ -121,7 +121,7 @@ $html_page = 'Старонка';
 $html_of = 'з';
 $html_view_header = 'Паказаць загаловак';
 $html_remove_header = 'Схаваць загаловак';
-$html_inbox = 'Уваходзячыя';
+$html_inbox = 'Уваходныя';
 $html_new_msg = 'Напісаць';
 $html_reply = 'Адказаць';
 $html_reply_short = 'Адк.';
