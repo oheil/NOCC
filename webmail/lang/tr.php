@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: tr.php 3169 2025-08-07 12:14:08Z translatewiki $
+ * @version    SVN: $Id: tr.php 3223 2026-05-25 12:12:59Z translatewiki $
  */
 /** Turkish (Türkçe)
  * 
@@ -28,6 +28,7 @@
  * @author HakanIST
  * @author Hedda
  * @author Joseph
+ * @author Leo
  * @author McAang
  * @author Meelo
  * @author MuratTheTurkish
@@ -276,3 +277,15 @@ $html_inbox_show_alert = 'Gelen kutusundaki e-posta sayısı değiştiğinde uya
 $lang_horde_require_failed = 'Horde pmap istemci sınıfı bulunamadı';
 $lang_strong_encryption_required = 'Güvenli olmayan parolama izin verilmiyor';
 $html_default = 'Varsayılan';
+$html_window_width_label = 'Yeni pencerelerin başlangıç ​​genişliği (px)';
+$html_window_height_label = 'Yeni pencerelerin başlangıç ​​yüksekliği (px)';
+$html_invalid_new_window = 'Yeni pencereler için geçersiz px boyutu';
+$html_search_result = 'Sonuç';
+$html_subject_only = 'yalnızca başlıklarda';
+$html_all_folders = 'tüm klasörlerde veya sadece';
+$html_max_folders = '%1$s klasörlerinde aynı anda';
+$html_search_finished = 'Arama tamamlandı';
+$html_search_more = 'Daha fazla göster';
+$html_stop = 'Durdur';
+$html_pause = 'Duraklat';
+$html_hide_empty = 'Boş klasörleri gizle';
