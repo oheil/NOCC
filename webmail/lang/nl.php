@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 3219 2026-05-11 12:14:05Z translatewiki $
+ * @version    SVN: $Id: nl.php 3224 2026-06-08 12:14:10Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -257,7 +257,7 @@ $html_fd_skipcount = 'met %1$d e-mails';
 $html_fd_largefolder = 'Afhankelijk van uw downloadsnelheid, is het mogelijk dat het downloaden te lang duurt en wordt afgebroken.<br />Controleer of uw download compleet is of steil de PHP-instelling "max_execution_time" in php.ini hoger in.';
 $reset_clicked = 'Weet u zeker dat u deze dit formulieren wilt wissen?';
 $html_send_recover = 'Meld u aan om het concept te herstellen!';
-$html_send_discard = 'Klik hier om het klad te verwijderen.';
+$html_send_discard = 'Klik hier om het concept te verwijderen.';
 $html_collect_label = 'Automatisch e-mailadressen verzamelen:';
 $html_collect_option0 = 'Nooit';
 $html_collect_option1 = 'Alleen voor uitgaande e-mail';
@@ -269,10 +269,10 @@ $html_version_message3 = 'Er is een nieuwe versie beschikbaar';
 $html_session_expired = 'Deze sessie is verlopen';
 $html_session_ip_changed = 'omdat de client IP is gewijzigd';
 $html_session_expire_time = 'Deze sessie verloopt automatisch op';
-$html_inbox_changed = 'De inhoud van je inbox is veranderd';
+$html_inbox_changed = 'De inhoud van uw inbox is gewijzigd';
 $html_inbox_show_alert = 'Melding weergeven als het aantal emails in het postvak in wijzigt';
-$lang_horde_require_failed = 'Horde pmap client klasse niet gevonden.';
-$lang_strong_encryption_required = 'Niet beveiligde encryptie is niet toegestaan';
+$lang_horde_require_failed = 'Horde pmap clientklasse niet gevonden';
+$lang_strong_encryption_required = 'Onveilige encryptie is niet toegestaan';
 $html_default = 'Standaard';
 $html_window_width_label = 'Aanvankelijke breedte (px) van nieuwe vensters';
 $html_window_height_label = 'Aanvankelijke hoogte (px) van nieuwe vensters';

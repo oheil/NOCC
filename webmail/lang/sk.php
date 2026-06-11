@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sk.php 3152 2025-02-24 12:12:35Z translatewiki $
+ * @version    SVN: $Id: sk.php 3225 2026-06-11 12:15:22Z translatewiki $
  */
 /** Slovak (slovenčina)
  * 
@@ -26,10 +26,12 @@
  * @author Mikulas1
  * @author Oujon
  * @author Peter Sochna <sochna@telecom.sk>
+ * @author Wizzard
  * @author Yardom78
  */
 
 $lang_locale = 'sk_SK.UTF-8';
+$lang_dir = 'ltr';
 $default_date_format = '%d.%m.%Y';
 $no_locale_date_format = '%d.%m.%Y';
 $default_time_format = '%I:%M %p';
@@ -266,3 +268,15 @@ $html_inbox_show_alert = 'Zobraziť upozornenie keď sa určitý počet mailov v
 $lang_horde_require_failed = 'Nenašlo sa Horde pmap client class';
 $lang_strong_encryption_required = 'Nie je povolené nezabezpečené kódovanie';
 $html_default = 'Predvolené';
+$html_window_width_label = 'Počiatočná šírka (px) nových okien';
+$html_window_height_label = 'Počiatočná výška (px) nových okien';
+$html_invalid_new_window = 'Neplatná veľkosť v px pre nové okná';
+$html_search_result = 'Výsledok';
+$html_subject_only = 'iba v hlavičkách';
+$html_all_folders = 'vo všetkých priečinkoch alebo iba v';
+$html_max_folders = 'v %1$s priečinkoch naraz';
+$html_search_finished = 'Hľadanie dokončené';
+$html_search_more = 'Zobraziť viac';
+$html_stop = 'Zastaviť';
+$html_pause = 'Pozastaviť';
+$html_hide_empty = 'Skryť prázdne priečinky';

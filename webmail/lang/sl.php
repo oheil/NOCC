@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: sl.php 3194 2025-12-04 12:15:38Z translatewiki $
+ * @version    SVN: $Id: sl.php 3225 2026-06-11 12:15:22Z translatewiki $
  */
 /** Slovenian (slovenščina)
  * 
@@ -263,7 +263,7 @@ $html_session_expired = 'Ta seja je potekla';
 $html_session_ip_changed = 'zaradi spremembe IP-naslova odjemalca';
 $html_session_expire_time = 'Ta seja samodejno preteče ob času:';
 $html_inbox_changed = 'Vsebina vašega nabiralnika se je spremenila';
-$html_inbox_show_alert = 'Prikaži obvestilo, ko se število e-poštnih sporočil v nabiralniku spremeni';
+$html_inbox_show_alert = 'Prikaži opozorilo, ko se število e-poštnih sporočil v nabiralniku spremeni';
 $lang_horde_require_failed = 'Razred odjemalnika pmap Horde ni najden';
 $lang_strong_encryption_required = 'Ne-varno šifriranje ni dovoljeno';
 $html_default = 'Privzeto';
