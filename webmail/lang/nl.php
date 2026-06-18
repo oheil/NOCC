@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 3224 2026-06-08 12:14:10Z translatewiki $
+ * @version    SVN: $Id: nl.php 3226 2026-06-18 12:12:41Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -226,7 +226,7 @@ $html_contact_listcheck_title = 'Aanvinken om e-mail aan de lijst toe te voegen.
 $html_contact_list_add = 'Aan lijst toevoegen';
 $html_contact_listname = 'Lijstnaam';
 $html_contact_listonly = 'Alleen lijsten';
-$html_contact_all = 'Allemaal weergeven';
+$html_contact_all = 'Alles weergeven';
 $html_contact_add_confirm = 'E-mail aan bestaande lijst toevoegen?';
 $html_del_msg = 'Geselecteerde berichten verwijderen?';
 $html_down_mail = 'Downloaden';
