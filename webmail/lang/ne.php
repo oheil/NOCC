@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3194 2025-12-04 12:15:38Z translatewiki $
+ * @version    SVN: $Id: ne.php 3229 2026-07-23 12:14:13Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -213,6 +213,7 @@ $html_contact_err1 = 'उच्चतम सम्पर्क संङ्ख�
 $html_contact_err2 = 'तपाईं नयाँ सम्पर्क थप्न सक्नुहुन्न';
 $html_contact_err3 = 'तपाईंसँग सम्पर्क सूचीको पहुच अधिकार छैन';
 $html_contact_none = 'कुनैपनि सम्पर्क फेला पार्न सकिएन';
+$html_contact_ruler_top = 'शीर्ष';
 $html_del_msg = 'छानिएको सन्देशहरू मट्ने हो ?';
 $html_down_mail = 'डाउनलोड गर्नुहोस्';
 $original_msg = '-- मूल सन्देश --';

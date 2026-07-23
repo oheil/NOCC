@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3195 2025-12-08 12:13:58Z translatewiki $
+ * @version    SVN: $Id: lb.php 3229 2026-07-23 12:14:13Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -160,7 +160,7 @@ $html_contact_count = '%1$d Kontakten';
 $html_contact_err2 = 'Dir kënnt keen neie Kontakt derbäisetzen';
 $html_contact_none = 'Et konnte keng Kontakte fonnt ginn.';
 $html_contact_ruler_top = 'Uewen';
-$html_contact_list_add = 'Op d\'Lëscht derbäisetzen';
+$html_contact_list_add = 'Op d\'Lëscht setzen';
 $html_contact_listonly = 'Nëmme Lëschten';
 $html_contact_all = 'Alles weisen';
 $html_del_msg = 'Den erausgesichte Message läschen?';

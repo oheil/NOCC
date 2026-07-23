@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fi.php 3219 2026-05-11 12:14:05Z translatewiki $
+ * @version    SVN: $Id: fi.php 3227 2026-06-29 12:17:46Z translatewiki $
  */
 /** Finnish (suomi)
  * 
@@ -28,6 +28,7 @@
  * @author Olli
  * @author Pyscowicz
  * @author Silvonen
+ * @author Wikipeedikko
  * @author Yupik
  */
 
@@ -268,8 +269,13 @@ $html_inbox_show_alert = 'Näytä hälytyslaatikko, kun sähköpostien lukumää
 $lang_horde_require_failed = 'Horde pmap -asiakasohjelmaluokkaa ei löydy';
 $lang_strong_encryption_required = 'Heikko salaus ei ole sallittu';
 $html_default = 'Oletus';
+$html_window_width_label = 'Uusien ikkunoiden alustava leveys (pikseleinä)';
+$html_window_height_label = 'Uusien ikkunoiden alustava korkeus (pikseleinä)';
+$html_invalid_new_window = 'Uusien ikkunoiden pikselikoko on virheellinen';
 $html_search_result = 'Tulos';
+$html_subject_only = 'vain ylätunnisteissa';
 $html_all_folders = 'kaikissa kansioissa tai vain';
+$html_max_folders = '%1$s kansiossa samanaikaisesti';
 $html_search_finished = 'Haku suoritettu';
 $html_search_more = 'Näytä lisää';
 $html_stop = 'Pysäytä';
