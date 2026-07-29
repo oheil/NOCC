@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3229 2026-07-23 12:14:13Z translatewiki $
+ * @version    SVN: $Id: lb.php 3230 2026-07-27 12:18:09Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -172,6 +172,7 @@ $html_smtp_error_unexpected = 'Onerwarten SMTP-Äntwert:';
 $lang_could_not_connect = 'De Server konnt net erreecht ginn';
 $lang_invalid_msg_num = 'Falsche Nummer vum Messsage';
 $html_invalid_email_address = 'Ongülteg E-Mail-Adress';
+$html_invalid_msg_per_page = 'Ongülteg Zuel vu Messagë pro Säit';
 $html_seperate_msg_win = 'Messagen a separate Fënsteren';
 $lang_err_send_delay = 'Dir musst tëschent 2 Maile waarden (%1$d Sekonnen)';
 $html_search = 'Sichen';
