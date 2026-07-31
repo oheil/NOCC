@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: lb.php 3230 2026-07-27 12:18:09Z translatewiki $
+ * @version    SVN: $Id: lb.php 3231 2026-07-30 12:13:23Z translatewiki $
  */
 /** Luxembourgish (Lëtzebuergesch)
  * 
@@ -189,5 +189,6 @@ $html_version_message2 = 'Déi lescht Versioun kann net ofgeruff ginn';
 $html_version_message3 = 'Eng nei Versioun ass disponibel';
 $html_session_expired = 'Dës Sessioun ass ofgelaf';
 $html_session_expire_time = 'Dës Sessioun leeft automatesch of um';
+$html_default = 'Standard';
 $html_search_result = 'Resultat';
 $html_search_more = 'Méi weisen';
