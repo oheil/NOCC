@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: fa.php 3176 2025-10-20 05:25:12Z translatewiki $
+ * @version    SVN: $Id: fa.php 3233 2026-08-13 12:18:52Z translatewiki $
  */
 /** Persian (فارسی)
  * 
@@ -29,6 +29,7 @@
  * @author FarsiNevis
  * @author Huji
  * @author Iriman
+ * @author LProfo
  * @author LordProfo
  * @author Mjbmr
  * @author Mohammad ebz
@@ -58,7 +59,7 @@ $title_prev_page = 'پيغام قبلى';
 $title_next_msg = 'پیام بعدی';
 $title_prev_msg = 'پیام قبلی';
 $html_theme_label = 'پوسته';
-$html_welcome = 'خوش آمدید به %1$s';
+$html_welcome = 'به %1$s خوش آمدید';
 $html_login = 'ورود به سامانه';
 $html_user_label = 'کاربر:';
 $html_passwd_label = 'رمز عبور:';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: nl.php 3226 2026-06-18 12:12:41Z translatewiki $
+ * @version    SVN: $Id: nl.php 3232 2026-08-03 12:20:04Z translatewiki $
  */
 /** Dutch (Nederlands)
  * 
@@ -190,7 +190,7 @@ $html_spam = 'Spam';
 $html_spam_warning = 'Dit bericht is ingedeeld als spam.';
 $html_receipt = 'Ontvangstbevestiging';
 $html_select = 'Selecteren';
-$html_select_all = 'Selectie omdraaien';
+$html_select_all = 'Selectie omkeren';
 $html_select_contacts = 'Contactpersonen selecteren';
 $html_loading_image = 'Afbeelding laden';
 $html_send_confirmed = 'Het bericht is verzonden';
