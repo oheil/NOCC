@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: id.php 3197 2025-12-15 12:17:41Z translatewiki $
+ * @version    SVN: $Id: id.php 3237 2026-09-03 12:16:14Z translatewiki $
  */
 /** Indonesian (Bahasa Indonesia)
  * 
@@ -166,7 +166,7 @@ $html_cc_label = 'Cc:';
 $html_bcc_label = 'Bcc:';
 $html_nosubject = 'Tiada judul';
 $html_send = 'Kirim';
-$html_cancel = 'Batalkan';
+$html_cancel = 'Batal';
 $html_no_mail = 'Tiada pesan.';
 $html_logout = 'Keluar log';
 $html_msg = 'Pesan';

@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: pl.php 3010 2022-05-16 11:11:12Z translatewiki $
+ * @version    SVN: $Id: pl.php 3235 2026-08-27 12:13:37Z translatewiki $
  */
 /** Polish (polski)
  * 
@@ -24,6 +24,7 @@
  *
  * @author BeginaFelicysym
  * @author Matik7
+ * @author PanWor
  * @author Ryszard Janiszewski <dex7@akacje.net>
  * @author Sp5uhe
  * @author Tomasz Mateja <tommat@pimpek.one.pl>
@@ -213,7 +214,7 @@ $html_contact_del = 'z listy kontaktów';
 $html_contact_count = 'Kontakty %1$d';
 $html_contact_err1 = 'Maksymalna liczba kontaktów to „%1$d”';
 $html_contact_err2 = 'Nie możesz dodać nowego kontaktu';
-$html_contact_err3 = 'Nie posiadasz uprawnień do listy kontaktów.';
+$html_contact_err3 = 'Nie masz uprawnień do listy kontaktów.';
 $html_contact_none = 'Nie odnaleziono żadnych kontaktów.';
 $html_contact_ruler_top = 'Do góry';
 $html_contact_listcheck_title = 'Zaznacz, aby dodać adres e-mail do listy.';

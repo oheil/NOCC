@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ps.php 3211 2026-03-05 12:14:23Z translatewiki $
+ * @version    SVN: $Id: ps.php 3238 2026-09-07 12:16:35Z translatewiki $
  */
 /** Pashto (پښتو)
  * 
@@ -23,6 +23,8 @@
  * @file
  *
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ * @author Oheil
+ * @author باران
  * @author شاه زمان پټان
  */
 
@@ -156,7 +158,7 @@ $html_gb = 'گېگا بايټ';
 $html_bytes = 'بايټونه';
 $html_filename = 'د دوتنې نوم';
 $html_to = 'اخيستونکی';
-$html_to_label = 'اخيستونکی';
+$html_to_label = 'اخيستونکی:';
 $html_cc = 'لمېسه';
 $html_cc_label = 'لمېسه:';
 $html_bcc_label = 'پټه برېښليکي لمېسه لېږل';
