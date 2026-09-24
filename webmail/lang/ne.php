@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3229 2026-07-23 12:14:13Z translatewiki $
+ * @version    SVN: $Id: ne.php 3241 2026-09-24 12:03:08Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -93,9 +93,9 @@ $html_folder_subscribe = 'ग्राह्यता';
 $html_folder_rename = 'पुन: नामाकरण';
 $html_folder_create = 'नाम गरिएको नयाँ फोल्डर श्रृजना गर्ने';
 $html_folder_remove = 'बाट ग्राह्यता बदर गर्ने';
-$html_folder_delete = 'मेट्ने';
+$html_folder_delete = 'मेटाउनुहोस्';
 $html_folder_to = 'लाई';
-$html_filter_remove = 'मेट्ने';
+$html_filter_remove = 'मेटाउनुहोस्';
 $html_filter_body = 'सन्देश मूल भाग';
 $html_filter_subject = 'सन्देश विषय';
 $html_filter_to = 'लाई मान';
@@ -116,7 +116,7 @@ $html_copy = 'प्रतिलिपी';
 $html_messages_to = 'छानिएका सन्देशहरू';
 $html_gotopage = 'पृष्ठमा जाने';
 $html_gotofolder = 'फोल्डरमा जाने';
-$html_other_folders = 'फो्डर सुची';
+$html_other_folders = 'फोल्डर सूची';
 $html_page = 'पृष्ठ';
 $html_of = 'को';
 $html_view_header = 'शिर्षक प्रदर्शन गर्ने';
@@ -129,9 +129,9 @@ $html_reply_all = 'सबै जवाफ फर्काउने';
 $html_forward = 'अगाडि बढाउने';
 $html_forward_short = 'Fwd:';
 $html_forward_info = 'अगाडि पठाएका सन्देशहरू यस सन्देशमा जोडेर पठाइने छ ।';
-$html_delete = 'मेटाउने';
+$html_delete = 'मेटाउनुहोस्';
 $html_new = 'नयाँ';
-$html_mark = 'मेट्नुहोस्';
+$html_mark = 'मेटाउनुहोस्';
 $html_att_label = 'यसमा जोडिएको:';
 $html_atts_label = 'यसमा जोडिएकाहरु:';
 $html_unknown = '[अज्ञात]';
@@ -206,7 +206,7 @@ $html_contact_first = 'पहिलो नाम(नाम)';
 $html_contact_last = 'अन्तिम नाम(थर)';
 $html_contact_nick = 'बोलाउने नाम';
 $html_contact_mail = 'इमेल';
-$html_contact_list = '%1$s को सम्पर्क सुची';
+$html_contact_list = '%1$s को सम्पर्क सूची';
 $html_contact_del = 'सम्पर्क सुचीबाट';
 $html_contact_count = '%1$d सम्पर्कहरु';
 $html_contact_err1 = 'उच्चतम सम्पर्क संङ्ख्या "%1$d" हो';
