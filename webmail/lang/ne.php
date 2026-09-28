@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3241 2026-09-24 12:03:08Z translatewiki $
+ * @version    SVN: $Id: ne.php 3242 2026-09-28 12:03:07Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -123,7 +123,7 @@ $html_view_header = 'शिर्षक प्रदर्शन गर्ने
 $html_remove_header = 'शिर्षक प्रदर्शन नगर्ने';
 $html_inbox = 'पत्र मञ्जुषा';
 $html_new_msg = 'लेख्ने';
-$html_reply = 'जवाफ';
+$html_reply = 'उत्तर';
 $html_reply_short = 'पुन:';
 $html_reply_all = 'सबै जवाफ फर्काउने';
 $html_forward = 'अगाडि बढाउने';
