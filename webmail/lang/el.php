@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: el.php 3203 2026-01-19 12:14:31Z translatewiki $
+ * @version    SVN: $Id: el.php 3243 2026-10-08 12:03:21Z translatewiki $
  */
 /** Greek (Ελληνικά)
  * 
@@ -194,7 +194,7 @@ $html_select_contacts = 'Επιλογή επαφών';
 $html_loading_image = 'Φορτώνω την εικόνα';
 $html_send_confirmed = 'Το μήνυμα σας θα αποσταλεί.';
 $html_no_sendaction = 'Δεν επιλέχθηκε εντολή. Δοκιμάστε να ενεργοποιήσετε τηνJavaScript.';
-$html_error_occurred = 'Ενα σφάλμα συνέβη';
+$html_error_occurred = 'Παρουσιάστηκε ένα σφάλμα';
 $html_prefs_file_error = 'Δεν μπορώ να γράψω στο αρχείο προτιμήσεων.';
 $html_wrap = 'Αριθμός χαρακτήρων για την αναδίπλωση γραμμών εξερχόμενων μηνυμάτων σε:';
 $html_wrap_none = 'Καμία αναδίπλωση';
