@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ne.php 3242 2026-09-28 12:03:07Z translatewiki $
+ * @version    SVN: $Id: ne.php 3244 2026-10-15 12:03:18Z translatewiki $
  */
 /** Nepali (नेपाली)
  * 
@@ -41,7 +41,7 @@ $err_passwd_empty = 'प्रवेशशब्द मान खाली छ';
 $alt_delete = 'छानिएका सन्देशहरू मेट्ने';
 $alt_delete_one = 'सन्देश मेट्ने';
 $alt_new_msg = 'नयाँ सन्देशहरू';
-$alt_reply = 'लेखकलाई जवाफ लेख्ने';
+$alt_reply = 'लेखकलाई उत्तर दिनुहोस्';
 $alt_reply_all = 'सबैको जवाफलेख्ने';
 $alt_forward = 'अगाडि बढाउने';
 $alt_next = 'पछिको';
@@ -69,7 +69,7 @@ $html_email_address_label = 'इमेल ठेगाना:';
 $html_bccself = 'बि सि सि प्रतिलिपि आफैलाइ';
 $html_hide_addresses = 'ठेगाना लुकाउनुहोस्';
 $html_outlook_quoting = 'Outlook जस्तो कोटिङ्ग';
-$html_reply_to = 'लाई जवाफ दिने';
+$html_reply_to = 'उत्तर दिनुहोस्';
 $html_use_signature = 'हस्ताक्षर प्रयोग गर्ने';
 $html_signature = 'हस्ताक्षर';
 $html_signature_label = 'हस्ताक्षर:';
@@ -125,7 +125,7 @@ $html_inbox = 'पत्र मञ्जुषा';
 $html_new_msg = 'लेख्ने';
 $html_reply = 'उत्तर';
 $html_reply_short = 'पुन:';
-$html_reply_all = 'सबै जवाफ फर्काउने';
+$html_reply_all = 'सबैलाई उत्तर दिनुहोस्';
 $html_forward = 'अगाडि बढाउने';
 $html_forward_short = 'Fwd:';
 $html_forward_info = 'अगाडि पठाएका सन्देशहरू यस सन्देशमा जोडेर पठाइने छ ।';
