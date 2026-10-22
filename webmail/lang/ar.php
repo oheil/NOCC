@@ -12,7 +12,7 @@
  * @package    NOCC
  * @subpackage Translations
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @version    SVN: $Id: ar.php 3199 2025-12-22 12:17:24Z translatewiki $
+ * @version    SVN: $Id: ar.php 3246 2026-10-22 12:03:34Z translatewiki $
  */
 /** Arabic (العربية)
  * 
@@ -282,6 +282,6 @@ $html_all_folders = 'في جميع المجلدات أو فقط في';
 $html_max_folders = 'في مجلدات %1$s دفعة واحدة';
 $html_search_finished = 'تم الانتهاء من البحث';
 $html_search_more = 'عرض المزيد';
-$html_stop = 'قف';
+$html_stop = 'إيقاف';
 $html_pause = 'يوقف';
 $html_hide_empty = 'إخفاء المجلدات الفارغة';
